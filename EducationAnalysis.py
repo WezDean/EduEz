@@ -204,8 +204,9 @@ o_level_dist = OLevelDistributionAltair(df)
 a_level_dist = ALevelDistributionAltair(df)
 
 # Display the charts side by side
-tab1, = st.tabs(["Analysis"])
-with tab1:
+tabs = st.tabs(["Results Analysis", "EduEz"])
+# EduEZ Tab
+with tabs[0]:
     col1, col2 = st.columns(2)
 
     with col1:
@@ -244,9 +245,7 @@ with tab1:
     with col6:
         a_level_dist.plot_distribution()
 
-tab2, = st.tabs(["EduEz"])
-
-with tab2:
+with tabs[1]:
     import streamlit as st
     import pandas as pd
 
@@ -407,4 +406,4 @@ with tab2:
     # Additional sections
     with st.expander("More Information"):
         st.write("Here is more detailed information about the eligibility criteria and application process.")
-
+        
