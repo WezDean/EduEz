@@ -203,6 +203,55 @@ institution_distribution = InstitutionApplicationDistribution(df)
 o_level_dist = OLevelDistributionAltair(df)
 a_level_dist = ALevelDistributionAltair(df)
 
+# Creating the cover header layout
+header_col1, header_col2 = st.columns([1, 2])
+
+# Adding the title and description on the right
+with header_col1:
+    st.title("EduEZ: Educational Pathways Recommendation System")
+    st.write("""
+        EduEZ is designed to help students explore potential educational pathways based on their O Level and A Level results. 
+        Simply input your grades, and we'll recommend institutions and programs that match your qualifications.
+    """)
+
+# Adding the image on the left
+with header_col2:
+    st.image("SDG4.jpg", use_column_width=True)  # Replace with your image path or URL
+
+# Custom CSS
+st.markdown("""
+    <style>
+    /* Style for the tabs */
+    div[role="tablist"] > div[role="tab"] {
+        background-color: #f0f0f5;
+        color: black;
+        font-weight: bold;
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Style for the selected tab */
+    div[role="tablist"] > div[role="tab"]:first-child {
+        background-color: #0066cc;
+        color: white;
+    }
+
+    /* Style on hover */
+    div[role="tablist"] > div[role="tab"]:hover {
+        background-color: #d9d9d9;
+    }
+    
+    /* Style for the tab content */
+    div[role="tabpanel"] {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Display the charts side by side
 tabs = st.tabs(["Results Analysis", "EduEz"])
 # EduEZ Tab
