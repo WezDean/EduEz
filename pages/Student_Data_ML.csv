@@ -1,0 +1,1001 @@
+Student_ID,Age,Gender,School_Type,District,O_Level_Results,A_Level_Results,O_Level_Credits,A_Level_Credits,Preferred_Program,Preferred_Institution,Enrolled,Program,Success_Level,Previous_Achievements,Extra_Curricular,Interest_Areas,Recommended_Program,Household_Income,Parental_Education,Attendance,Study_Hours
+STU1000,21,Female,Public,Brunei-Muara,4.13,6.64,6,1,IT,Universiti Brunei Darussalam,1,Engineering,Medium,None,1,Business,IT,1190,Degree,86.29,15
+STU1001,18,Male,Public,Brunei-Muara,2.75,7.83,4,2,Health Sciences,Politeknik Brunei,0,Engineering,Medium,Sports,1,Business,Business,4664,Masters,85.13,5
+STU1002,19,Female,Public,Tutong,6.8,3.97,5,4,IT,Micronet International College,1,Health Sciences,High,None,0,Technology,IT,1010,Diploma,76.61,12
+STU1003,20,Male,Private,Brunei-Muara,3.81,5.97,6,1,Business,Universiti Brunei Darussalam,1,Health Sciences,High,Debate,1,Technology,Business,3660,Diploma,95.08,17
+STU1004,20,Female,Private,Belait,6.69,8.15,9,2,IT,Micronet International College,0,Engineering,Medium,Debate,0,Humanities,Engineering,2000,Masters,89.49,16
+STU1005,17,Female,Private,Tutong,5.56,6.61,7,1,Education,Micronet International College,0,Engineering,Medium,Science Fair,1,Arts,Business,2302,Masters,80.68,12
+STU1006,21,Male,Private,Tutong,6.54,6.63,8,1,Health Sciences,Politeknik Brunei,0,IT,Low,Arts,1,Humanities,Health Sciences,3128,Masters,90.26,7
+STU1007,17,Male,Public,Brunei-Muara,8.95,3.65,5,4,IT,International Graduate Studies College,1,Education,Medium,Arts,1,Humanities,IT,4774,High School,88.35,15
+STU1008,19,Female,Public,Temburong,2.26,2.63,5,1,IT,International Graduate Studies College,0,Business,High,Science Fair,0,Humanities,Engineering,2876,High School,97.36,10
+STU1009,17,Female,Public,Tutong,8.28,8.52,9,2,Business,Universiti Brunei Darussalam,1,IT,High,Debate,1,Business,Health Sciences,3154,Diploma,78.7,17
+STU1010,17,Female,Private,Temburong,3.17,7.87,7,1,IT,Universiti Brunei Darussalam,1,Education,Medium,None,0,Humanities,Health Sciences,4728,Degree,89.02,16
+STU1011,19,Female,Private,Temburong,8.83,7.44,9,1,Education,Politeknik Brunei,1,Engineering,Low,Debate,0,Technology,Business,4367,Diploma,96.92,11
+STU1012,21,Female,Public,Brunei-Muara,4.44,8.94,8,4,IT,Micronet International College,1,Engineering,Low,Science Fair,1,Arts,IT,3049,Degree,97.26,14
+STU1013,18,Female,Public,Temburong,4.89,8,8,3,Health Sciences,Politeknik Brunei,0,IT,High,Debate,0,Business,Education,1764,Degree,91.21,12
+STU1014,17,Female,Public,Tutong,3.78,7.23,7,3,Education,Micronet International College,1,Health Sciences,Low,Arts,0,Technology,Education,4613,Degree,95.73,6
+STU1015,19,Female,Public,Tutong,6.34,6.96,7,1,Engineering,International Graduate Studies College,0,Health Sciences,Medium,Arts,0,Science,Business,1833,High School,81.42,6
+STU1016,18,Male,Public,Belait,8.36,7.96,7,4,Health Sciences,International Graduate Studies College,0,IT,Low,None,0,Science,Education,1190,Degree,78.83,7
+STU1017,21,Female,Public,Temburong,5.08,4.17,5,1,IT,International Graduate Studies College,0,Engineering,Medium,None,1,Science,Health Sciences,2828,High School,98.94,18
+STU1018,17,Female,Private,Tutong,2.43,5.68,5,2,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Sports,0,Arts,Engineering,3026,Masters,91.44,5
+STU1019,18,Male,Private,Brunei-Muara,8.45,3.45,9,1,IT,International Graduate Studies College,1,Business,Low,Science Fair,0,Arts,Health Sciences,1095,Diploma,87.3,8
+STU1020,19,Female,Public,Temburong,6.54,8.74,4,1,Business,Politeknik Brunei,1,Health Sciences,High,None,1,Humanities,Health Sciences,4670,Diploma,79.71,11
+STU1021,18,Female,Private,Tutong,2.97,8,4,1,Business,International Graduate Studies College,1,IT,High,Sports,0,Humanities,Business,4736,Diploma,84.54,12
+STU1022,17,Female,Public,Temburong,6.67,6.58,8,4,Education,Micronet International College,1,Education,High,Arts,1,Technology,Education,2898,Diploma,86.39,5
+STU1023,21,Female,Private,Temburong,4.86,8.92,7,1,Engineering,International Graduate Studies College,0,Engineering,High,Sports,1,Business,Business,1715,Degree,82.48,11
+STU1024,21,Male,Private,Tutong,7.6,8.33,9,2,Health Sciences,Politeknik Brunei,0,Education,Low,None,1,Humanities,Education,1963,High School,77.94,13
+STU1025,21,Female,Public,Temburong,7.53,8.31,5,2,Health Sciences,Micronet International College,1,Health Sciences,High,None,1,Business,Business,2192,Masters,80.93,15
+STU1026,17,Female,Public,Belait,3.74,5.14,8,3,Education,Universiti Brunei Darussalam,0,IT,High,None,1,Science,Health Sciences,1052,High School,79.09,15
+STU1027,18,Male,Private,Temburong,2.39,7.49,5,2,Health Sciences,International Graduate Studies College,1,Business,Low,Debate,0,Arts,Education,1422,Degree,76.64,11
+STU1028,19,Male,Public,Temburong,8.13,5.17,8,1,Engineering,International Graduate Studies College,0,IT,Medium,Debate,0,Science,IT,1352,Degree,79.31,18
+STU1029,20,Male,Private,Brunei-Muara,3.17,7.99,4,2,Engineering,Universiti Brunei Darussalam,1,Engineering,Medium,Sports,0,Business,Health Sciences,2666,High School,87.48,13
+STU1030,19,Female,Private,Temburong,4.56,6.56,5,3,Education,Politeknik Brunei,0,Health Sciences,Medium,Sports,0,Humanities,Education,4992,Diploma,90.57,7
+STU1031,19,Male,Public,Belait,3.19,7.84,4,4,Health Sciences,International Graduate Studies College,1,Education,High,None,0,Technology,Education,2422,High School,96.97,16
+STU1032,18,Female,Private,Belait,6.49,8.48,9,2,Education,Micronet International College,1,Business,High,Science Fair,0,Business,IT,2327,Masters,92.9,13
+STU1033,21,Female,Public,Temburong,4.47,4.34,5,1,Engineering,Micronet International College,1,IT,High,Sports,1,Arts,Education,2252,Degree,94.83,18
+STU1034,20,Male,Public,Brunei-Muara,8.09,8.39,4,4,IT,Universiti Brunei Darussalam,0,Business,Medium,None,0,Technology,Business,2402,High School,83.09,13
+STU1035,17,Female,Private,Belait,2.2,7.63,6,2,IT,Politeknik Brunei,0,Business,Medium,None,0,Technology,Education,2573,Masters,94.65,13
+STU1036,18,Male,Private,Tutong,3.89,8.71,9,1,Engineering,Politeknik Brunei,0,IT,High,Debate,0,Humanities,Engineering,4338,Degree,92.89,16
+STU1037,18,Female,Public,Tutong,8.21,2.47,9,1,IT,Micronet International College,1,IT,Low,Science Fair,0,Humanities,Education,1296,Degree,80.56,12
+STU1038,21,Male,Private,Temburong,3.8,4.35,5,4,Education,Micronet International College,0,Business,Medium,Debate,1,Technology,Education,4186,Degree,85.46,5
+STU1039,20,Male,Public,Belait,5.27,6.74,4,2,Education,Universiti Brunei Darussalam,1,IT,Medium,None,0,Business,IT,3323,High School,90.44,8
+STU1040,17,Female,Public,Temburong,3.62,5.54,4,4,IT,Universiti Brunei Darussalam,1,Education,Medium,Sports,1,Science,Health Sciences,1166,High School,80.98,7
+STU1041,18,Female,Public,Temburong,2.44,7.76,9,4,Business,Universiti Brunei Darussalam,1,Education,Medium,Arts,1,Technology,Engineering,1479,High School,89.66,14
+STU1042,17,Male,Public,Brunei-Muara,6.12,6.07,9,3,Business,Politeknik Brunei,0,Engineering,Low,Sports,1,Business,Engineering,4701,Masters,94.33,13
+STU1043,19,Female,Public,Tutong,6.98,2.61,5,4,Business,Universiti Brunei Darussalam,1,Health Sciences,Low,Arts,1,Humanities,Engineering,1210,High School,86.87,19
+STU1044,21,Male,Private,Temburong,5.85,2.94,9,1,Health Sciences,Micronet International College,0,IT,Low,None,0,Technology,Health Sciences,4672,Degree,87.19,13
+STU1045,20,Female,Public,Belait,3.01,8.61,7,4,Engineering,Universiti Brunei Darussalam,1,Education,Medium,Arts,1,Technology,Health Sciences,2961,Degree,85.77,15
+STU1046,19,Male,Public,Temburong,2.1,2.69,6,4,Education,Universiti Brunei Darussalam,1,Business,Low,Sports,0,Arts,Engineering,1599,Diploma,87.25,12
+STU1047,17,Female,Public,Belait,8.66,6.69,6,1,Engineering,Universiti Brunei Darussalam,1,Business,High,None,0,Arts,IT,4228,Diploma,91.06,16
+STU1048,20,Male,Private,Belait,7.08,2.16,7,2,Education,Micronet International College,1,Health Sciences,Medium,Sports,1,Science,Business,3662,Degree,85.72,9
+STU1049,17,Male,Public,Brunei-Muara,3.25,8.36,9,2,Education,Micronet International College,1,Business,Medium,Sports,1,Technology,Health Sciences,3032,High School,81.88,11
+STU1050,19,Female,Private,Brunei-Muara,3.29,3.13,9,1,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Debate,0,Technology,Health Sciences,2610,Diploma,91.61,11
+STU1051,21,Male,Public,Brunei-Muara,7.19,6.32,8,4,Business,Micronet International College,1,IT,High,Debate,0,Humanities,Engineering,4939,Masters,94.78,9
+STU1052,18,Female,Private,Temburong,2.68,3.24,9,4,Health Sciences,Politeknik Brunei,0,Business,Medium,Sports,1,Arts,Business,4001,High School,88.75,5
+STU1053,19,Male,Private,Belait,5.86,7.34,4,2,IT,Micronet International College,1,Health Sciences,Low,None,1,Humanities,Engineering,3596,Masters,79,9
+STU1054,18,Male,Public,Tutong,4.18,7.81,4,3,Engineering,Micronet International College,1,Business,Medium,Arts,1,Humanities,Engineering,2402,Masters,77.06,17
+STU1055,17,Female,Private,Tutong,2.33,6.95,5,3,Engineering,Universiti Brunei Darussalam,1,Engineering,Low,Science Fair,0,Business,Business,4339,High School,87.89,15
+STU1056,18,Female,Private,Tutong,5.25,3.98,7,3,Business,Micronet International College,0,IT,High,Science Fair,1,Science,IT,2163,Diploma,93.98,9
+STU1057,19,Female,Private,Belait,2.77,5.61,7,1,Health Sciences,Micronet International College,1,IT,High,Debate,1,Humanities,Health Sciences,3987,Diploma,84.19,9
+STU1058,19,Female,Private,Tutong,5.3,7,9,1,Education,Politeknik Brunei,0,IT,High,Debate,1,Science,Business,1515,Diploma,77,10
+STU1059,17,Female,Public,Brunei-Muara,4.02,7.86,7,2,Engineering,Politeknik Brunei,0,Education,High,None,0,Technology,Engineering,2303,Masters,95.89,16
+STU1060,20,Female,Public,Belait,8.03,6.35,6,1,Education,Universiti Brunei Darussalam,0,Engineering,Medium,Debate,1,Science,IT,3839,Diploma,94.1,6
+STU1061,18,Female,Private,Tutong,7.49,6.46,9,2,Engineering,Micronet International College,0,Engineering,High,Debate,1,Technology,Engineering,2879,High School,95.85,18
+STU1062,21,Male,Public,Belait,5.53,5.86,7,2,Education,Universiti Brunei Darussalam,1,Engineering,Low,Sports,1,Technology,Business,3734,Masters,90.62,18
+STU1063,17,Male,Public,Tutong,6.22,8.95,6,2,Business,Micronet International College,0,IT,High,Arts,1,Business,Engineering,3850,Degree,97.3,12
+STU1064,20,Female,Private,Belait,2.08,2.88,4,2,Health Sciences,Politeknik Brunei,1,Health Sciences,High,Debate,1,Humanities,Engineering,1436,Diploma,86.22,9
+STU1065,19,Male,Public,Belait,4.09,3.89,6,3,Engineering,Politeknik Brunei,0,Engineering,Medium,Sports,1,Technology,Business,1888,Diploma,95.71,19
+STU1066,19,Male,Private,Temburong,4.45,3.76,9,1,Business,International Graduate Studies College,1,Education,Low,None,0,Business,Business,3071,High School,96.72,5
+STU1067,20,Female,Private,Tutong,6.55,6.76,4,2,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Science Fair,1,Technology,IT,1977,Diploma,77.25,13
+STU1068,17,Female,Private,Temburong,2.6,7.54,8,3,Education,International Graduate Studies College,0,Business,High,Debate,0,Arts,Engineering,4063,Degree,83.24,6
+STU1069,20,Female,Private,Belait,8.14,5.8,9,3,Engineering,Universiti Brunei Darussalam,0,Engineering,Low,Debate,1,Humanities,Engineering,3605,Degree,77.97,15
+STU1070,17,Female,Public,Temburong,4.83,5.04,7,3,Engineering,International Graduate Studies College,0,Education,Low,None,0,Humanities,Education,3194,Masters,86.55,5
+STU1071,19,Male,Public,Temburong,8.74,5.27,4,4,Engineering,International Graduate Studies College,1,Education,Low,None,0,Humanities,IT,3303,Diploma,90.71,9
+STU1072,20,Male,Public,Brunei-Muara,8.6,4.84,8,4,Health Sciences,International Graduate Studies College,1,Health Sciences,Low,Debate,1,Business,Business,3015,Diploma,85.75,7
+STU1073,17,Female,Private,Tutong,3.18,8.73,9,3,Health Sciences,Politeknik Brunei,1,IT,Medium,Sports,0,Humanities,Health Sciences,3852,Diploma,79.61,13
+STU1074,19,Male,Public,Brunei-Muara,5.24,8.68,9,3,Engineering,Universiti Brunei Darussalam,1,Engineering,High,Arts,0,Humanities,Education,4516,Degree,84.99,19
+STU1075,19,Female,Public,Brunei-Muara,4.08,8.96,5,2,Health Sciences,Micronet International College,1,Health Sciences,Low,Debate,1,Humanities,Education,2437,Diploma,82.65,15
+STU1076,21,Male,Public,Temburong,7.75,5.03,7,3,Business,Politeknik Brunei,0,Education,Medium,Sports,1,Technology,Engineering,1501,Degree,79.11,15
+STU1077,17,Female,Private,Temburong,5.87,3.52,6,4,Engineering,Universiti Brunei Darussalam,0,Business,High,Science Fair,0,Arts,Engineering,3825,Diploma,82.71,7
+STU1078,19,Male,Private,Tutong,7.39,8.13,4,2,Business,Universiti Brunei Darussalam,0,IT,Medium,Arts,0,Business,IT,1989,High School,83.67,5
+STU1079,18,Female,Public,Brunei-Muara,5.01,3.2,8,3,Business,Politeknik Brunei,1,Health Sciences,Low,Sports,0,Arts,IT,2961,Degree,82.33,17
+STU1080,19,Female,Public,Brunei-Muara,2.06,3.55,8,3,Business,International Graduate Studies College,1,Education,Medium,Arts,0,Humanities,Business,1796,High School,82.62,17
+STU1081,21,Male,Private,Temburong,2.65,4.65,5,2,Education,Micronet International College,1,Business,High,None,1,Arts,Engineering,1163,Degree,96.21,19
+STU1082,20,Male,Public,Tutong,8.76,5.68,7,4,IT,Politeknik Brunei,1,Education,High,Sports,1,Science,Engineering,1557,Degree,85.62,18
+STU1083,21,Female,Public,Brunei-Muara,2.03,3.36,4,3,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Low,Science Fair,0,Science,Education,3899,Masters,94.84,15
+STU1084,19,Male,Private,Temburong,4.24,2.12,6,3,IT,International Graduate Studies College,0,Engineering,Low,Science Fair,1,Technology,Education,1604,Degree,96.15,8
+STU1085,18,Male,Private,Belait,6.5,4.28,5,4,Engineering,Universiti Brunei Darussalam,0,Education,Low,None,1,Arts,Engineering,2967,Masters,99.29,18
+STU1086,20,Female,Public,Belait,7.45,8.6,6,2,IT,Politeknik Brunei,0,Engineering,Medium,None,0,Technology,IT,4644,Masters,76.84,14
+STU1087,21,Female,Private,Brunei-Muara,5.89,4.64,9,4,Business,International Graduate Studies College,0,IT,High,Science Fair,1,Arts,Health Sciences,1857,High School,99.28,5
+STU1088,20,Female,Public,Temburong,7.16,5.25,8,3,Engineering,Micronet International College,1,Engineering,High,Arts,1,Science,Health Sciences,1827,Masters,84.7,9
+STU1089,21,Male,Public,Brunei-Muara,7.18,8.9,5,4,Engineering,Universiti Brunei Darussalam,1,Health Sciences,Low,Science Fair,1,Business,IT,3841,Degree,76.58,8
+STU1090,18,Male,Private,Belait,5.82,7.16,9,2,Engineering,Politeknik Brunei,1,IT,Low,None,1,Business,Engineering,2063,Degree,97.42,5
+STU1091,17,Female,Public,Tutong,6.05,3.41,6,3,IT,International Graduate Studies College,1,Engineering,Medium,Science Fair,0,Technology,Engineering,3648,Diploma,81.13,8
+STU1092,17,Male,Private,Belait,8.64,2.51,5,3,Engineering,Politeknik Brunei,0,Business,High,Science Fair,0,Business,IT,2606,Degree,80.24,7
+STU1093,21,Male,Public,Temburong,6.67,8.31,4,1,IT,Micronet International College,1,Health Sciences,Medium,Debate,0,Science,Education,2636,Masters,82.49,14
+STU1094,18,Female,Private,Temburong,2.68,4.76,6,2,Business,Micronet International College,1,Education,Low,Debate,0,Science,Education,1947,Degree,79.9,7
+STU1095,17,Male,Private,Temburong,5.96,4.57,4,2,Education,International Graduate Studies College,0,Engineering,Low,Arts,1,Technology,Education,2734,High School,91.27,8
+STU1096,18,Female,Public,Brunei-Muara,7.06,2.43,7,1,Health Sciences,Universiti Brunei Darussalam,0,IT,High,Science Fair,1,Business,Education,1506,Masters,91.37,6
+STU1097,20,Male,Private,Temburong,4.35,7.7,7,2,IT,International Graduate Studies College,0,Engineering,High,Arts,1,Humanities,Health Sciences,3475,Diploma,91.14,19
+STU1098,20,Male,Public,Tutong,6.61,7.01,4,1,Health Sciences,International Graduate Studies College,1,Education,Low,Sports,1,Technology,Business,1053,High School,76.66,8
+STU1099,18,Male,Private,Belait,8.38,6.92,8,1,Business,International Graduate Studies College,0,Business,Low,None,0,Science,Health Sciences,2784,Degree,94.03,8
+STU1100,21,Male,Private,Brunei-Muara,2.73,3.87,8,1,Business,Politeknik Brunei,1,Health Sciences,Medium,Sports,0,Science,Business,3739,Degree,83.8,15
+STU1101,21,Male,Public,Temburong,2.21,5.54,8,4,Health Sciences,International Graduate Studies College,1,Health Sciences,Low,Debate,0,Science,Education,2724,Diploma,98.94,8
+STU1102,19,Female,Public,Temburong,7.12,8.02,9,2,Business,Politeknik Brunei,1,IT,Low,None,0,Humanities,Business,1285,Diploma,86.27,11
+STU1103,19,Female,Public,Temburong,2.96,4.39,5,2,Health Sciences,Politeknik Brunei,1,IT,Medium,None,0,Science,Business,3454,Diploma,95.01,13
+STU1104,19,Female,Private,Belait,4.55,2.76,4,3,Education,International Graduate Studies College,1,Education,Low,None,1,Technology,Engineering,3892,Degree,82.32,5
+STU1105,20,Female,Private,Temburong,3.1,3.46,6,4,IT,Micronet International College,1,Business,Medium,Science Fair,0,Technology,IT,3509,High School,77.85,9
+STU1106,18,Female,Public,Temburong,5.72,5.05,7,3,Health Sciences,Universiti Brunei Darussalam,0,IT,High,Arts,0,Technology,IT,2643,Masters,76.65,14
+STU1107,17,Male,Public,Tutong,3.25,3.16,7,2,Health Sciences,Universiti Brunei Darussalam,1,IT,Low,Sports,1,Business,Engineering,3576,Diploma,94.7,15
+STU1108,21,Male,Private,Belait,7.81,6.78,6,2,Engineering,Universiti Brunei Darussalam,0,Engineering,High,None,0,Technology,IT,1648,Diploma,76.65,8
+STU1109,19,Female,Private,Temburong,4.61,4.21,9,1,Education,International Graduate Studies College,1,Engineering,High,Arts,1,Science,Education,2140,Degree,99.11,13
+STU1110,21,Female,Private,Temburong,3.41,3.87,8,1,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Science Fair,0,Arts,Business,3742,Diploma,85.58,16
+STU1111,21,Male,Private,Brunei-Muara,8.47,6.27,6,2,Education,Micronet International College,0,Business,High,Debate,0,Science,IT,4791,Diploma,75.43,18
+STU1112,20,Female,Public,Temburong,5.4,8.45,9,4,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,Low,None,1,Science,Education,1975,Degree,82.27,8
+STU1113,19,Female,Private,Tutong,8.99,6.6,7,2,Health Sciences,Micronet International College,0,IT,Medium,Sports,1,Arts,IT,2364,Masters,88.13,6
+STU1114,21,Male,Private,Brunei-Muara,7.44,2.36,4,1,Business,Politeknik Brunei,0,Business,Low,Debate,1,Humanities,IT,4701,High School,77.44,9
+STU1115,18,Male,Public,Temburong,7.14,2.32,6,1,IT,Politeknik Brunei,0,Business,Low,Debate,0,Technology,Health Sciences,3126,High School,88.57,16
+STU1116,21,Female,Public,Tutong,5.86,4.96,5,3,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Low,Sports,0,Arts,Health Sciences,3503,High School,94.11,5
+STU1117,17,Male,Public,Temburong,4.28,7.09,4,3,Business,Micronet International College,0,Business,Low,Sports,1,Technology,Education,3682,Degree,95.61,18
+STU1118,19,Male,Private,Tutong,7.22,2.44,5,4,Education,Micronet International College,1,Education,High,Debate,1,Arts,IT,1824,High School,87.86,6
+STU1119,21,Male,Public,Brunei-Muara,5.17,6.27,8,1,Engineering,International Graduate Studies College,1,Health Sciences,Low,Arts,1,Science,Education,3625,Diploma,87.06,17
+STU1120,19,Male,Private,Brunei-Muara,5.14,7.67,6,3,Engineering,Universiti Brunei Darussalam,1,Education,High,Debate,0,Business,Business,4415,Degree,95.73,19
+STU1121,17,Female,Public,Tutong,2.63,4.39,7,4,IT,International Graduate Studies College,0,IT,High,Debate,0,Humanities,Health Sciences,2568,Masters,78.01,12
+STU1122,21,Female,Private,Brunei-Muara,2.13,4.65,5,2,Health Sciences,Universiti Brunei Darussalam,1,Education,Medium,Arts,0,Arts,Education,1408,Diploma,79.34,10
+STU1123,18,Male,Private,Tutong,4.15,3.34,8,2,Business,Universiti Brunei Darussalam,1,Engineering,Low,None,0,Humanities,Health Sciences,3897,Masters,93.39,14
+STU1124,21,Female,Public,Brunei-Muara,7.3,6.12,8,2,Business,Universiti Brunei Darussalam,1,Business,High,None,0,Humanities,Business,3178,Masters,83.71,7
+STU1125,20,Female,Public,Brunei-Muara,8.14,8.34,4,3,Engineering,Micronet International College,0,Education,High,Sports,1,Business,IT,1800,Masters,94.35,19
+STU1126,20,Male,Private,Belait,5.45,4.86,5,3,IT,Micronet International College,0,Education,Medium,Debate,0,Technology,Education,4326,High School,96.85,11
+STU1127,18,Male,Public,Temburong,7.98,5.49,5,4,Engineering,Universiti Brunei Darussalam,1,IT,Low,Debate,1,Science,Business,2877,High School,78.26,10
+STU1128,18,Female,Private,Temburong,2.98,2.81,8,2,Health Sciences,International Graduate Studies College,1,Business,High,Sports,0,Business,Health Sciences,3110,High School,78.46,5
+STU1129,20,Female,Public,Temburong,3.96,3.59,5,1,Health Sciences,Politeknik Brunei,0,IT,High,Sports,0,Business,Education,2876,Degree,96.74,9
+STU1130,18,Male,Private,Belait,2.87,2.04,8,2,Health Sciences,Micronet International College,0,Education,Medium,Sports,1,Business,Business,4167,Degree,85.54,18
+STU1131,18,Male,Private,Temburong,3.67,3.58,4,3,IT,Micronet International College,0,Health Sciences,High,Arts,1,Arts,Engineering,1054,Degree,76.08,11
+STU1132,21,Male,Private,Temburong,6.99,8.56,4,2,Business,Micronet International College,1,IT,Medium,Debate,1,Science,Health Sciences,2426,High School,99.99,11
+STU1133,21,Male,Public,Temburong,6.99,6.72,7,1,Health Sciences,International Graduate Studies College,1,IT,Low,None,0,Science,Education,3487,Degree,91.02,10
+STU1134,17,Male,Public,Belait,8.18,4.19,6,3,Business,Politeknik Brunei,0,Business,High,Sports,1,Science,Engineering,3882,Masters,99.24,7
+STU1135,19,Male,Public,Tutong,5.36,5.63,8,3,Engineering,Politeknik Brunei,0,Business,Low,Arts,1,Humanities,IT,2796,High School,96.31,16
+STU1136,21,Female,Private,Temburong,4.84,6.34,8,4,Business,Micronet International College,1,IT,High,Debate,0,Technology,IT,2870,Degree,75.14,11
+STU1137,21,Male,Private,Brunei-Muara,8.85,6.34,8,1,Health Sciences,Universiti Brunei Darussalam,0,Engineering,High,Arts,0,Business,Health Sciences,2349,Degree,84.11,12
+STU1138,19,Male,Private,Belait,8.31,8.47,8,4,IT,Micronet International College,0,Business,Medium,Science Fair,0,Humanities,IT,4325,Diploma,96.38,12
+STU1139,21,Female,Public,Temburong,4.54,6.61,4,1,Education,Politeknik Brunei,0,IT,Low,None,1,Technology,IT,2067,Degree,75.69,8
+STU1140,17,Male,Public,Temburong,2.89,8.75,5,3,Engineering,Micronet International College,0,Business,High,Science Fair,0,Technology,Health Sciences,3676,High School,86.91,6
+STU1141,21,Male,Public,Belait,5.23,4.93,5,3,Health Sciences,International Graduate Studies College,1,Education,High,None,0,Humanities,Engineering,3166,Masters,84.81,7
+STU1142,17,Male,Private,Brunei-Muara,3.96,2.62,5,1,IT,International Graduate Studies College,1,IT,High,Science Fair,1,Business,Health Sciences,4876,Diploma,91.67,5
+STU1143,20,Male,Private,Temburong,5.64,2.9,9,2,Business,Universiti Brunei Darussalam,0,Education,Medium,None,1,Science,Health Sciences,2672,High School,78.12,9
+STU1144,18,Male,Private,Belait,4.36,5.4,5,1,IT,International Graduate Studies College,0,Business,Low,Arts,0,Science,Education,2108,Masters,83.81,15
+STU1145,17,Female,Public,Tutong,7.18,6.24,9,1,Business,Universiti Brunei Darussalam,0,IT,Low,Arts,0,Science,Engineering,3338,High School,93.33,17
+STU1146,20,Male,Private,Brunei-Muara,4.74,2.83,9,1,Business,International Graduate Studies College,0,Health Sciences,Medium,Science Fair,1,Science,Health Sciences,1113,Degree,87.6,10
+STU1147,21,Male,Private,Belait,3.66,7.53,8,3,Education,Micronet International College,0,Education,High,Sports,1,Science,Engineering,3554,High School,98.6,17
+STU1148,18,Male,Private,Tutong,2.17,3.9,5,1,IT,International Graduate Studies College,0,Health Sciences,High,Debate,0,Technology,Education,3223,High School,89.93,19
+STU1149,18,Female,Private,Belait,8.81,7.52,7,3,Education,Politeknik Brunei,1,Health Sciences,High,Sports,0,Science,Business,1801,Masters,88.39,10
+STU1150,17,Male,Private,Tutong,3.97,4.36,9,1,Education,Universiti Brunei Darussalam,1,Health Sciences,High,Science Fair,0,Humanities,Education,1990,Degree,87.01,5
+STU1151,19,Male,Private,Temburong,2.73,8.57,7,2,Business,Micronet International College,1,Health Sciences,Medium,Sports,1,Technology,Health Sciences,2101,High School,82.11,18
+STU1152,20,Male,Private,Temburong,4.75,5.32,5,2,Health Sciences,Micronet International College,1,Education,High,Sports,0,Technology,Education,4019,Degree,97.67,11
+STU1153,20,Female,Public,Tutong,6.74,3.94,8,3,Business,Universiti Brunei Darussalam,0,IT,High,Arts,0,Technology,IT,2685,High School,97.03,13
+STU1154,19,Male,Private,Brunei-Muara,8.48,3.96,4,4,Education,Politeknik Brunei,0,Business,Medium,Sports,0,Arts,Business,4012,Degree,79.76,13
+STU1155,20,Female,Public,Temburong,5.58,7.2,6,1,Education,Universiti Brunei Darussalam,1,Health Sciences,Low,Sports,0,Arts,Engineering,1820,Degree,76.39,10
+STU1156,18,Male,Private,Tutong,8.51,2.77,6,3,Health Sciences,International Graduate Studies College,0,Engineering,High,Debate,1,Humanities,Education,2111,Degree,96.04,11
+STU1157,18,Male,Private,Brunei-Muara,7.36,8.94,9,2,Engineering,Micronet International College,0,Education,Medium,None,0,Arts,Business,1995,High School,94.93,13
+STU1158,19,Male,Private,Tutong,3.83,3.31,6,1,Education,Universiti Brunei Darussalam,1,Education,Low,Arts,0,Business,Health Sciences,2692,Degree,86.21,10
+STU1159,17,Male,Public,Tutong,3.72,5.88,7,3,IT,Politeknik Brunei,0,Health Sciences,High,Science Fair,0,Science,Business,1282,Degree,86.95,9
+STU1160,20,Male,Public,Brunei-Muara,7.64,8.83,7,3,Health Sciences,Micronet International College,1,Business,High,Sports,0,Technology,Engineering,4825,Masters,98.48,19
+STU1161,21,Male,Public,Belait,5.77,7.68,5,1,Business,International Graduate Studies College,0,Education,Medium,None,1,Science,Health Sciences,4727,Diploma,87.53,18
+STU1162,20,Female,Public,Brunei-Muara,5.33,2.91,7,2,Education,Micronet International College,0,IT,High,Arts,0,Technology,Education,2086,Diploma,80.8,17
+STU1163,19,Female,Public,Belait,4.69,7.79,8,2,Engineering,Micronet International College,0,Engineering,Medium,None,1,Arts,Engineering,2920,Diploma,93.09,8
+STU1164,21,Male,Private,Brunei-Muara,5.35,7.38,4,1,Business,Politeknik Brunei,1,IT,Medium,Science Fair,0,Science,Education,1162,High School,88.37,15
+STU1165,20,Female,Private,Tutong,4.86,6.11,5,1,Education,Politeknik Brunei,1,Health Sciences,High,Arts,0,Technology,Business,2667,High School,94.67,6
+STU1166,20,Female,Private,Brunei-Muara,8.18,3.17,7,1,Education,Politeknik Brunei,0,Business,Medium,Arts,1,Business,Engineering,3155,High School,76.09,6
+STU1167,21,Female,Private,Temburong,2.41,8.85,7,4,IT,Micronet International College,1,Health Sciences,High,Debate,0,Humanities,IT,3940,High School,97.17,7
+STU1168,17,Female,Private,Temburong,7.96,3.19,9,2,Health Sciences,Universiti Brunei Darussalam,0,Education,Medium,Debate,0,Humanities,Business,3334,Diploma,98.14,13
+STU1169,19,Female,Public,Brunei-Muara,4.21,3.17,4,2,Health Sciences,Micronet International College,1,Health Sciences,Low,Science Fair,1,Science,Health Sciences,4515,Masters,95.84,5
+STU1170,20,Male,Private,Tutong,7.18,6.76,8,3,Health Sciences,International Graduate Studies College,0,Business,Medium,Sports,1,Science,Business,2337,High School,86.62,6
+STU1171,17,Male,Public,Belait,8.02,5.08,5,3,Business,International Graduate Studies College,1,Business,Medium,Science Fair,0,Arts,IT,2170,Masters,92.41,17
+STU1172,17,Male,Public,Temburong,3.64,4.69,9,2,Education,International Graduate Studies College,0,Business,Medium,Sports,0,Humanities,Education,2179,High School,89.6,9
+STU1173,18,Male,Private,Belait,4,3.75,7,2,Business,Universiti Brunei Darussalam,1,Business,High,Debate,0,Humanities,IT,3334,High School,89.54,7
+STU1174,19,Male,Public,Belait,5.72,5.98,6,3,Business,International Graduate Studies College,1,IT,Low,Debate,0,Humanities,Engineering,2957,Masters,97.82,9
+STU1175,20,Male,Private,Brunei-Muara,4.96,6.07,8,3,Health Sciences,Politeknik Brunei,1,Business,High,Arts,0,Science,Business,2255,High School,90.87,5
+STU1176,18,Female,Private,Temburong,2.67,6.97,9,3,IT,Politeknik Brunei,1,Engineering,Low,Arts,1,Technology,IT,2171,High School,93.31,10
+STU1177,18,Male,Public,Tutong,7.16,2.96,4,2,Business,Politeknik Brunei,0,Education,Low,Arts,0,Arts,Business,3138,Degree,86.04,7
+STU1178,19,Male,Public,Brunei-Muara,7.25,6.59,8,1,Engineering,International Graduate Studies College,0,Engineering,Low,Sports,1,Business,IT,1412,Diploma,99.71,7
+STU1179,18,Male,Public,Brunei-Muara,8.16,6.76,5,4,Health Sciences,International Graduate Studies College,1,Engineering,Low,None,1,Technology,IT,4680,Degree,88.94,7
+STU1180,20,Male,Public,Temburong,4.06,2.98,9,2,Education,Micronet International College,1,Engineering,Low,None,1,Science,Health Sciences,4930,High School,85.83,7
+STU1181,18,Male,Private,Temburong,5.28,2.18,6,1,Health Sciences,International Graduate Studies College,0,Business,Medium,Arts,0,Business,Business,3295,Degree,96.98,9
+STU1182,17,Male,Public,Temburong,7.05,6.56,5,1,Engineering,Micronet International College,1,Business,Medium,Debate,0,Arts,IT,4832,High School,88.64,15
+STU1183,19,Male,Private,Tutong,7.91,5.86,8,2,Education,Universiti Brunei Darussalam,0,Business,Low,Debate,0,Humanities,Business,4324,Masters,95.62,18
+STU1184,21,Female,Public,Tutong,3.73,6.39,4,3,Business,Politeknik Brunei,0,Health Sciences,High,Science Fair,1,Humanities,Engineering,1331,High School,91.62,8
+STU1185,21,Male,Private,Temburong,7.97,8.48,5,1,Health Sciences,Politeknik Brunei,1,Health Sciences,High,Sports,1,Humanities,IT,1031,Degree,85.63,9
+STU1186,17,Female,Public,Tutong,8.5,3.93,4,1,Engineering,Universiti Brunei Darussalam,0,Business,Low,Debate,1,Business,Education,3296,Degree,77.86,11
+STU1187,18,Female,Public,Belait,5.1,8.17,8,3,Engineering,Universiti Brunei Darussalam,0,Business,Low,Arts,1,Arts,Business,2805,Degree,82.4,9
+STU1188,21,Female,Private,Belait,4.69,3.8,5,1,Education,International Graduate Studies College,0,IT,High,Arts,1,Business,Business,2141,High School,95.4,10
+STU1189,20,Female,Private,Brunei-Muara,5.92,6.74,5,3,Education,Universiti Brunei Darussalam,0,Engineering,High,Debate,0,Science,Education,4712,Diploma,86.16,16
+STU1190,17,Female,Private,Brunei-Muara,7.24,4.9,8,3,Health Sciences,Politeknik Brunei,0,Health Sciences,High,Debate,0,Arts,Engineering,2748,Degree,90.87,12
+STU1191,18,Male,Public,Tutong,3.51,7.11,9,4,Business,International Graduate Studies College,1,Health Sciences,Low,None,0,Technology,Business,4431,Degree,91.97,9
+STU1192,20,Female,Public,Tutong,5.37,2.07,9,2,Business,International Graduate Studies College,0,Education,High,Science Fair,1,Business,Business,2488,Diploma,96.78,12
+STU1193,18,Female,Private,Tutong,4.57,4.82,9,2,Education,Politeknik Brunei,0,IT,High,None,1,Technology,IT,4649,Masters,85.45,7
+STU1194,19,Female,Private,Belait,6.86,8.34,9,2,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Medium,Arts,1,Science,Health Sciences,3901,Masters,88.58,19
+STU1195,21,Female,Public,Temburong,2.52,2.99,5,2,Health Sciences,Universiti Brunei Darussalam,0,Business,High,Science Fair,0,Business,Health Sciences,1596,Masters,77.05,18
+STU1196,20,Male,Public,Temburong,5.82,7.21,8,4,Education,Universiti Brunei Darussalam,1,IT,Medium,Science Fair,1,Arts,Engineering,4715,Diploma,77.88,10
+STU1197,20,Female,Private,Belait,8.94,3.06,4,2,Business,International Graduate Studies College,1,Education,Low,Debate,1,Humanities,IT,2200,High School,95.45,15
+STU1198,20,Male,Public,Belait,5.78,2.72,9,4,Engineering,International Graduate Studies College,0,Health Sciences,Low,Debate,1,Technology,Engineering,4791,Masters,75.93,8
+STU1199,18,Female,Private,Tutong,6,8.24,5,4,Education,Micronet International College,1,Engineering,High,Sports,1,Business,Education,4425,Diploma,85.25,19
+STU1200,19,Female,Public,Temburong,5.45,3.94,8,3,Engineering,Universiti Brunei Darussalam,1,Education,High,None,1,Arts,Health Sciences,2727,Masters,95.53,16
+STU1201,20,Male,Public,Temburong,3.74,3.24,7,4,Engineering,Universiti Brunei Darussalam,1,Business,Medium,Sports,0,Science,Engineering,1063,Diploma,76.11,18
+STU1202,21,Female,Private,Brunei-Muara,2.97,4.47,9,2,IT,Micronet International College,0,Health Sciences,Medium,Sports,1,Science,Engineering,3368,Masters,94.44,9
+STU1203,21,Female,Public,Belait,8.52,7.68,6,3,Engineering,Politeknik Brunei,1,IT,High,Science Fair,1,Business,Health Sciences,3182,Masters,80.05,15
+STU1204,20,Female,Private,Tutong,2.86,3.6,7,1,Health Sciences,International Graduate Studies College,0,Business,High,Science Fair,1,Humanities,IT,2295,Degree,90.08,12
+STU1205,20,Male,Private,Belait,2.38,2.52,5,3,Engineering,International Graduate Studies College,0,Engineering,High,Sports,0,Technology,Education,2697,Diploma,88.77,10
+STU1206,20,Female,Public,Temburong,8.12,6.71,9,1,Engineering,Universiti Brunei Darussalam,0,Health Sciences,High,Sports,0,Business,Education,3945,Masters,94.74,5
+STU1207,21,Male,Public,Temburong,2.36,4.35,5,4,IT,Micronet International College,1,Education,Medium,Science Fair,1,Business,Health Sciences,3612,High School,79.69,8
+STU1208,19,Male,Private,Brunei-Muara,4.18,6.88,8,1,Education,Politeknik Brunei,0,Education,Medium,Science Fair,0,Business,Education,1080,Diploma,91.83,7
+STU1209,20,Male,Public,Brunei-Muara,2.58,7.46,8,3,Engineering,Universiti Brunei Darussalam,1,Education,Low,Sports,1,Technology,Engineering,2922,Masters,79.65,12
+STU1210,20,Male,Private,Tutong,2.07,8.38,8,4,Engineering,Politeknik Brunei,1,Education,Medium,Debate,1,Humanities,Health Sciences,1068,Degree,96.4,18
+STU1211,20,Female,Private,Temburong,6.01,4.76,7,4,Engineering,Universiti Brunei Darussalam,1,Education,High,Sports,0,Arts,Engineering,2882,Degree,98.18,10
+STU1212,21,Male,Private,Belait,7.26,3.04,5,4,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Low,Arts,0,Science,Business,3134,Degree,99.26,13
+STU1213,19,Male,Private,Temburong,7.49,3.3,8,4,IT,Universiti Brunei Darussalam,1,IT,Low,Debate,1,Arts,Business,2540,Masters,81.6,19
+STU1214,17,Female,Private,Tutong,8.86,3.12,7,2,IT,Micronet International College,1,Education,Low,None,0,Humanities,IT,4661,Degree,94.65,15
+STU1215,17,Female,Public,Temburong,7.5,2.12,4,1,Engineering,Micronet International College,1,IT,High,Arts,0,Business,Health Sciences,3425,Masters,92,5
+STU1216,18,Female,Private,Tutong,5.52,4.88,8,2,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,None,0,Business,Business,4585,Degree,93.68,9
+STU1217,17,Male,Public,Brunei-Muara,8.14,7.22,7,2,Business,Politeknik Brunei,0,Health Sciences,Low,None,1,Science,Engineering,2090,Masters,81.43,18
+STU1218,21,Female,Public,Brunei-Muara,2.06,3.97,9,3,Health Sciences,Universiti Brunei Darussalam,0,IT,High,None,0,Arts,Education,2041,Diploma,78.98,15
+STU1219,21,Male,Private,Belait,2.69,6.99,7,2,Health Sciences,International Graduate Studies College,1,Business,Low,Sports,0,Humanities,Health Sciences,3634,Masters,95.6,10
+STU1220,21,Male,Public,Tutong,2.45,2.72,8,4,Business,Micronet International College,0,Education,High,Sports,1,Technology,IT,3400,Diploma,95.2,12
+STU1221,20,Male,Private,Brunei-Muara,4,8.09,8,1,Education,Universiti Brunei Darussalam,1,Business,High,Sports,1,Arts,Engineering,1110,Degree,85.46,12
+STU1222,20,Male,Public,Brunei-Muara,8.24,5.86,9,1,Business,Politeknik Brunei,1,Engineering,Low,Debate,0,Business,IT,2441,Degree,76.48,6
+STU1223,18,Male,Public,Temburong,5.38,8.46,5,4,Health Sciences,Politeknik Brunei,1,Business,Low,None,1,Arts,Business,1786,Degree,96.27,11
+STU1224,17,Female,Public,Temburong,7.48,3.49,6,4,Education,Politeknik Brunei,0,Business,High,Debate,1,Arts,Business,2215,Degree,82.23,13
+STU1225,17,Male,Public,Temburong,3.4,5.8,7,3,IT,Micronet International College,1,Health Sciences,High,Arts,1,Arts,Business,1594,Diploma,86.13,18
+STU1226,17,Male,Public,Tutong,3.95,2.71,4,2,Health Sciences,Micronet International College,1,IT,Medium,Debate,0,Humanities,Health Sciences,4486,High School,84.99,10
+STU1227,21,Female,Private,Temburong,7.14,5.45,7,4,Health Sciences,Micronet International College,1,Business,Low,None,1,Technology,Health Sciences,1876,High School,95.15,15
+STU1228,18,Male,Private,Brunei-Muara,6.97,5.96,7,4,Engineering,Politeknik Brunei,1,Health Sciences,High,None,0,Technology,Education,1127,Diploma,97.1,17
+STU1229,20,Male,Private,Brunei-Muara,7.69,8.29,9,4,IT,Universiti Brunei Darussalam,1,IT,Medium,Arts,0,Science,Education,1453,Degree,91.62,11
+STU1230,21,Female,Public,Brunei-Muara,7.39,6.27,6,2,Business,Politeknik Brunei,0,Business,High,None,0,Business,Business,1308,High School,94.43,6
+STU1231,18,Male,Private,Brunei-Muara,8.6,7.71,6,2,Business,International Graduate Studies College,1,Health Sciences,Medium,Debate,0,Business,IT,3858,Degree,88.84,8
+STU1232,21,Male,Public,Belait,2.16,8.59,5,4,Education,Micronet International College,1,Education,Low,None,1,Business,IT,3664,Masters,91.31,13
+STU1233,19,Female,Private,Tutong,4.3,5.2,7,1,Business,Universiti Brunei Darussalam,1,Business,High,Science Fair,0,Humanities,IT,2317,Diploma,81.2,9
+STU1234,19,Female,Public,Brunei-Muara,2.12,2.7,6,3,Engineering,Micronet International College,1,Business,Low,Science Fair,1,Arts,Health Sciences,1692,High School,92.84,11
+STU1235,21,Male,Private,Brunei-Muara,6.59,7,9,1,Health Sciences,Micronet International College,1,IT,High,Debate,0,Arts,Business,3486,Degree,79.26,7
+STU1236,21,Female,Public,Tutong,3.86,4.25,7,2,Business,International Graduate Studies College,1,IT,Medium,Science Fair,1,Humanities,Education,2957,Degree,96.34,8
+STU1237,17,Male,Private,Temburong,2.26,2.86,4,2,Health Sciences,International Graduate Studies College,1,Business,High,None,1,Arts,Health Sciences,4312,Masters,90.51,14
+STU1238,20,Female,Public,Tutong,2.44,7.92,4,4,Health Sciences,International Graduate Studies College,0,Engineering,High,Arts,0,Business,Education,1288,Degree,86.19,19
+STU1239,18,Male,Private,Brunei-Muara,2.82,5.26,5,1,Education,Politeknik Brunei,0,Health Sciences,Medium,Sports,1,Business,Engineering,4240,Degree,91.19,10
+STU1240,17,Male,Private,Tutong,3.98,5.4,4,2,Engineering,International Graduate Studies College,1,Business,High,Arts,0,Arts,IT,4735,Degree,88.28,19
+STU1241,20,Female,Public,Tutong,7.28,6.3,4,4,Engineering,Universiti Brunei Darussalam,0,Health Sciences,Low,Science Fair,0,Business,Health Sciences,3268,Degree,86.89,10
+STU1242,17,Male,Public,Temburong,6.92,8.06,5,1,Education,International Graduate Studies College,1,Health Sciences,Low,None,1,Technology,Health Sciences,3867,High School,86.7,19
+STU1243,21,Male,Private,Temburong,6.57,3.3,7,4,Business,Universiti Brunei Darussalam,0,Business,Low,None,1,Business,IT,4123,Masters,94.32,15
+STU1244,20,Female,Private,Temburong,6.99,2.49,9,2,Education,Micronet International College,0,Education,Medium,Sports,0,Technology,Business,1750,Diploma,94.72,16
+STU1245,21,Male,Private,Brunei-Muara,8.3,3.93,8,1,IT,International Graduate Studies College,1,Health Sciences,Medium,Debate,0,Arts,Health Sciences,2963,Degree,93,19
+STU1246,20,Male,Private,Tutong,5.28,8.29,7,1,Business,Universiti Brunei Darussalam,0,Engineering,Low,Science Fair,1,Business,IT,2409,Degree,86.73,11
+STU1247,21,Male,Private,Brunei-Muara,2.32,2.38,9,3,Business,Universiti Brunei Darussalam,1,Health Sciences,High,Arts,1,Science,Education,4135,Degree,95.18,17
+STU1248,19,Male,Public,Belait,4.39,6.88,8,3,Education,Universiti Brunei Darussalam,0,IT,High,Arts,1,Technology,Engineering,4686,Degree,91.47,5
+STU1249,17,Male,Public,Brunei-Muara,3.08,8.34,9,3,Health Sciences,International Graduate Studies College,0,Business,High,Debate,1,Humanities,IT,1915,Masters,75.18,9
+STU1250,18,Female,Public,Temburong,3.81,3.62,6,3,Health Sciences,Politeknik Brunei,1,Business,Medium,Arts,1,Business,Education,2603,Masters,90.73,15
+STU1251,21,Male,Private,Belait,3.31,4.6,9,1,IT,Universiti Brunei Darussalam,1,Engineering,High,None,0,Science,IT,1015,Degree,76.11,9
+STU1252,17,Female,Private,Brunei-Muara,4.09,2.18,6,3,Education,Micronet International College,0,IT,Low,None,1,Business,Health Sciences,3776,Diploma,83.79,18
+STU1253,21,Male,Public,Belait,7.73,7.96,4,3,Engineering,Micronet International College,0,Education,Medium,Debate,0,Science,Engineering,4405,Degree,77.75,9
+STU1254,19,Female,Public,Tutong,4.83,8.9,6,3,Health Sciences,Politeknik Brunei,0,Education,Medium,Debate,1,Science,IT,1885,Diploma,82.95,19
+STU1255,21,Female,Public,Brunei-Muara,4.91,6.56,5,3,Business,Universiti Brunei Darussalam,0,IT,High,Sports,0,Arts,Health Sciences,1394,Degree,96.46,11
+STU1256,17,Male,Public,Brunei-Muara,7.4,2.22,6,4,Health Sciences,Politeknik Brunei,0,Business,Low,Sports,0,Arts,Engineering,4696,Diploma,75.38,7
+STU1257,19,Male,Public,Brunei-Muara,7.27,8.11,6,1,Education,Universiti Brunei Darussalam,0,Engineering,High,Arts,0,Humanities,Education,1900,High School,87.01,15
+STU1258,18,Female,Public,Brunei-Muara,3.8,2.68,9,2,Engineering,Universiti Brunei Darussalam,1,Engineering,High,Sports,0,Technology,Engineering,4719,High School,95.18,7
+STU1259,21,Male,Private,Temburong,8.46,4.28,6,2,IT,Universiti Brunei Darussalam,0,IT,High,None,1,Humanities,IT,1705,High School,83.34,6
+STU1260,17,Male,Private,Brunei-Muara,6.69,2.02,4,3,IT,Micronet International College,0,Health Sciences,Medium,Sports,0,Technology,IT,4297,Diploma,92.13,7
+STU1261,21,Male,Private,Brunei-Muara,2.65,4.17,4,4,Education,Micronet International College,1,Health Sciences,High,Sports,1,Humanities,Engineering,3915,High School,75.05,13
+STU1262,18,Female,Private,Belait,8.73,5.49,4,2,Business,Politeknik Brunei,0,Business,Medium,None,1,Arts,Education,1841,High School,83.67,14
+STU1263,17,Male,Private,Brunei-Muara,6.88,8.64,4,2,IT,Universiti Brunei Darussalam,1,IT,Low,Debate,0,Technology,Health Sciences,3511,Degree,95.15,7
+STU1264,17,Female,Private,Brunei-Muara,6.94,8.67,6,1,Health Sciences,Politeknik Brunei,0,Education,Medium,None,1,Technology,Education,4443,High School,92.1,10
+STU1265,21,Female,Private,Temburong,8.1,3.67,7,2,IT,Micronet International College,0,Business,Medium,Arts,1,Technology,Health Sciences,1983,Diploma,75.01,15
+STU1266,19,Female,Private,Tutong,8.86,7.07,6,2,Business,International Graduate Studies College,1,Business,High,Debate,1,Business,Education,4243,Degree,86.42,15
+STU1267,19,Female,Private,Temburong,8.52,6.31,6,1,Engineering,Universiti Brunei Darussalam,0,IT,Low,Debate,1,Technology,Education,2454,Degree,95.1,11
+STU1268,18,Male,Public,Tutong,6.29,2.62,5,4,IT,Politeknik Brunei,0,Health Sciences,High,Science Fair,1,Technology,Engineering,3834,Degree,79.98,14
+STU1269,20,Male,Public,Belait,8.22,3.64,4,3,Education,Universiti Brunei Darussalam,1,IT,Medium,None,0,Arts,Education,3076,Masters,75.52,18
+STU1270,21,Male,Public,Temburong,6.76,8.84,5,3,Health Sciences,Politeknik Brunei,1,IT,High,Arts,1,Humanities,IT,4554,Masters,95.65,9
+STU1271,17,Female,Public,Temburong,7.95,4.09,4,4,Health Sciences,Universiti Brunei Darussalam,1,IT,Low,None,0,Business,Health Sciences,1951,High School,85.16,8
+STU1272,21,Female,Public,Belait,5.75,6.66,9,1,Education,Politeknik Brunei,1,Engineering,Medium,Science Fair,1,Arts,IT,3029,Diploma,94.47,11
+STU1273,19,Male,Private,Brunei-Muara,2.1,7.01,6,2,IT,International Graduate Studies College,1,IT,Low,Science Fair,0,Humanities,Health Sciences,2369,Masters,78.55,19
+STU1274,21,Female,Private,Brunei-Muara,5.93,4.54,7,2,Education,Micronet International College,1,Health Sciences,High,None,0,Technology,Health Sciences,1377,Masters,86.88,17
+STU1275,20,Female,Private,Brunei-Muara,2.28,5.37,9,2,Engineering,Politeknik Brunei,1,Health Sciences,High,Debate,1,Business,Business,3785,Degree,80.82,10
+STU1276,18,Male,Private,Tutong,4.21,8.2,7,2,IT,Politeknik Brunei,1,Health Sciences,High,Arts,0,Technology,IT,1589,High School,95.24,15
+STU1277,18,Female,Private,Tutong,4.53,5.56,5,4,IT,International Graduate Studies College,0,IT,Low,None,1,Business,IT,2439,Masters,93.15,16
+STU1278,19,Female,Private,Belait,4.98,2.83,6,2,Business,Universiti Brunei Darussalam,0,Health Sciences,High,Science Fair,0,Arts,Engineering,1739,Masters,97.01,5
+STU1279,20,Female,Private,Temburong,7.49,4.54,4,4,IT,Micronet International College,1,Education,High,Science Fair,0,Science,Business,3343,Degree,86.24,14
+STU1280,18,Female,Private,Brunei-Muara,2.14,6.69,4,1,Education,International Graduate Studies College,0,Engineering,Low,Science Fair,1,Science,Education,4741,Degree,98.27,13
+STU1281,19,Female,Private,Tutong,2.4,2.87,8,1,Health Sciences,Micronet International College,1,Education,Low,None,1,Technology,Business,1226,High School,91.51,14
+STU1282,21,Male,Public,Belait,8.32,7.74,7,2,Health Sciences,Universiti Brunei Darussalam,0,IT,High,Science Fair,1,Humanities,Education,1380,Degree,83.19,5
+STU1283,20,Male,Public,Belait,7.61,3.65,4,4,Education,Politeknik Brunei,1,Engineering,Medium,Debate,1,Arts,Engineering,2509,High School,85.46,10
+STU1284,21,Male,Private,Brunei-Muara,2.59,3.06,9,2,Engineering,Micronet International College,0,IT,Medium,Arts,0,Humanities,Education,3530,Degree,97.51,14
+STU1285,19,Female,Public,Tutong,4.31,3.38,5,2,Business,Politeknik Brunei,0,Engineering,Low,Debate,0,Humanities,Health Sciences,4403,High School,80.63,7
+STU1286,18,Female,Private,Tutong,3.65,8.65,9,4,Education,Micronet International College,1,Health Sciences,Low,Science Fair,1,Arts,Education,2292,Masters,98.12,5
+STU1287,19,Male,Private,Tutong,5.16,6.23,6,3,Health Sciences,Micronet International College,0,Business,High,Sports,0,Technology,Education,2702,Degree,94.49,17
+STU1288,20,Female,Public,Temburong,2.61,8.88,6,2,Engineering,International Graduate Studies College,1,IT,Medium,Sports,1,Science,Education,2185,High School,98.39,8
+STU1289,18,Male,Public,Belait,3.56,7.56,5,1,Business,Politeknik Brunei,0,Health Sciences,Medium,Sports,0,Technology,Engineering,2644,Diploma,86.88,18
+STU1290,17,Female,Private,Brunei-Muara,5.55,8.14,6,4,Engineering,International Graduate Studies College,1,IT,Low,Debate,1,Technology,IT,1455,High School,79.36,5
+STU1291,20,Male,Private,Brunei-Muara,3.87,7.4,7,4,Education,International Graduate Studies College,1,Education,Low,None,1,Technology,Engineering,3615,Masters,83.55,8
+STU1292,18,Female,Public,Brunei-Muara,4.52,7.26,7,4,Health Sciences,Politeknik Brunei,0,IT,High,None,0,Business,Education,1461,Degree,94.9,18
+STU1293,20,Female,Public,Temburong,2.41,2.69,4,3,Business,Universiti Brunei Darussalam,1,IT,High,Science Fair,1,Humanities,Engineering,4041,Masters,90.18,19
+STU1294,21,Female,Private,Brunei-Muara,2.23,5.78,9,4,IT,Universiti Brunei Darussalam,1,Health Sciences,Medium,Sports,0,Business,Engineering,4541,Degree,94.94,15
+STU1295,18,Male,Private,Belait,5.92,3.58,9,3,IT,International Graduate Studies College,0,Health Sciences,Low,Debate,1,Business,Education,1705,Masters,83.71,9
+STU1296,17,Female,Private,Tutong,2.68,7.28,4,1,Education,Politeknik Brunei,1,Education,Medium,Sports,0,Business,Education,2176,Diploma,82.31,11
+STU1297,19,Male,Private,Brunei-Muara,6.29,4.41,9,1,Business,Universiti Brunei Darussalam,0,Education,Medium,None,1,Technology,Business,3952,Masters,99.55,13
+STU1298,17,Female,Public,Tutong,4.33,3.47,9,3,IT,International Graduate Studies College,0,Business,High,None,1,Arts,Health Sciences,1036,High School,84.75,7
+STU1299,18,Male,Private,Temburong,7.97,2.11,8,2,Education,Universiti Brunei Darussalam,0,IT,High,Debate,0,Science,Education,2753,High School,88.73,17
+STU1300,19,Male,Public,Tutong,2.5,6.39,6,1,Engineering,International Graduate Studies College,1,Business,High,Sports,0,Arts,Health Sciences,1688,Diploma,92.31,13
+STU1301,17,Female,Public,Tutong,6.23,5.68,8,3,Health Sciences,Micronet International College,1,Health Sciences,High,Sports,1,Arts,Business,3301,Degree,77.2,8
+STU1302,21,Female,Private,Temburong,7.45,8.38,8,3,IT,Universiti Brunei Darussalam,1,Health Sciences,High,Science Fair,0,Technology,Health Sciences,4227,Degree,85.47,12
+STU1303,21,Female,Private,Brunei-Muara,9,2.58,8,1,Business,Universiti Brunei Darussalam,1,Business,Medium,None,0,Arts,IT,3340,Masters,79.24,15
+STU1304,19,Female,Public,Tutong,7.25,3.28,6,4,Education,Micronet International College,1,Education,Low,None,1,Business,Education,2239,Degree,96.42,16
+STU1305,19,Female,Public,Brunei-Muara,8.46,6.88,8,3,Engineering,Politeknik Brunei,0,Business,High,Debate,0,Arts,IT,1038,Masters,97.43,18
+STU1306,20,Female,Private,Belait,5.41,7.39,7,3,Education,Politeknik Brunei,0,Business,Medium,None,1,Technology,Engineering,1327,Diploma,91.74,8
+STU1307,18,Female,Private,Brunei-Muara,6.77,2.64,8,4,Education,International Graduate Studies College,0,Business,High,None,0,Science,Education,3830,Masters,81.3,11
+STU1308,18,Female,Public,Belait,5.54,8.11,4,2,Engineering,Micronet International College,1,IT,Medium,Arts,0,Technology,Health Sciences,1796,Diploma,88.67,19
+STU1309,19,Male,Private,Belait,5.32,3.58,5,4,Education,Universiti Brunei Darussalam,0,Education,High,Science Fair,1,Arts,IT,3516,Diploma,94.28,10
+STU1310,20,Male,Private,Belait,6.11,4.39,4,4,Education,Micronet International College,1,Health Sciences,Low,None,1,Science,Education,1586,Masters,92.17,17
+STU1311,20,Male,Private,Brunei-Muara,8.92,5.07,6,2,Education,International Graduate Studies College,0,Health Sciences,Low,Arts,0,Arts,Health Sciences,1922,Masters,76.41,17
+STU1312,20,Female,Private,Brunei-Muara,2.12,5.45,8,4,Business,Universiti Brunei Darussalam,1,Engineering,Medium,Debate,0,Science,IT,1227,Degree,80.68,12
+STU1313,20,Male,Public,Brunei-Muara,3.39,2.46,8,1,Health Sciences,Politeknik Brunei,0,IT,Medium,Debate,0,Science,Business,2201,Diploma,75.42,11
+STU1314,18,Female,Private,Tutong,5.85,5.13,4,1,Health Sciences,Universiti Brunei Darussalam,1,Business,Medium,Debate,0,Science,IT,2543,Masters,83.94,15
+STU1315,18,Male,Private,Temburong,8.05,7.82,8,4,Education,International Graduate Studies College,1,Education,Low,Arts,0,Arts,Education,2048,Masters,88.1,16
+STU1316,17,Male,Private,Tutong,5.29,5.91,5,3,Education,International Graduate Studies College,1,Health Sciences,High,Debate,1,Humanities,Education,2992,Masters,81.14,10
+STU1317,17,Male,Private,Tutong,4.28,6.96,7,3,Business,Micronet International College,1,Health Sciences,Low,Sports,0,Technology,Education,3462,Degree,82.85,17
+STU1318,20,Female,Public,Belait,5.25,5.52,5,2,Education,International Graduate Studies College,1,IT,Low,Debate,1,Arts,Business,3210,Masters,88.46,14
+STU1319,17,Male,Public,Belait,6.93,4.7,9,3,Business,Micronet International College,0,Health Sciences,High,Debate,1,Arts,Health Sciences,2620,High School,77.09,9
+STU1320,20,Female,Public,Tutong,7.84,3.05,5,2,Engineering,Universiti Brunei Darussalam,1,Health Sciences,Low,Debate,1,Arts,Health Sciences,3471,Diploma,79.59,10
+STU1321,20,Male,Private,Tutong,3.17,3.67,9,1,Business,International Graduate Studies College,1,IT,Medium,Debate,1,Technology,Business,2914,Degree,79.31,13
+STU1322,18,Female,Public,Temburong,8.06,8.93,4,1,Education,Politeknik Brunei,1,IT,Medium,Sports,1,Humanities,Business,4569,Masters,98.57,12
+STU1323,20,Male,Public,Temburong,5.97,5.1,4,2,Business,Universiti Brunei Darussalam,1,Business,High,Science Fair,1,Humanities,Health Sciences,1842,Masters,92.95,18
+STU1324,19,Male,Private,Brunei-Muara,3.3,8.83,8,4,Health Sciences,Universiti Brunei Darussalam,0,Education,Low,Debate,1,Science,Health Sciences,1841,Diploma,76.98,19
+STU1325,17,Male,Public,Brunei-Muara,5.46,5.89,9,2,Engineering,Universiti Brunei Darussalam,0,Engineering,High,Debate,1,Humanities,Business,1208,Degree,83.94,13
+STU1326,21,Male,Private,Belait,7.47,5.9,7,1,Engineering,Micronet International College,1,Health Sciences,Low,Science Fair,1,Business,Education,3788,Masters,93.31,5
+STU1327,21,Male,Private,Temburong,7.81,7.91,9,4,Engineering,International Graduate Studies College,1,Business,Medium,Sports,1,Science,IT,2087,High School,88.25,19
+STU1328,19,Male,Private,Belait,8.19,2.36,5,1,Health Sciences,Politeknik Brunei,0,Business,Medium,None,1,Business,Engineering,1196,Masters,98.21,7
+STU1329,20,Female,Private,Temburong,8.93,4.11,6,4,IT,International Graduate Studies College,1,Business,Medium,Arts,1,Arts,Engineering,1502,High School,92.41,6
+STU1330,20,Male,Private,Belait,8.32,2.78,9,4,Engineering,Universiti Brunei Darussalam,1,Engineering,Low,Arts,0,Business,Health Sciences,3715,Degree,82.48,19
+STU1331,19,Male,Public,Belait,7.42,2.99,6,4,Education,Politeknik Brunei,1,Engineering,High,None,1,Humanities,Health Sciences,3943,Masters,76.63,9
+STU1332,18,Female,Public,Belait,6.08,4.3,6,2,IT,Micronet International College,1,Engineering,Low,None,0,Arts,IT,2324,High School,95.19,13
+STU1333,21,Female,Private,Brunei-Muara,7.55,5.52,5,4,Education,International Graduate Studies College,1,Health Sciences,Low,None,0,Technology,Education,1987,Diploma,87.75,9
+STU1334,21,Female,Public,Belait,7.42,2.37,9,1,Education,Universiti Brunei Darussalam,0,Engineering,Low,Science Fair,0,Technology,Business,1478,High School,77.21,13
+STU1335,19,Female,Private,Belait,4.65,7.25,9,1,Business,Micronet International College,0,Engineering,High,Debate,0,Business,Health Sciences,3648,Degree,78.43,14
+STU1336,20,Female,Public,Temburong,3.63,5.93,4,1,Business,Universiti Brunei Darussalam,0,Engineering,Medium,Sports,0,Arts,IT,3258,Degree,87.88,10
+STU1337,17,Female,Public,Temburong,3.01,6.98,4,3,Engineering,Micronet International College,0,Education,Medium,None,1,Arts,Health Sciences,2130,Diploma,90.97,10
+STU1338,19,Male,Public,Belait,5.99,7.66,4,1,IT,Micronet International College,1,Health Sciences,Low,Sports,1,Business,IT,4774,Masters,86.96,13
+STU1339,17,Female,Private,Tutong,7.88,3.05,9,2,Health Sciences,Universiti Brunei Darussalam,0,Engineering,Low,Debate,0,Technology,IT,1548,High School,79.68,11
+STU1340,20,Male,Public,Tutong,7.1,3.93,9,2,Engineering,Micronet International College,0,Health Sciences,Medium,Debate,0,Business,Business,1150,Masters,96.26,8
+STU1341,17,Male,Public,Brunei-Muara,6.51,8.08,9,1,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,High,Sports,0,Business,Education,3569,Masters,91.65,11
+STU1342,18,Male,Public,Temburong,5.71,7.05,4,4,Education,International Graduate Studies College,1,IT,Medium,None,1,Technology,Business,1295,Masters,83.13,13
+STU1343,17,Male,Private,Brunei-Muara,8.65,4.75,9,3,Education,Politeknik Brunei,0,Health Sciences,Medium,Sports,1,Technology,Business,3680,Degree,80.54,12
+STU1344,20,Female,Public,Belait,4.36,6.65,8,2,IT,Micronet International College,0,Business,Low,None,0,Business,Health Sciences,4261,High School,91.64,11
+STU1345,21,Female,Public,Belait,8.84,8.67,9,1,Engineering,Micronet International College,0,Engineering,High,Science Fair,0,Science,IT,2561,Diploma,95.94,18
+STU1346,18,Female,Public,Belait,5.94,6.75,6,1,Engineering,Politeknik Brunei,0,IT,Medium,Arts,0,Humanities,Education,1577,Diploma,96.7,7
+STU1347,18,Male,Private,Brunei-Muara,8.44,6.98,9,1,Business,Universiti Brunei Darussalam,0,Business,High,Sports,0,Business,Health Sciences,2942,Degree,76.37,11
+STU1348,19,Female,Public,Brunei-Muara,7.21,4.87,4,1,Engineering,Universiti Brunei Darussalam,0,Business,Medium,None,0,Science,Engineering,2554,High School,83.23,13
+STU1349,18,Female,Private,Brunei-Muara,2.67,6.99,9,1,Engineering,International Graduate Studies College,0,Education,High,Science Fair,0,Arts,Engineering,1843,Masters,90.44,6
+STU1350,21,Female,Private,Brunei-Muara,7.64,3.74,7,2,Education,International Graduate Studies College,1,Education,High,Science Fair,0,Technology,Business,1422,High School,79.6,9
+STU1351,20,Male,Private,Brunei-Muara,7.01,7.36,7,2,Engineering,Politeknik Brunei,1,Education,High,Science Fair,0,Business,Health Sciences,2193,High School,97.91,15
+STU1352,18,Female,Private,Temburong,6.78,7.23,8,4,Engineering,Micronet International College,0,Business,Low,Science Fair,1,Humanities,Education,2071,Diploma,80.57,17
+STU1353,17,Male,Public,Brunei-Muara,2.23,8.8,8,3,Business,Politeknik Brunei,1,Health Sciences,Low,None,1,Business,Business,4220,Diploma,90.36,14
+STU1354,18,Female,Public,Brunei-Muara,6.64,4.17,9,2,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,Medium,Sports,0,Science,Business,3234,Masters,79.99,17
+STU1355,21,Male,Private,Temburong,2.13,4.47,4,2,Engineering,Universiti Brunei Darussalam,1,Engineering,Low,Sports,1,Business,Business,1538,Masters,92.21,7
+STU1356,19,Male,Public,Temburong,2.65,3.53,5,2,Education,Universiti Brunei Darussalam,0,IT,Medium,None,0,Business,Engineering,2908,Masters,96.87,13
+STU1357,17,Female,Public,Belait,3.22,3.78,9,3,Business,Universiti Brunei Darussalam,0,Business,Medium,Science Fair,0,Humanities,Health Sciences,2947,High School,81.94,19
+STU1358,18,Male,Private,Tutong,6.89,4.27,6,3,IT,International Graduate Studies College,0,Engineering,Medium,None,1,Arts,Engineering,4084,Degree,95.68,12
+STU1359,19,Female,Private,Temburong,7.61,7.81,6,1,Business,International Graduate Studies College,1,Business,Medium,Arts,0,Technology,Education,2564,High School,90.44,16
+STU1360,21,Female,Private,Tutong,6.95,3.09,8,2,Education,Politeknik Brunei,1,Education,Low,Sports,0,Arts,Business,3402,High School,76.79,7
+STU1361,20,Male,Private,Tutong,7.7,3.69,6,3,Engineering,International Graduate Studies College,0,Education,Medium,Debate,0,Arts,IT,4335,High School,80.79,9
+STU1362,18,Male,Public,Tutong,4.8,7.03,7,4,Business,Micronet International College,1,Engineering,Medium,Science Fair,0,Humanities,Engineering,3453,Masters,86.88,9
+STU1363,19,Female,Private,Belait,6.62,2.63,8,2,Education,Politeknik Brunei,1,Education,Medium,Arts,1,Technology,Business,4166,Degree,90.18,10
+STU1364,17,Male,Public,Belait,8.22,2.7,4,3,IT,Micronet International College,1,Business,Medium,Arts,1,Humanities,Business,1986,Masters,82.26,12
+STU1365,19,Female,Public,Tutong,8.12,8.35,8,3,Engineering,Universiti Brunei Darussalam,1,IT,Medium,Sports,0,Technology,IT,3711,High School,77.64,15
+STU1366,18,Female,Public,Brunei-Muara,3.71,5.46,9,4,Business,Universiti Brunei Darussalam,1,Education,High,Science Fair,1,Technology,Engineering,4024,High School,82.16,16
+STU1367,19,Male,Public,Brunei-Muara,8.12,3.36,6,3,Business,Micronet International College,0,Health Sciences,Medium,Arts,1,Arts,Health Sciences,3877,Degree,76.67,5
+STU1368,17,Female,Private,Temburong,2.14,8.85,7,3,Engineering,International Graduate Studies College,0,IT,Medium,Sports,1,Arts,Business,3212,Degree,99.72,7
+STU1369,20,Female,Public,Brunei-Muara,6.32,3.69,4,4,Education,International Graduate Studies College,0,Education,Low,Science Fair,0,Technology,Health Sciences,1226,High School,87.59,11
+STU1370,19,Female,Private,Tutong,8.36,8.17,8,4,IT,International Graduate Studies College,1,Engineering,High,Science Fair,0,Humanities,Business,4122,Degree,92.43,10
+STU1371,17,Male,Public,Temburong,8.09,7.03,4,4,Health Sciences,Micronet International College,0,Health Sciences,Low,Sports,1,Business,Engineering,1378,Diploma,85.55,14
+STU1372,18,Female,Public,Brunei-Muara,7.12,4.69,5,4,Engineering,International Graduate Studies College,0,IT,Medium,Arts,0,Science,Education,1122,Masters,89.69,11
+STU1373,21,Male,Private,Tutong,4.71,7.4,4,2,Health Sciences,International Graduate Studies College,0,IT,Medium,None,1,Arts,Business,2852,High School,92.58,7
+STU1374,21,Female,Public,Brunei-Muara,8.27,3.19,4,4,Education,Micronet International College,0,Education,High,Sports,1,Humanities,IT,4579,Masters,76.09,5
+STU1375,18,Male,Public,Belait,5.81,2.94,4,3,IT,Universiti Brunei Darussalam,1,IT,Medium,None,0,Business,Business,3223,Diploma,75.49,19
+STU1376,17,Male,Public,Belait,7.79,2.14,4,3,Education,Micronet International College,1,Business,Low,Science Fair,0,Business,Education,4949,Masters,87.82,10
+STU1377,21,Male,Public,Tutong,6.49,3.44,4,2,Health Sciences,International Graduate Studies College,1,Education,Low,Sports,0,Technology,IT,4836,Diploma,86.34,13
+STU1378,21,Male,Public,Brunei-Muara,7.78,4.93,8,3,Education,International Graduate Studies College,0,Engineering,Low,Sports,1,Business,Engineering,3729,High School,92.52,5
+STU1379,19,Female,Public,Temburong,8.82,4.75,5,2,Business,Micronet International College,1,Health Sciences,Medium,Debate,1,Arts,Business,4543,Degree,79.29,9
+STU1380,19,Female,Private,Tutong,5.61,8.16,5,2,Education,Politeknik Brunei,0,IT,High,Science Fair,1,Science,Education,2407,Masters,75.01,9
+STU1381,19,Male,Public,Brunei-Muara,5.61,7.11,6,2,Business,International Graduate Studies College,1,Business,High,Arts,0,Science,Education,3107,High School,96.76,8
+STU1382,20,Female,Public,Brunei-Muara,5.25,3.85,8,1,Engineering,Micronet International College,0,Education,Medium,None,1,Arts,Education,1970,Masters,79.44,16
+STU1383,18,Male,Public,Belait,8.17,4.7,8,1,Engineering,International Graduate Studies College,1,Education,High,Arts,1,Arts,Education,2049,Masters,99.19,14
+STU1384,17,Female,Public,Belait,7.41,8.41,5,2,IT,Universiti Brunei Darussalam,0,Business,Low,None,0,Arts,Health Sciences,4681,High School,93.89,10
+STU1385,20,Female,Public,Belait,6.92,5.94,4,1,IT,International Graduate Studies College,1,Education,Low,Sports,1,Business,Education,1619,Masters,79.32,5
+STU1386,19,Female,Public,Belait,5.38,5.48,8,1,Business,International Graduate Studies College,1,Business,High,Debate,0,Arts,Health Sciences,4449,Degree,77.1,17
+STU1387,17,Male,Public,Brunei-Muara,4.61,7.61,9,2,Business,Universiti Brunei Darussalam,0,IT,Low,Science Fair,1,Arts,Business,3115,Masters,99.04,10
+STU1388,19,Male,Public,Tutong,7.73,3.35,8,4,Business,Universiti Brunei Darussalam,0,Engineering,Medium,Arts,1,Business,IT,1679,Masters,81.88,13
+STU1389,21,Male,Public,Tutong,3.13,2.62,8,1,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Medium,Sports,1,Business,Education,4132,Masters,85.23,12
+STU1390,17,Female,Public,Temburong,7.58,3.63,8,4,Education,Politeknik Brunei,1,Health Sciences,High,Science Fair,0,Technology,Education,3795,Diploma,94.01,9
+STU1391,21,Male,Private,Belait,3.83,4.95,9,2,Business,Politeknik Brunei,0,Engineering,Medium,Debate,1,Technology,Health Sciences,2145,Diploma,97.75,8
+STU1392,18,Female,Private,Tutong,7.4,8.47,4,4,Business,Politeknik Brunei,1,Business,Low,None,1,Business,Engineering,2275,Degree,86.47,19
+STU1393,19,Male,Public,Brunei-Muara,4.61,7.28,4,2,Business,Micronet International College,0,Health Sciences,Medium,None,0,Humanities,Education,3752,Degree,76.08,18
+STU1394,17,Male,Private,Temburong,4.3,3.63,9,1,Business,Universiti Brunei Darussalam,0,Engineering,Low,Debate,1,Technology,Education,2484,Degree,95.47,18
+STU1395,21,Female,Private,Brunei-Muara,6.72,4.15,4,4,Education,Micronet International College,0,Engineering,Medium,Science Fair,0,Business,Health Sciences,2120,High School,98.83,8
+STU1396,19,Male,Private,Tutong,3.04,7.74,5,4,Health Sciences,International Graduate Studies College,0,Engineering,Low,Arts,1,Technology,Engineering,3905,Masters,93.52,19
+STU1397,21,Male,Public,Temburong,2.61,2.28,9,4,Health Sciences,Universiti Brunei Darussalam,1,Business,High,Sports,1,Science,IT,3040,Masters,93.95,13
+STU1398,17,Female,Public,Tutong,7.36,6.07,6,1,Business,Politeknik Brunei,1,Engineering,Low,Arts,1,Humanities,Health Sciences,2270,Masters,75.05,16
+STU1399,17,Male,Public,Brunei-Muara,7.88,8.84,9,1,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,Medium,Science Fair,0,Arts,Engineering,2940,High School,87.28,6
+STU1400,19,Male,Public,Belait,4.28,4.61,6,2,Education,Politeknik Brunei,1,IT,Medium,Sports,1,Arts,Engineering,1560,Masters,95.12,19
+STU1401,19,Male,Private,Temburong,7.8,7.93,8,2,IT,Politeknik Brunei,1,Business,Low,Debate,1,Arts,Health Sciences,3766,Diploma,90.52,18
+STU1402,21,Male,Public,Belait,3.74,2.49,9,3,Health Sciences,Universiti Brunei Darussalam,0,Education,Medium,Science Fair,0,Arts,Engineering,1824,Diploma,79.72,19
+STU1403,19,Male,Public,Tutong,4.12,5.4,8,1,Health Sciences,International Graduate Studies College,1,IT,High,None,1,Science,IT,1139,Diploma,88.03,19
+STU1404,21,Female,Public,Belait,7.96,8.16,5,4,Education,International Graduate Studies College,0,Business,Medium,Arts,1,Arts,IT,1160,Masters,97.62,17
+STU1405,20,Male,Public,Tutong,2.46,3.02,9,1,Engineering,Politeknik Brunei,0,Health Sciences,Low,None,0,Arts,Health Sciences,4287,Degree,81.23,6
+STU1406,21,Female,Public,Tutong,7.65,3,5,1,Education,Micronet International College,0,Health Sciences,Low,Sports,1,Technology,Education,3852,Diploma,75.98,6
+STU1407,19,Male,Public,Tutong,7.43,8.96,5,3,Education,Politeknik Brunei,1,Engineering,High,Sports,0,Business,Engineering,2731,Diploma,98.05,14
+STU1408,19,Male,Private,Temburong,7.38,6.13,5,1,IT,Universiti Brunei Darussalam,0,Engineering,Low,Sports,0,Technology,IT,1170,Degree,80.93,15
+STU1409,18,Male,Private,Temburong,4.45,8.2,7,2,Health Sciences,Politeknik Brunei,1,Education,High,Debate,1,Humanities,Education,2186,Diploma,91.06,7
+STU1410,19,Female,Private,Belait,4.15,4.27,4,3,Business,Micronet International College,0,Education,Low,Debate,1,Technology,Engineering,2420,Degree,78.53,7
+STU1411,17,Female,Public,Brunei-Muara,7.42,3.68,6,2,Engineering,Micronet International College,0,Education,High,Sports,1,Arts,IT,2437,Diploma,85.24,12
+STU1412,21,Female,Private,Brunei-Muara,4.39,7.21,8,4,Health Sciences,Politeknik Brunei,0,Health Sciences,High,None,1,Arts,Engineering,3116,High School,88.4,5
+STU1413,18,Male,Public,Belait,7.22,4.31,9,4,Engineering,International Graduate Studies College,1,Health Sciences,High,Sports,1,Humanities,Health Sciences,3935,High School,81.19,7
+STU1414,18,Male,Public,Brunei-Muara,8.13,3.24,4,1,Business,Universiti Brunei Darussalam,0,Education,Medium,Sports,0,Arts,IT,1022,High School,93.58,6
+STU1415,20,Female,Private,Brunei-Muara,3.37,7.19,5,4,Business,Politeknik Brunei,1,Engineering,Low,Science Fair,1,Technology,Education,3613,Degree,91.33,8
+STU1416,21,Male,Public,Temburong,2.92,8.03,4,3,Business,Universiti Brunei Darussalam,0,Business,High,Science Fair,1,Technology,Engineering,3098,High School,79.33,18
+STU1417,20,Male,Public,Temburong,4.78,8.89,9,3,Engineering,Universiti Brunei Darussalam,1,IT,Low,Debate,1,Business,IT,1580,Masters,78.76,18
+STU1418,17,Male,Private,Temburong,7.2,4.78,8,2,Business,International Graduate Studies College,1,Business,High,Science Fair,0,Business,IT,4673,Diploma,77.47,11
+STU1419,21,Female,Public,Tutong,6.83,8.35,4,3,Engineering,International Graduate Studies College,0,Engineering,High,None,1,Arts,Education,3124,Masters,97.44,15
+STU1420,18,Female,Private,Brunei-Muara,3.97,8.19,8,2,Education,Micronet International College,0,Business,High,Arts,0,Technology,Engineering,4330,Degree,84.47,13
+STU1421,19,Female,Private,Temburong,7.11,5.95,5,3,IT,International Graduate Studies College,1,Engineering,High,Science Fair,1,Business,Education,3484,Masters,77.5,5
+STU1422,20,Female,Private,Tutong,2.39,7.99,5,4,Health Sciences,International Graduate Studies College,0,Education,Medium,Debate,1,Arts,IT,4597,Degree,95.82,13
+STU1423,20,Female,Private,Brunei-Muara,2.2,4.42,9,4,IT,Politeknik Brunei,0,Health Sciences,Medium,Sports,0,Humanities,Education,4052,Degree,76.51,6
+STU1424,20,Male,Public,Temburong,2.13,2.82,9,3,Health Sciences,Micronet International College,1,Education,Medium,None,0,Technology,Business,2158,Degree,96.83,16
+STU1425,21,Female,Private,Belait,5.68,2.31,7,2,Business,Universiti Brunei Darussalam,0,Engineering,High,None,0,Business,Education,1128,Diploma,78.71,19
+STU1426,20,Female,Public,Belait,6.45,6.03,5,2,Business,Micronet International College,1,Business,Low,None,0,Science,Business,4492,Degree,82.43,18
+STU1427,17,Female,Private,Brunei-Muara,7.62,7,9,2,Business,Universiti Brunei Darussalam,1,Engineering,Medium,None,0,Arts,Business,1967,Diploma,80.34,17
+STU1428,18,Male,Private,Tutong,8.41,6.93,9,4,Education,International Graduate Studies College,1,Health Sciences,Medium,Science Fair,0,Technology,Engineering,2623,Degree,92.25,13
+STU1429,17,Female,Public,Brunei-Muara,4.1,3.35,8,3,Engineering,Micronet International College,1,Education,Medium,Debate,0,Humanities,IT,2990,High School,89.04,12
+STU1430,19,Female,Public,Belait,2.73,3.77,6,1,Health Sciences,Universiti Brunei Darussalam,0,Engineering,High,Science Fair,1,Technology,Business,2794,Degree,90.62,19
+STU1431,19,Male,Private,Temburong,3.01,8.91,7,2,Engineering,Micronet International College,0,Health Sciences,Medium,Debate,0,Arts,IT,2783,High School,91.19,19
+STU1432,17,Male,Public,Temburong,7.84,7.02,9,1,Business,International Graduate Studies College,0,Health Sciences,Medium,None,0,Business,IT,4764,High School,90.84,10
+STU1433,21,Female,Private,Belait,5.93,4.2,6,3,IT,International Graduate Studies College,0,IT,High,Science Fair,1,Humanities,Engineering,2516,High School,92.33,7
+STU1434,19,Male,Public,Brunei-Muara,4.68,5.8,8,2,Engineering,Politeknik Brunei,0,Engineering,Low,Sports,1,Technology,IT,2145,Degree,89.65,18
+STU1435,20,Female,Public,Belait,7.63,2.82,5,3,Engineering,International Graduate Studies College,1,IT,High,Arts,1,Technology,Business,3879,High School,77.87,13
+STU1436,19,Female,Private,Tutong,4.26,3.94,9,1,Education,Micronet International College,1,IT,Low,Debate,0,Arts,IT,4546,Diploma,81.76,10
+STU1437,20,Male,Private,Temburong,7.99,3.57,5,1,Business,Politeknik Brunei,0,Health Sciences,Low,Debate,0,Business,Health Sciences,1934,Degree,98.78,10
+STU1438,17,Male,Private,Brunei-Muara,8.18,7.04,8,2,IT,Micronet International College,1,Education,High,Science Fair,1,Humanities,Health Sciences,4404,Masters,89.33,6
+STU1439,19,Female,Public,Tutong,4.4,4.63,6,1,Health Sciences,International Graduate Studies College,0,Business,High,None,0,Technology,IT,4828,Diploma,80.78,19
+STU1440,17,Male,Private,Temburong,6.39,2.33,5,1,Engineering,Politeknik Brunei,0,Education,Low,None,1,Business,Business,4756,Degree,83.16,15
+STU1441,19,Female,Private,Belait,6.58,6.19,5,2,Business,Universiti Brunei Darussalam,0,Business,High,Arts,1,Business,IT,1065,High School,76.76,13
+STU1442,19,Female,Public,Brunei-Muara,8.69,8.87,8,3,IT,Politeknik Brunei,0,Education,Medium,Science Fair,1,Technology,Health Sciences,2347,Masters,91.55,18
+STU1443,20,Female,Private,Brunei-Muara,4.64,7.11,8,1,Engineering,Universiti Brunei Darussalam,0,Health Sciences,Medium,Arts,0,Humanities,Business,2357,High School,75.96,14
+STU1444,17,Male,Public,Temburong,5.45,3.39,9,1,Engineering,Politeknik Brunei,0,Health Sciences,Low,None,1,Humanities,IT,4025,Degree,83.47,13
+STU1445,20,Female,Private,Belait,2.99,2.99,5,4,Education,Universiti Brunei Darussalam,1,IT,High,None,0,Technology,Business,4597,Masters,90.43,19
+STU1446,20,Male,Public,Belait,7.03,4.72,7,4,Business,International Graduate Studies College,1,Health Sciences,Medium,Sports,0,Science,Health Sciences,2127,Diploma,99.77,9
+STU1447,19,Male,Private,Belait,3.85,2.22,4,3,Business,Micronet International College,1,Education,High,Sports,0,Business,Education,3146,Degree,76.93,14
+STU1448,18,Female,Public,Brunei-Muara,8.3,2.6,9,2,Health Sciences,Universiti Brunei Darussalam,0,IT,High,None,1,Business,Business,4048,Degree,85.16,8
+STU1449,19,Female,Private,Tutong,2.3,6.5,7,4,IT,Micronet International College,1,Business,High,Sports,0,Business,IT,1849,High School,87.23,12
+STU1450,17,Male,Private,Tutong,3.22,2.94,6,1,Health Sciences,Micronet International College,1,Engineering,Medium,None,1,Arts,IT,3586,Diploma,88.93,17
+STU1451,20,Female,Public,Belait,2.43,6.26,9,4,IT,International Graduate Studies College,1,IT,Medium,None,0,Science,Education,4694,High School,77.47,19
+STU1452,17,Male,Private,Temburong,6.97,6.56,9,4,Engineering,Universiti Brunei Darussalam,0,Engineering,Low,Science Fair,1,Humanities,Business,1973,Diploma,82.94,17
+STU1453,17,Female,Public,Tutong,7.33,8.65,6,4,Education,Politeknik Brunei,0,IT,Low,Debate,0,Technology,Business,3939,Degree,81.62,15
+STU1454,20,Male,Public,Belait,7.84,2.63,4,3,IT,Micronet International College,1,Health Sciences,High,Science Fair,1,Arts,Education,1357,High School,88.72,19
+STU1455,18,Male,Public,Belait,7.7,4.75,5,3,Education,Micronet International College,1,Education,Low,Arts,0,Humanities,IT,4735,Diploma,89.77,5
+STU1456,19,Female,Public,Belait,3.2,2.56,4,1,Health Sciences,Micronet International College,1,IT,Medium,None,0,Humanities,Business,4121,High School,91.18,10
+STU1457,20,Male,Public,Temburong,8.34,6.73,4,1,Engineering,Politeknik Brunei,1,Engineering,High,Sports,1,Science,Engineering,4039,Diploma,95.84,13
+STU1458,21,Male,Private,Temburong,4.37,5.45,5,3,Education,Universiti Brunei Darussalam,0,Business,High,None,0,Humanities,Business,4729,Diploma,79.97,9
+STU1459,19,Male,Private,Tutong,6.82,3.59,7,4,Business,Universiti Brunei Darussalam,1,Health Sciences,Low,Science Fair,1,Technology,Education,2770,Masters,79.45,9
+STU1460,21,Male,Private,Brunei-Muara,6.7,4.58,4,2,Health Sciences,Micronet International College,0,IT,Medium,Debate,1,Business,Engineering,1225,Masters,86.63,19
+STU1461,21,Female,Private,Brunei-Muara,8.51,4.75,6,2,Health Sciences,Universiti Brunei Darussalam,1,IT,Low,Science Fair,0,Technology,Engineering,1775,Diploma,83.44,14
+STU1462,18,Male,Public,Tutong,2.06,8.46,7,4,IT,Micronet International College,1,IT,Low,Arts,1,Science,Education,2368,Masters,81.58,10
+STU1463,21,Male,Private,Brunei-Muara,8.71,4.84,8,1,Engineering,Universiti Brunei Darussalam,0,IT,High,Arts,0,Humanities,Education,2130,Degree,98.42,12
+STU1464,18,Male,Public,Tutong,3.1,3.53,8,1,Health Sciences,International Graduate Studies College,1,IT,High,Science Fair,0,Arts,Education,1444,Degree,81.41,7
+STU1465,19,Male,Public,Brunei-Muara,5.56,5.92,9,3,Business,Universiti Brunei Darussalam,1,Education,High,Sports,1,Technology,Education,3770,Degree,96.67,12
+STU1466,18,Male,Public,Temburong,4.14,6.99,4,4,Business,Universiti Brunei Darussalam,1,Engineering,High,Sports,1,Science,Health Sciences,3955,Masters,98.71,15
+STU1467,21,Male,Public,Belait,3.77,5.2,6,3,IT,Micronet International College,1,Health Sciences,High,None,0,Technology,Business,3986,Masters,76.39,8
+STU1468,21,Female,Public,Belait,5.19,7.75,8,2,IT,International Graduate Studies College,0,IT,High,Sports,0,Business,IT,4066,Masters,75.68,6
+STU1469,18,Female,Public,Temburong,8.98,8.54,7,2,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,High,Arts,0,Science,Business,4208,Masters,85.76,16
+STU1470,17,Male,Public,Belait,4.18,7.32,5,4,IT,Micronet International College,1,IT,Medium,Arts,1,Business,Health Sciences,4979,Diploma,82.22,18
+STU1471,19,Female,Public,Belait,6.27,2.82,4,1,Education,Micronet International College,0,Business,High,Debate,1,Humanities,Education,4816,Diploma,94.25,9
+STU1472,20,Male,Public,Temburong,3,3.57,7,4,Business,Politeknik Brunei,0,Education,Medium,Sports,0,Science,Engineering,3394,High School,80.75,19
+STU1473,19,Male,Private,Tutong,8.95,2.13,9,3,Education,Micronet International College,0,Engineering,Low,Sports,0,Technology,IT,4676,High School,92.28,14
+STU1474,21,Male,Public,Brunei-Muara,2.63,4.36,7,4,Health Sciences,Politeknik Brunei,1,Education,Medium,Science Fair,0,Business,Education,2214,Diploma,87.89,15
+STU1475,21,Male,Public,Belait,3.35,7.65,6,3,IT,Politeknik Brunei,1,Business,Low,Debate,1,Humanities,IT,1126,High School,94.9,10
+STU1476,20,Male,Public,Tutong,7.71,2.46,6,1,Health Sciences,Micronet International College,0,IT,High,Debate,0,Science,Health Sciences,2584,Masters,78.26,13
+STU1477,20,Female,Public,Temburong,2.93,7.68,5,1,Business,Universiti Brunei Darussalam,0,Engineering,Medium,Debate,0,Business,IT,4395,Masters,98.71,9
+STU1478,20,Male,Private,Temburong,3.54,7.55,4,2,Engineering,International Graduate Studies College,1,Education,Low,Science Fair,0,Technology,Engineering,4578,Degree,89.64,9
+STU1479,21,Female,Private,Brunei-Muara,5.23,6.17,6,3,Health Sciences,Micronet International College,1,Engineering,Medium,Arts,0,Humanities,Engineering,2378,Degree,90.49,19
+STU1480,20,Female,Public,Belait,4.11,5.07,5,1,Education,Politeknik Brunei,1,Business,High,Sports,1,Technology,Business,2937,Diploma,75.99,19
+STU1481,18,Female,Public,Tutong,4.97,5.74,6,3,Education,Politeknik Brunei,1,Engineering,Medium,Sports,1,Science,IT,1209,Degree,96.31,19
+STU1482,19,Male,Public,Temburong,7.62,3.14,5,3,IT,Politeknik Brunei,0,Education,High,Sports,1,Humanities,Health Sciences,1581,Diploma,99.76,6
+STU1483,20,Male,Public,Belait,6.92,2.97,5,2,Business,Universiti Brunei Darussalam,0,Health Sciences,Medium,Sports,1,Technology,Engineering,2685,Masters,82.91,8
+STU1484,20,Male,Private,Tutong,7.99,5.76,8,2,Engineering,Universiti Brunei Darussalam,0,Business,High,Science Fair,0,Humanities,Education,1513,Diploma,97.15,6
+STU1485,18,Female,Private,Tutong,3.55,2.75,7,1,IT,Micronet International College,1,Business,Low,Science Fair,1,Arts,Health Sciences,4279,High School,98.7,11
+STU1486,20,Female,Public,Belait,7.85,4.05,8,2,Health Sciences,Politeknik Brunei,1,Engineering,Medium,Debate,1,Technology,Health Sciences,1138,Masters,96.71,5
+STU1487,19,Male,Private,Brunei-Muara,3.9,6.77,6,2,Engineering,Politeknik Brunei,1,Business,Medium,Debate,0,Technology,IT,1192,Diploma,78.45,17
+STU1488,19,Female,Private,Brunei-Muara,4.46,2.06,4,4,Health Sciences,International Graduate Studies College,0,IT,Medium,None,1,Science,Business,2423,Masters,81.35,19
+STU1489,17,Male,Public,Tutong,8.02,7.41,5,1,Engineering,International Graduate Studies College,0,Engineering,Medium,Science Fair,1,Business,Engineering,1775,Degree,93.97,8
+STU1490,20,Female,Public,Belait,7.76,8.18,6,1,Health Sciences,Universiti Brunei Darussalam,0,Engineering,Low,Sports,1,Science,IT,4961,Diploma,75.13,5
+STU1491,21,Female,Public,Belait,2.25,7.68,9,1,Business,Politeknik Brunei,1,Engineering,High,Science Fair,0,Business,Health Sciences,2047,Masters,83,16
+STU1492,20,Male,Public,Temburong,2.73,7.64,9,2,Engineering,Politeknik Brunei,1,Engineering,Medium,Sports,0,Arts,IT,1820,Diploma,87.95,18
+STU1493,21,Male,Public,Belait,4.4,2.46,9,4,IT,Micronet International College,1,IT,Medium,Science Fair,1,Business,Health Sciences,3119,High School,84.01,9
+STU1494,20,Female,Private,Tutong,2.88,8.94,4,1,Engineering,Politeknik Brunei,1,Business,Medium,Arts,0,Business,Health Sciences,2011,Degree,79.8,11
+STU1495,19,Male,Private,Temburong,2.42,6.23,8,1,Engineering,International Graduate Studies College,0,Health Sciences,Low,Debate,0,Technology,Business,4285,Diploma,78.46,6
+STU1496,17,Male,Private,Temburong,8.8,7.84,7,1,Business,International Graduate Studies College,1,Engineering,High,Debate,1,Science,Education,2992,High School,87.7,17
+STU1497,21,Female,Private,Belait,6.89,4.18,7,2,Health Sciences,Micronet International College,1,Health Sciences,Low,Debate,0,Arts,Business,2279,High School,83.18,7
+STU1498,21,Male,Public,Brunei-Muara,7.61,3.15,9,4,Business,Politeknik Brunei,1,Education,Low,Science Fair,0,Technology,Health Sciences,2633,High School,94.56,15
+STU1499,18,Male,Public,Brunei-Muara,4.31,8.19,4,2,IT,International Graduate Studies College,0,Business,Low,Arts,0,Technology,Education,2203,High School,97.99,15
+STU1500,17,Female,Private,Temburong,8.87,5.24,7,1,Business,Micronet International College,1,IT,High,Science Fair,1,Science,Engineering,3700,Masters,96.83,12
+STU1501,17,Male,Public,Temburong,2.25,8.37,4,3,Health Sciences,Micronet International College,1,Health Sciences,High,Science Fair,1,Arts,Education,4513,Diploma,89.3,12
+STU1502,19,Female,Public,Tutong,7.03,6.59,9,4,Education,Micronet International College,0,Engineering,Low,Sports,0,Technology,Health Sciences,1487,Degree,78.72,12
+STU1503,18,Female,Public,Belait,2.01,4.63,7,2,Business,Micronet International College,1,Education,Medium,Debate,1,Science,Education,3475,Masters,98.86,11
+STU1504,20,Male,Private,Temburong,7.07,8.05,5,4,Health Sciences,Universiti Brunei Darussalam,1,Business,Medium,Arts,1,Business,Education,2801,Diploma,98.99,9
+STU1505,18,Male,Public,Temburong,5.41,5.83,8,1,Education,International Graduate Studies College,0,Business,Low,Arts,0,Arts,Health Sciences,1260,Degree,77.72,7
+STU1506,20,Female,Public,Brunei-Muara,2.94,7.93,8,1,Business,Micronet International College,0,Business,Low,None,0,Arts,Engineering,2101,Degree,86.26,6
+STU1507,18,Male,Private,Belait,8.61,3.78,4,4,Education,Micronet International College,1,Health Sciences,Medium,Sports,1,Technology,IT,2707,Masters,83.04,8
+STU1508,18,Male,Private,Belait,6.6,8.6,7,1,Education,Politeknik Brunei,1,Education,High,Sports,1,Arts,Business,1277,Degree,79.24,9
+STU1509,18,Female,Public,Brunei-Muara,3.14,7.38,8,4,Education,Universiti Brunei Darussalam,0,Business,Medium,Sports,1,Science,Education,1275,Degree,83.35,11
+STU1510,19,Male,Private,Tutong,5.64,2.14,9,1,Business,International Graduate Studies College,0,Business,Low,Science Fair,0,Science,Education,3438,Masters,78.74,15
+STU1511,20,Male,Private,Temburong,5.51,6.93,5,3,Engineering,Universiti Brunei Darussalam,1,Engineering,High,Arts,1,Humanities,Health Sciences,3598,Diploma,93.71,9
+STU1512,17,Female,Private,Tutong,8.43,7.92,9,1,Business,International Graduate Studies College,0,Engineering,Low,Sports,1,Technology,Education,3030,High School,88.47,17
+STU1513,21,Female,Public,Tutong,3.77,6.89,7,1,Education,Universiti Brunei Darussalam,0,Health Sciences,Low,Science Fair,1,Arts,Education,2348,Degree,87.46,8
+STU1514,21,Male,Public,Belait,5.17,8.02,8,1,Engineering,Micronet International College,1,Education,Medium,Sports,0,Technology,Engineering,4929,Masters,96.03,10
+STU1515,20,Female,Private,Belait,3.47,4.12,4,2,Engineering,Politeknik Brunei,1,Engineering,Medium,Arts,0,Humanities,Health Sciences,3907,Masters,80.84,11
+STU1516,17,Male,Private,Tutong,6.32,5.84,4,2,Health Sciences,International Graduate Studies College,0,Business,High,Sports,1,Arts,Business,4487,Degree,97.83,10
+STU1517,17,Female,Public,Tutong,5,5.75,6,4,Education,Universiti Brunei Darussalam,0,IT,High,Arts,1,Business,Engineering,2193,High School,93.97,8
+STU1518,21,Female,Public,Brunei-Muara,5.28,3.21,7,3,Engineering,International Graduate Studies College,0,Education,Medium,Sports,0,Humanities,Engineering,4385,Degree,89.38,13
+STU1519,21,Male,Public,Tutong,6.98,5.71,7,1,Health Sciences,Micronet International College,1,Engineering,High,Arts,1,Humanities,Business,4711,High School,87.97,13
+STU1520,19,Male,Private,Brunei-Muara,4.17,6.8,8,3,IT,Politeknik Brunei,0,Education,High,Sports,0,Humanities,IT,2001,Diploma,79.17,18
+STU1521,17,Male,Public,Brunei-Muara,5.24,4.85,5,4,IT,Micronet International College,1,IT,Medium,Arts,1,Science,Engineering,1263,Degree,89.17,5
+STU1522,17,Female,Private,Brunei-Muara,6.33,3.52,8,2,IT,Universiti Brunei Darussalam,1,Engineering,Medium,Debate,0,Science,IT,2562,High School,87.85,11
+STU1523,21,Female,Public,Brunei-Muara,6.48,4.16,7,4,Health Sciences,International Graduate Studies College,0,Engineering,High,None,0,Arts,Health Sciences,1275,High School,96.71,9
+STU1524,18,Female,Private,Belait,8.82,5.69,7,4,Business,Micronet International College,0,Health Sciences,High,Arts,1,Arts,Health Sciences,3894,Masters,98.44,17
+STU1525,17,Female,Private,Temburong,4.54,5.86,8,1,Health Sciences,International Graduate Studies College,0,IT,Low,Debate,1,Humanities,IT,4195,Diploma,90.04,17
+STU1526,18,Male,Private,Belait,2.96,2.71,7,2,Engineering,Politeknik Brunei,1,Business,Low,Arts,0,Arts,IT,4681,High School,75.46,13
+STU1527,20,Male,Private,Tutong,5.84,2.05,5,1,Education,Micronet International College,1,Business,High,None,1,Business,Education,2243,Masters,83.73,7
+STU1528,17,Female,Public,Tutong,3.23,3.04,8,1,Engineering,Universiti Brunei Darussalam,1,Education,Low,Science Fair,1,Technology,Health Sciences,2369,Degree,99.26,17
+STU1529,20,Male,Public,Temburong,4.68,3.47,8,3,Health Sciences,Politeknik Brunei,0,IT,Medium,Sports,1,Technology,Business,3351,Diploma,92.87,8
+STU1530,18,Male,Private,Temburong,4.94,8.22,4,3,Health Sciences,Politeknik Brunei,0,IT,Low,Arts,0,Science,Business,2499,High School,92.3,16
+STU1531,17,Male,Private,Temburong,7.99,7.01,7,4,Business,Micronet International College,1,Engineering,Medium,Sports,1,Arts,Health Sciences,4064,Diploma,94.19,6
+STU1532,17,Male,Private,Tutong,5.14,3.93,4,2,Education,Politeknik Brunei,0,Business,Low,Arts,0,Science,Health Sciences,3575,Masters,92.79,6
+STU1533,19,Female,Public,Tutong,4.43,2.46,5,4,Health Sciences,International Graduate Studies College,0,Education,Medium,Sports,1,Technology,IT,2346,Degree,92.19,19
+STU1534,21,Male,Public,Temburong,2.12,6.54,4,4,Business,Politeknik Brunei,1,Health Sciences,High,None,1,Science,Education,1368,Degree,97.27,11
+STU1535,19,Male,Private,Temburong,6.33,6.13,4,2,Education,Politeknik Brunei,1,Engineering,High,None,0,Humanities,Engineering,3271,Masters,96.97,12
+STU1536,21,Male,Public,Belait,5.85,7.22,6,4,Business,Universiti Brunei Darussalam,1,Business,High,Arts,1,Business,IT,2321,Diploma,79.56,12
+STU1537,18,Male,Private,Tutong,8.2,3.31,7,2,Health Sciences,International Graduate Studies College,1,IT,Low,Sports,1,Business,Education,1009,Masters,78.57,13
+STU1538,18,Male,Public,Temburong,2.2,5.74,7,3,Education,Politeknik Brunei,0,Engineering,Low,None,0,Business,Business,4687,High School,78.42,13
+STU1539,17,Female,Private,Brunei-Muara,2.61,6.34,8,3,Business,Universiti Brunei Darussalam,0,Engineering,Medium,Arts,0,Technology,Engineering,4743,Diploma,94.72,10
+STU1540,17,Male,Public,Brunei-Muara,5.52,8.12,7,1,Engineering,Universiti Brunei Darussalam,1,Health Sciences,Medium,Science Fair,1,Science,Business,2243,Diploma,92.5,8
+STU1541,17,Female,Public,Tutong,5.14,3.95,6,4,Business,Universiti Brunei Darussalam,1,Engineering,High,Science Fair,0,Humanities,Engineering,4900,High School,75.19,14
+STU1542,21,Male,Private,Brunei-Muara,8.72,5.97,7,1,Engineering,Universiti Brunei Darussalam,1,Health Sciences,High,Arts,1,Humanities,Engineering,4910,Degree,96.98,5
+STU1543,19,Female,Public,Tutong,6.19,2.85,7,2,Health Sciences,Politeknik Brunei,0,Education,Low,None,1,Humanities,Health Sciences,1394,Degree,81.58,9
+STU1544,19,Male,Private,Belait,6.19,8.51,4,4,Business,Universiti Brunei Darussalam,0,Health Sciences,Medium,None,1,Humanities,Business,3653,Degree,78.28,9
+STU1545,20,Female,Private,Brunei-Muara,6.2,6.9,9,1,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,High,Arts,0,Arts,Health Sciences,4739,Degree,99.68,19
+STU1546,17,Male,Public,Belait,8.77,5.67,9,4,Business,Universiti Brunei Darussalam,1,Education,Medium,None,1,Arts,Health Sciences,4982,Degree,83.83,12
+STU1547,19,Female,Public,Tutong,2.82,2.12,6,2,Business,Micronet International College,0,Engineering,Low,Arts,1,Business,Business,2113,Masters,96.41,14
+STU1548,17,Male,Private,Belait,3.07,6.22,8,2,Health Sciences,Micronet International College,1,Engineering,High,Debate,0,Technology,Health Sciences,3017,High School,87.7,12
+STU1549,19,Female,Private,Tutong,4.66,6.4,6,4,IT,International Graduate Studies College,1,IT,Medium,Sports,0,Humanities,Health Sciences,4871,Degree,96.89,7
+STU1550,20,Female,Private,Tutong,6.18,5.65,6,1,IT,Micronet International College,0,Engineering,Low,None,1,Humanities,Health Sciences,4309,High School,98.25,14
+STU1551,18,Female,Private,Tutong,7.31,2.76,9,4,Business,Micronet International College,1,Education,High,None,0,Science,Business,4655,Degree,93.53,10
+STU1552,17,Male,Private,Tutong,5.82,2.17,9,4,Education,Politeknik Brunei,0,IT,Medium,Science Fair,1,Arts,Education,3788,High School,77.61,10
+STU1553,20,Female,Public,Tutong,4.37,8.82,5,2,Engineering,Politeknik Brunei,0,Engineering,High,Sports,0,Business,Health Sciences,3786,Diploma,81.79,16
+STU1554,19,Male,Private,Tutong,8.94,8.62,9,4,Business,Universiti Brunei Darussalam,1,Business,Low,Arts,1,Business,Health Sciences,1683,Degree,86.86,8
+STU1555,20,Male,Private,Temburong,3.84,5.73,5,1,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Sports,1,Humanities,Health Sciences,2836,High School,97.59,18
+STU1556,19,Male,Private,Temburong,3.61,2.87,5,4,Education,International Graduate Studies College,1,IT,Medium,Arts,0,Science,Engineering,4195,Degree,90.77,14
+STU1557,18,Male,Public,Belait,8.19,7.73,4,3,Business,Politeknik Brunei,0,Education,High,Science Fair,1,Business,IT,2407,High School,86.35,10
+STU1558,17,Male,Public,Belait,5.43,2.9,7,2,IT,Micronet International College,1,Engineering,High,None,1,Technology,Business,2044,Masters,99.17,9
+STU1559,17,Female,Public,Temburong,4.46,8.57,6,2,Engineering,Politeknik Brunei,1,Education,Medium,Science Fair,1,Technology,Education,3258,High School,90.9,14
+STU1560,21,Male,Public,Temburong,6.59,6.9,7,1,Business,Universiti Brunei Darussalam,1,Business,Medium,Arts,1,Business,Engineering,1416,Diploma,97.95,7
+STU1561,18,Female,Private,Belait,4.4,3.06,9,4,IT,Politeknik Brunei,1,Business,Medium,Arts,0,Business,Education,1994,High School,92.4,12
+STU1562,17,Female,Public,Tutong,6.29,7.5,8,4,Business,Universiti Brunei Darussalam,0,Business,Low,Arts,1,Business,Engineering,2167,Degree,86.03,11
+STU1563,17,Female,Private,Belait,2.63,6.14,8,4,Engineering,International Graduate Studies College,0,Engineering,Medium,Sports,0,Arts,Health Sciences,1770,Diploma,81.86,5
+STU1564,19,Male,Public,Brunei-Muara,7.74,2.59,6,3,Education,Micronet International College,1,Business,Medium,Debate,0,Business,Health Sciences,2489,High School,99.94,11
+STU1565,21,Male,Public,Temburong,3.04,5.93,4,2,IT,International Graduate Studies College,1,Health Sciences,Low,None,1,Humanities,Engineering,2874,High School,77.82,18
+STU1566,17,Female,Private,Tutong,4.86,2.39,4,2,Engineering,Universiti Brunei Darussalam,1,Education,Low,Science Fair,1,Humanities,Business,1189,Diploma,94.96,17
+STU1567,21,Male,Public,Belait,5.13,3.3,4,3,Education,Politeknik Brunei,1,Business,High,Sports,0,Arts,Education,3972,Masters,87.82,5
+STU1568,17,Female,Private,Temburong,6.43,7.87,8,1,IT,International Graduate Studies College,1,Engineering,Medium,Science Fair,1,Science,Engineering,1876,Diploma,89.97,9
+STU1569,18,Female,Private,Belait,8.02,7.1,7,2,Business,International Graduate Studies College,0,IT,Low,Arts,1,Science,Education,4507,Diploma,79.38,8
+STU1570,21,Female,Public,Temburong,6.82,2.26,5,1,Business,International Graduate Studies College,1,Business,Low,Science Fair,0,Arts,Health Sciences,1784,Masters,89.8,6
+STU1571,19,Male,Public,Temburong,5.94,2.42,9,2,Education,Universiti Brunei Darussalam,0,IT,Medium,Science Fair,1,Business,Engineering,3640,Degree,86.29,8
+STU1572,17,Female,Private,Temburong,5.08,8.83,5,2,Education,Universiti Brunei Darussalam,1,IT,Low,Debate,1,Humanities,Engineering,1269,Diploma,78.51,6
+STU1573,17,Female,Public,Belait,3.17,6.68,8,1,Education,Micronet International College,1,Business,High,Arts,1,Arts,Business,2347,High School,77.16,10
+STU1574,18,Male,Public,Brunei-Muara,8.46,2.71,7,3,IT,Politeknik Brunei,1,IT,Medium,Sports,1,Arts,Education,1611,Degree,82.91,8
+STU1575,21,Female,Public,Temburong,2.41,2.72,7,4,Education,Universiti Brunei Darussalam,0,Education,Medium,Sports,0,Business,Health Sciences,4874,Degree,76.77,12
+STU1576,21,Female,Private,Temburong,3.66,8.35,4,3,Education,Politeknik Brunei,1,Business,Low,Sports,0,Arts,Business,1555,Masters,85.18,17
+STU1577,20,Male,Public,Belait,2.17,3.25,9,2,Engineering,International Graduate Studies College,0,Engineering,Low,Sports,1,Technology,Education,3316,Diploma,80.21,11
+STU1578,20,Male,Public,Brunei-Muara,3.84,6.94,5,3,Health Sciences,Micronet International College,1,Education,Medium,None,1,Arts,Business,4526,Diploma,79.77,11
+STU1579,19,Female,Public,Belait,5.22,8.63,6,3,IT,Politeknik Brunei,0,Engineering,Low,Science Fair,1,Science,Health Sciences,3902,Diploma,93.35,10
+STU1580,17,Male,Private,Brunei-Muara,6.23,4.7,7,2,Engineering,International Graduate Studies College,0,Business,High,Sports,0,Science,Education,2059,Degree,91.28,19
+STU1581,17,Male,Private,Brunei-Muara,8.11,3.15,7,1,Health Sciences,Universiti Brunei Darussalam,0,IT,Low,Arts,1,Science,Business,4727,Degree,95.04,19
+STU1582,18,Male,Public,Brunei-Muara,3.43,3.54,9,3,Health Sciences,Politeknik Brunei,1,Business,Low,None,0,Technology,IT,1633,Diploma,90.56,8
+STU1583,20,Female,Private,Belait,6.82,7.1,5,1,Health Sciences,International Graduate Studies College,0,Education,Low,Arts,0,Business,Business,1970,Degree,96.84,15
+STU1584,21,Male,Private,Tutong,7.46,8.73,9,3,Health Sciences,Micronet International College,0,Business,Low,Science Fair,1,Humanities,Education,1585,Masters,82.77,19
+STU1585,20,Male,Public,Temburong,6.24,6.3,7,1,Engineering,International Graduate Studies College,1,Business,Medium,None,0,Science,IT,3991,Degree,88.04,11
+STU1586,19,Male,Public,Belait,7.85,4.22,7,4,Engineering,Micronet International College,0,Business,High,None,0,Science,Education,3111,High School,95.21,16
+STU1587,18,Male,Private,Belait,8.7,5.52,6,1,Engineering,Micronet International College,1,Education,High,Science Fair,1,Science,Engineering,4341,High School,89.67,19
+STU1588,20,Female,Public,Belait,2.47,4.85,9,4,IT,Micronet International College,1,Engineering,Low,Sports,1,Humanities,Education,3668,Degree,91.37,10
+STU1589,17,Female,Public,Belait,7.81,4.73,6,2,IT,Universiti Brunei Darussalam,0,Engineering,High,None,1,Science,IT,1034,Diploma,96.42,18
+STU1590,21,Female,Private,Tutong,5.07,3.01,6,3,Engineering,Universiti Brunei Darussalam,0,Business,Low,Arts,0,Arts,Engineering,4196,Masters,92.28,16
+STU1591,18,Female,Private,Belait,2.54,3.83,9,1,Business,Universiti Brunei Darussalam,0,Education,Medium,Arts,1,Arts,Education,1353,Masters,92.1,11
+STU1592,18,Female,Private,Temburong,3.79,2.95,7,4,Education,International Graduate Studies College,1,Engineering,High,Debate,1,Technology,Business,1127,Degree,97.84,8
+STU1593,19,Female,Public,Temburong,4.65,7.61,5,4,Education,Universiti Brunei Darussalam,0,IT,Low,Arts,1,Arts,Health Sciences,1633,Diploma,93.3,13
+STU1594,17,Male,Private,Tutong,2.06,3.27,6,4,Engineering,International Graduate Studies College,0,Health Sciences,Medium,Sports,1,Business,Business,4844,Degree,98.83,17
+STU1595,19,Female,Public,Temburong,8.78,4.58,9,1,Health Sciences,Politeknik Brunei,1,IT,Low,Sports,1,Technology,Engineering,1401,Masters,88.92,10
+STU1596,20,Male,Private,Temburong,3,2.24,9,1,IT,International Graduate Studies College,0,Health Sciences,Medium,Sports,0,Technology,IT,4412,High School,86.06,10
+STU1597,17,Male,Private,Temburong,5.07,5.41,7,3,Business,International Graduate Studies College,0,Business,Low,None,0,Humanities,IT,2662,High School,97.88,5
+STU1598,18,Female,Public,Temburong,2.12,8.46,8,1,Engineering,Politeknik Brunei,1,Health Sciences,Low,None,0,Business,Business,1963,High School,89.13,7
+STU1599,21,Male,Private,Brunei-Muara,5.52,7.97,4,1,Engineering,Universiti Brunei Darussalam,1,Health Sciences,Medium,Arts,0,Technology,Education,2491,Degree,92.83,15
+STU1600,20,Female,Private,Brunei-Muara,3.89,2.56,9,3,Education,Universiti Brunei Darussalam,0,IT,Medium,None,0,Humanities,Education,1300,High School,99.69,19
+STU1601,21,Female,Public,Brunei-Muara,3.09,7.61,8,3,IT,International Graduate Studies College,1,Health Sciences,Medium,Debate,1,Technology,IT,3290,Degree,89.22,8
+STU1602,19,Female,Public,Brunei-Muara,3.48,6.63,7,4,Education,Micronet International College,1,Health Sciences,Medium,Arts,1,Science,Health Sciences,4298,Masters,86.56,7
+STU1603,17,Male,Public,Tutong,3,3.97,4,4,Business,Politeknik Brunei,1,Business,Medium,Arts,0,Humanities,Business,1449,Degree,95.59,7
+STU1604,20,Female,Public,Temburong,8.29,7.31,9,1,IT,Universiti Brunei Darussalam,1,Engineering,Medium,None,1,Business,IT,3095,High School,85.62,10
+STU1605,19,Female,Private,Brunei-Muara,8.79,6.48,4,1,Business,Politeknik Brunei,0,Education,Medium,Arts,1,Business,IT,2856,Diploma,81.21,6
+STU1606,20,Female,Private,Temburong,7.48,5.35,9,3,Health Sciences,Universiti Brunei Darussalam,0,Business,High,Arts,0,Arts,Health Sciences,2850,Masters,86.62,16
+STU1607,18,Female,Public,Belait,5.57,4.47,9,3,Health Sciences,International Graduate Studies College,1,Engineering,Low,None,1,Humanities,Engineering,3468,High School,99.01,8
+STU1608,17,Female,Public,Belait,3.82,6.55,5,2,Education,Universiti Brunei Darussalam,1,Education,Low,None,0,Business,IT,2772,Masters,92.46,13
+STU1609,18,Male,Private,Temburong,2.99,8.64,7,2,Business,Politeknik Brunei,0,Education,Low,None,0,Technology,Education,4844,Degree,90.65,7
+STU1610,21,Male,Private,Temburong,8.58,7.71,9,2,Business,Universiti Brunei Darussalam,0,Education,Medium,Sports,0,Technology,Health Sciences,2071,Diploma,93.76,13
+STU1611,17,Female,Public,Brunei-Muara,6.88,8.05,4,1,Business,Politeknik Brunei,1,Engineering,Low,Debate,1,Arts,Health Sciences,2370,Masters,99.71,10
+STU1612,18,Male,Private,Brunei-Muara,3.49,7.67,6,1,Business,Politeknik Brunei,1,IT,Low,None,0,Science,Education,2793,Masters,76.5,19
+STU1613,18,Male,Private,Brunei-Muara,8.7,8,5,1,Business,Micronet International College,1,IT,High,None,1,Humanities,Business,4341,Degree,77.42,18
+STU1614,18,Male,Private,Tutong,6.78,4.78,7,2,Health Sciences,Politeknik Brunei,0,IT,Low,Sports,0,Science,IT,3381,Diploma,75.99,18
+STU1615,19,Female,Public,Tutong,2.4,5.81,5,4,Business,Universiti Brunei Darussalam,0,Business,Medium,Debate,1,Business,Education,2237,Diploma,83.73,6
+STU1616,17,Male,Public,Temburong,8.37,7.64,8,4,Health Sciences,Politeknik Brunei,0,IT,Medium,None,0,Science,Business,1902,Diploma,85.63,9
+STU1617,17,Female,Public,Belait,8.29,4.99,9,4,Education,Politeknik Brunei,0,Education,Low,Science Fair,1,Humanities,IT,4946,High School,97.63,18
+STU1618,21,Male,Public,Brunei-Muara,5.71,8.13,9,2,Health Sciences,International Graduate Studies College,1,Health Sciences,High,Arts,0,Technology,Business,4729,Diploma,99.21,19
+STU1619,17,Male,Public,Tutong,6,6.9,9,3,Health Sciences,Micronet International College,0,IT,High,Debate,1,Technology,Education,2758,Degree,99.64,13
+STU1620,18,Female,Public,Brunei-Muara,2.14,7.74,4,3,Health Sciences,Universiti Brunei Darussalam,0,Business,Low,Arts,0,Humanities,Education,1602,Diploma,94.97,16
+STU1621,17,Female,Private,Belait,5.46,7.75,7,2,Business,Universiti Brunei Darussalam,0,IT,Medium,Science Fair,1,Technology,Education,2034,High School,90.26,15
+STU1622,19,Female,Private,Temburong,2.35,2.41,5,4,Health Sciences,International Graduate Studies College,1,Education,Low,Sports,0,Science,Education,4929,Diploma,94.82,7
+STU1623,19,Female,Private,Temburong,7.5,7.14,7,2,Engineering,Universiti Brunei Darussalam,0,Engineering,Medium,Sports,0,Arts,Education,1216,Degree,85.07,10
+STU1624,17,Female,Public,Tutong,5.97,5.69,9,3,IT,Universiti Brunei Darussalam,0,Engineering,Medium,Sports,0,Business,Health Sciences,1401,Diploma,80.14,14
+STU1625,20,Female,Public,Brunei-Muara,7.91,3.67,5,2,Business,Universiti Brunei Darussalam,0,Education,High,Arts,0,Humanities,Education,3852,Masters,94.54,19
+STU1626,17,Male,Public,Tutong,2.22,4.4,7,2,Engineering,Politeknik Brunei,0,Health Sciences,Medium,Arts,1,Business,Health Sciences,3424,Masters,94.73,19
+STU1627,19,Male,Public,Brunei-Muara,6.23,8.38,5,3,Business,Universiti Brunei Darussalam,1,Health Sciences,High,Science Fair,0,Arts,Business,3583,High School,83.12,11
+STU1628,17,Female,Private,Belait,6.19,4.57,4,2,Engineering,Politeknik Brunei,1,Engineering,Low,Arts,1,Science,Education,1980,Diploma,94.56,10
+STU1629,18,Female,Private,Belait,4.08,5.94,6,1,Engineering,Universiti Brunei Darussalam,0,Engineering,High,None,1,Technology,Engineering,3095,High School,83.38,12
+STU1630,19,Female,Private,Belait,7.88,4.47,4,1,Health Sciences,Universiti Brunei Darussalam,0,Education,High,Arts,1,Business,Education,4221,Diploma,92.54,9
+STU1631,19,Female,Private,Temburong,2.31,6.22,4,3,Education,Micronet International College,0,Education,Medium,Arts,0,Technology,IT,1514,Diploma,82.79,8
+STU1632,19,Female,Public,Brunei-Muara,8.24,2.31,9,1,IT,Politeknik Brunei,0,IT,Medium,Science Fair,1,Arts,Business,4602,Degree,89.28,15
+STU1633,21,Male,Public,Tutong,2.56,2.05,7,4,Education,Micronet International College,1,Health Sciences,Low,None,1,Arts,Business,4867,High School,99.3,15
+STU1634,20,Male,Private,Brunei-Muara,2.49,4.6,9,3,IT,International Graduate Studies College,0,Health Sciences,Low,Arts,1,Technology,Business,3870,Degree,87.76,18
+STU1635,17,Female,Private,Brunei-Muara,5.78,4.19,7,3,Business,International Graduate Studies College,1,Engineering,Medium,Arts,1,Technology,IT,4592,High School,97.12,8
+STU1636,19,Male,Public,Tutong,8.15,2.22,7,1,Education,Micronet International College,1,Engineering,High,Sports,1,Science,Health Sciences,3549,Diploma,80.78,17
+STU1637,18,Female,Private,Tutong,6.42,7.53,9,1,Business,Politeknik Brunei,1,Health Sciences,Medium,Arts,1,Technology,Education,2023,Diploma,95.62,11
+STU1638,17,Female,Public,Belait,5.96,4.4,4,3,IT,Politeknik Brunei,0,IT,High,Arts,1,Business,Education,1729,High School,92.74,11
+STU1639,18,Male,Private,Temburong,7.6,7.76,7,3,Education,International Graduate Studies College,1,IT,Low,Sports,0,Humanities,Business,3822,Degree,96.25,14
+STU1640,19,Male,Private,Belait,6.72,6.97,8,2,Health Sciences,Micronet International College,0,Engineering,Medium,Arts,1,Arts,IT,2428,High School,81.1,8
+STU1641,17,Female,Private,Temburong,2.03,3.73,5,3,Engineering,Micronet International College,1,Health Sciences,Low,None,1,Humanities,Education,1092,Diploma,80.05,18
+STU1642,20,Female,Public,Belait,5.5,4.56,9,2,Health Sciences,Micronet International College,1,Education,Low,Science Fair,0,Humanities,Education,2002,Masters,88.03,9
+STU1643,20,Female,Public,Brunei-Muara,8.89,8.75,7,2,IT,International Graduate Studies College,1,Engineering,Low,Debate,0,Humanities,IT,4946,Masters,76.6,8
+STU1644,19,Female,Public,Belait,7.51,7.13,5,2,Education,Universiti Brunei Darussalam,0,Business,High,Debate,1,Technology,Business,1904,High School,75.25,12
+STU1645,20,Male,Private,Belait,7.86,7.16,8,1,IT,International Graduate Studies College,0,IT,Low,Debate,0,Humanities,Education,3964,Diploma,88.61,15
+STU1646,18,Male,Public,Belait,7.66,4.82,8,3,IT,Micronet International College,1,Business,Medium,None,1,Science,Education,4906,High School,99.57,15
+STU1647,20,Male,Public,Brunei-Muara,5.64,7.36,4,4,Engineering,International Graduate Studies College,0,Health Sciences,Medium,Sports,0,Technology,Education,2575,Degree,90.88,10
+STU1648,18,Male,Private,Tutong,2.6,5.45,6,1,IT,Universiti Brunei Darussalam,1,IT,Low,Science Fair,1,Humanities,Health Sciences,2904,Degree,95.85,8
+STU1649,17,Male,Private,Tutong,8.57,2.55,7,4,Education,Universiti Brunei Darussalam,1,IT,High,Science Fair,0,Science,Business,3117,High School,91.44,19
+STU1650,19,Female,Public,Belait,2.85,5.7,4,1,IT,International Graduate Studies College,0,Health Sciences,Medium,Debate,0,Business,Engineering,3091,Masters,77.28,10
+STU1651,20,Male,Private,Tutong,8.21,8.97,4,2,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,High,Science Fair,0,Humanities,Business,2081,Diploma,79.46,10
+STU1652,20,Female,Public,Temburong,2.57,2.28,8,4,Education,Universiti Brunei Darussalam,1,IT,Medium,Sports,1,Humanities,IT,4454,High School,79.9,7
+STU1653,18,Male,Public,Brunei-Muara,5.75,4.75,9,3,IT,Universiti Brunei Darussalam,1,Business,Low,Science Fair,0,Science,Engineering,2526,High School,98.13,11
+STU1654,19,Male,Public,Tutong,4.05,5.79,4,4,Health Sciences,Micronet International College,0,Engineering,Medium,Debate,1,Science,IT,4657,Masters,90.28,12
+STU1655,17,Male,Public,Belait,7.1,6.05,8,3,Health Sciences,Micronet International College,1,IT,Medium,Science Fair,1,Technology,Business,3690,Masters,78.37,10
+STU1656,17,Male,Private,Belait,2.97,6.06,4,3,Business,Politeknik Brunei,0,Engineering,High,Sports,1,Arts,IT,4673,Degree,76.73,14
+STU1657,18,Female,Public,Tutong,4.76,6.06,9,1,Education,Politeknik Brunei,1,Health Sciences,Medium,Science Fair,0,Business,Education,1069,Degree,81.05,15
+STU1658,19,Female,Public,Belait,5.89,6.07,4,3,Education,Politeknik Brunei,0,Health Sciences,Medium,None,1,Science,Engineering,3743,Degree,75.29,18
+STU1659,20,Female,Private,Tutong,4.58,7.04,8,4,Business,International Graduate Studies College,1,Education,High,None,1,Science,IT,1920,High School,77.25,19
+STU1660,17,Male,Private,Tutong,6.54,4.36,9,1,IT,International Graduate Studies College,1,IT,High,None,1,Science,Education,2916,Diploma,82.55,14
+STU1661,20,Male,Private,Belait,6.35,8.51,9,3,Health Sciences,Micronet International College,1,Education,High,Science Fair,1,Business,Business,1575,High School,82.51,5
+STU1662,19,Male,Public,Tutong,3.48,8.97,6,3,Education,Universiti Brunei Darussalam,1,Engineering,Low,Sports,1,Technology,Business,3500,Degree,88.85,5
+STU1663,17,Male,Private,Brunei-Muara,3.8,5.06,8,3,Education,Politeknik Brunei,1,Engineering,Low,Sports,0,Technology,Education,1545,Diploma,95.57,8
+STU1664,19,Female,Private,Belait,7.83,7.04,8,1,Education,Micronet International College,1,Education,Low,Debate,1,Science,Education,1757,Masters,95.19,9
+STU1665,20,Male,Public,Brunei-Muara,6.63,8.32,6,1,Education,Politeknik Brunei,1,Health Sciences,High,Arts,0,Business,Engineering,3549,High School,96.39,17
+STU1666,20,Female,Private,Tutong,3.52,8.47,8,2,Engineering,Politeknik Brunei,0,Engineering,Low,Sports,0,Science,Business,3936,Degree,95.1,12
+STU1667,21,Female,Private,Tutong,8.19,4.49,6,1,Business,International Graduate Studies College,1,Education,High,Science Fair,1,Arts,Health Sciences,1465,High School,81.53,17
+STU1668,19,Female,Private,Brunei-Muara,2.66,2.52,6,1,IT,Politeknik Brunei,1,Health Sciences,Low,Arts,0,Arts,Health Sciences,1036,Masters,98.79,11
+STU1669,19,Female,Public,Tutong,3.99,8.76,7,1,Education,Micronet International College,1,Health Sciences,High,Science Fair,1,Arts,IT,4563,Diploma,91.03,17
+STU1670,18,Male,Private,Belait,4.09,5.42,8,3,IT,Micronet International College,0,IT,Low,Science Fair,0,Business,Education,1756,Masters,82.22,7
+STU1671,17,Female,Public,Brunei-Muara,7.27,4.68,8,1,Business,Micronet International College,1,Engineering,High,Sports,1,Technology,Business,1643,Masters,75.1,6
+STU1672,17,Male,Private,Temburong,7.98,6.56,8,2,Health Sciences,Micronet International College,0,Business,Low,Sports,1,Technology,IT,4977,Masters,86.7,10
+STU1673,20,Female,Public,Brunei-Muara,7.95,3.97,4,3,Business,International Graduate Studies College,1,Education,Low,Debate,0,Arts,Engineering,1059,Masters,85.69,8
+STU1674,18,Female,Private,Belait,8.93,6.15,8,3,Education,Politeknik Brunei,0,Education,Medium,Sports,1,Humanities,Education,1235,Diploma,97.03,12
+STU1675,21,Female,Private,Temburong,5.83,3.28,4,1,Engineering,Universiti Brunei Darussalam,1,IT,High,Science Fair,0,Humanities,Engineering,4114,High School,75.82,17
+STU1676,21,Male,Public,Temburong,5.22,3.44,8,1,Business,Universiti Brunei Darussalam,1,Engineering,Medium,None,0,Arts,Business,2881,Masters,79.25,8
+STU1677,20,Male,Private,Tutong,4.47,3.86,4,4,Business,Universiti Brunei Darussalam,0,Education,Medium,Sports,0,Arts,Health Sciences,1161,Degree,84.38,18
+STU1678,17,Female,Private,Temburong,7.6,6.98,6,3,Engineering,Micronet International College,1,IT,Medium,Arts,1,Business,Engineering,3251,Degree,82.21,18
+STU1679,18,Male,Public,Tutong,6.66,2.12,8,4,Business,International Graduate Studies College,0,Education,Low,None,0,Humanities,Business,1194,Masters,84.21,15
+STU1680,18,Male,Public,Tutong,3.54,6.93,5,2,Education,Politeknik Brunei,1,Business,Low,Sports,1,Science,Business,2426,Degree,94.49,8
+STU1681,20,Male,Public,Temburong,2.13,7.54,9,3,Engineering,International Graduate Studies College,1,Business,Low,Debate,0,Technology,Business,4291,Masters,95.9,12
+STU1682,20,Male,Private,Temburong,5.88,4.59,8,2,IT,Micronet International College,1,IT,Low,Debate,1,Humanities,Health Sciences,1323,Diploma,90.94,19
+STU1683,18,Female,Private,Brunei-Muara,5.47,2.27,6,3,Engineering,Micronet International College,1,IT,High,None,0,Arts,Education,4509,High School,91.04,14
+STU1684,17,Female,Private,Brunei-Muara,8.12,8.71,9,3,Business,Micronet International College,0,Business,Medium,Arts,1,Business,Education,4565,High School,90.57,18
+STU1685,17,Male,Private,Tutong,3.91,4.61,7,1,Business,Micronet International College,0,IT,High,Sports,1,Arts,Health Sciences,2962,Diploma,98.87,9
+STU1686,21,Male,Private,Belait,7.9,7.96,5,4,Health Sciences,Universiti Brunei Darussalam,1,IT,High,Sports,0,Humanities,Health Sciences,1894,High School,85.03,10
+STU1687,17,Male,Private,Temburong,4.76,3.02,7,1,Health Sciences,Universiti Brunei Darussalam,0,IT,Medium,None,0,Arts,IT,4865,Diploma,83.81,11
+STU1688,18,Male,Public,Tutong,2.49,4.57,4,4,IT,Politeknik Brunei,0,Education,High,None,0,Technology,Business,1253,Diploma,91.28,12
+STU1689,18,Male,Public,Brunei-Muara,7.13,7.39,7,2,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,Medium,Arts,0,Science,IT,1202,High School,98.69,7
+STU1690,17,Male,Public,Tutong,6.06,4.46,8,2,Business,Universiti Brunei Darussalam,0,IT,Low,Debate,0,Business,Education,4758,High School,97.71,11
+STU1691,21,Female,Private,Brunei-Muara,7.34,3.78,8,2,Business,International Graduate Studies College,0,Health Sciences,Medium,Debate,1,Arts,Education,1986,High School,84.05,15
+STU1692,20,Male,Public,Belait,5.11,2.46,4,2,Engineering,Micronet International College,0,Engineering,High,Sports,0,Humanities,Health Sciences,4719,Degree,90.11,12
+STU1693,20,Male,Private,Tutong,6.05,2.86,9,2,Health Sciences,International Graduate Studies College,0,IT,Low,Arts,0,Science,IT,3570,Degree,82.71,9
+STU1694,17,Male,Public,Belait,6.08,6.2,5,3,Education,Politeknik Brunei,1,Education,Medium,Arts,0,Technology,Engineering,3829,Diploma,77.42,15
+STU1695,21,Male,Private,Tutong,7.47,3.57,9,1,Engineering,Politeknik Brunei,0,Health Sciences,High,Science Fair,1,Humanities,Education,3497,Diploma,84.36,19
+STU1696,21,Female,Public,Tutong,5.41,4.29,5,3,IT,Micronet International College,1,Education,Low,Science Fair,1,Humanities,Education,2607,Degree,94.32,15
+STU1697,21,Male,Private,Tutong,3.83,2.38,6,4,Business,International Graduate Studies College,1,IT,High,Arts,0,Technology,Education,3246,High School,77.35,14
+STU1698,19,Female,Public,Brunei-Muara,8.68,5.79,8,1,Engineering,International Graduate Studies College,0,Engineering,High,Debate,0,Arts,IT,2841,Degree,96.4,10
+STU1699,20,Male,Public,Tutong,6.74,3.44,9,1,Business,Universiti Brunei Darussalam,1,Engineering,High,Sports,0,Business,Education,3743,Degree,91.26,18
+STU1700,21,Female,Public,Tutong,5.89,4.62,6,4,Business,Micronet International College,0,Education,High,Arts,0,Science,Health Sciences,3395,High School,81.23,9
+STU1701,21,Male,Public,Tutong,4.96,2.18,8,4,Health Sciences,Politeknik Brunei,0,Engineering,Low,Science Fair,0,Business,IT,4097,Masters,82.21,10
+STU1702,17,Male,Public,Belait,5.81,4.55,9,4,Engineering,International Graduate Studies College,1,Engineering,Medium,Debate,0,Technology,Engineering,3743,Masters,83.3,19
+STU1703,21,Male,Public,Belait,4.16,4.02,9,3,Business,International Graduate Studies College,0,Health Sciences,High,Sports,0,Business,Engineering,4142,High School,76.31,7
+STU1704,19,Female,Private,Belait,5.79,8.69,7,2,Health Sciences,Universiti Brunei Darussalam,1,Education,Low,Science Fair,1,Science,Engineering,3021,Degree,91.78,15
+STU1705,20,Female,Public,Temburong,8.9,3.6,7,4,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,High,Debate,0,Technology,Business,4679,Degree,87.37,9
+STU1706,18,Female,Private,Brunei-Muara,8.66,3.5,7,1,Engineering,Micronet International College,1,Business,Low,Arts,1,Humanities,Education,1875,High School,87.84,17
+STU1707,20,Male,Public,Tutong,4.17,4.21,7,2,Engineering,Universiti Brunei Darussalam,1,Engineering,High,Sports,0,Business,Education,1416,Degree,83.39,8
+STU1708,21,Male,Public,Belait,7.92,2.36,4,4,Business,Micronet International College,1,Health Sciences,Low,Arts,0,Humanities,Business,1832,High School,86.61,5
+STU1709,17,Male,Private,Belait,6.6,7.95,6,3,Health Sciences,International Graduate Studies College,0,Education,Medium,Sports,1,Arts,IT,4727,Degree,90.4,15
+STU1710,17,Male,Private,Temburong,7.85,3.2,7,1,Health Sciences,Politeknik Brunei,0,IT,Low,None,0,Humanities,IT,4327,Masters,76.51,16
+STU1711,21,Male,Private,Tutong,7.98,6.76,6,2,Engineering,International Graduate Studies College,0,Education,Medium,Arts,0,Arts,Business,4848,High School,94.96,17
+STU1712,20,Female,Public,Temburong,2.62,4.24,7,2,IT,Politeknik Brunei,1,Health Sciences,High,Debate,1,Humanities,Education,1785,Masters,92.82,13
+STU1713,18,Male,Private,Tutong,7.08,8.15,4,3,Business,Micronet International College,1,Business,High,Debate,1,Business,IT,4003,Masters,82.23,15
+STU1714,17,Female,Private,Belait,8.74,6.14,8,2,Engineering,Politeknik Brunei,0,Business,Low,Science Fair,1,Arts,Health Sciences,4474,Degree,89.08,7
+STU1715,20,Female,Private,Belait,6.35,5.18,4,4,Business,Politeknik Brunei,0,Education,Low,Arts,1,Arts,IT,3472,Masters,82.6,6
+STU1716,20,Male,Private,Brunei-Muara,8.08,6.28,6,1,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Arts,0,Science,Engineering,3762,Masters,80.22,5
+STU1717,21,Female,Public,Brunei-Muara,8.12,5.6,9,3,IT,International Graduate Studies College,0,Education,Medium,Sports,0,Humanities,Business,4457,Diploma,90.43,12
+STU1718,18,Female,Public,Belait,8.95,6.12,7,1,Education,International Graduate Studies College,0,IT,High,None,0,Science,Education,4669,Masters,87.62,13
+STU1719,19,Female,Public,Temburong,6.23,8.83,8,3,Engineering,Politeknik Brunei,0,Business,High,Debate,1,Arts,IT,3379,High School,80.2,5
+STU1720,17,Male,Private,Brunei-Muara,4.75,3.24,4,1,Education,International Graduate Studies College,0,IT,Low,None,0,Business,Education,2295,Masters,87.17,5
+STU1721,21,Male,Private,Brunei-Muara,5.26,2.13,5,2,IT,International Graduate Studies College,1,IT,Medium,Sports,1,Science,Education,2299,Diploma,83.44,16
+STU1722,21,Male,Public,Brunei-Muara,6.73,2.2,9,1,Health Sciences,Politeknik Brunei,0,Health Sciences,Medium,Sports,1,Arts,Engineering,4935,High School,80.53,6
+STU1723,19,Male,Private,Temburong,5.75,4.13,6,4,Education,International Graduate Studies College,0,Health Sciences,High,Science Fair,0,Humanities,Education,4220,Degree,78.87,16
+STU1724,17,Female,Public,Belait,6.49,7.59,4,4,Engineering,Micronet International College,0,IT,High,Science Fair,0,Science,Engineering,4494,Diploma,75.34,10
+STU1725,21,Male,Private,Temburong,7.56,3.95,5,3,Engineering,International Graduate Studies College,1,Education,Low,Debate,0,Technology,Education,4926,Diploma,96.38,9
+STU1726,18,Male,Public,Temburong,5.89,3.86,8,1,Business,International Graduate Studies College,0,Engineering,Low,None,0,Humanities,IT,4667,Masters,79.93,16
+STU1727,19,Female,Public,Belait,8.79,7.17,7,4,Business,Micronet International College,1,Education,High,Science Fair,1,Business,IT,1131,Diploma,89.23,19
+STU1728,20,Female,Private,Tutong,6.9,4.97,9,4,Education,Micronet International College,0,Engineering,Low,Arts,1,Science,IT,2253,Masters,81.21,16
+STU1729,21,Male,Public,Tutong,3.34,4.59,8,4,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,High,Sports,0,Technology,IT,4482,Masters,93.59,5
+STU1730,19,Female,Public,Temburong,3.29,5.41,4,4,Engineering,Universiti Brunei Darussalam,0,Business,High,Sports,1,Arts,IT,4951,Degree,81.03,8
+STU1731,19,Male,Public,Tutong,2.01,3.87,8,4,IT,Micronet International College,0,Engineering,Low,Debate,0,Business,Education,2338,Degree,81.26,16
+STU1732,17,Female,Public,Belait,6.21,4.04,6,4,Business,Micronet International College,0,Engineering,Low,Debate,1,Humanities,Health Sciences,1307,Degree,96.28,15
+STU1733,17,Male,Private,Temburong,6.5,5.68,6,3,Business,Politeknik Brunei,0,Education,High,Sports,0,Arts,Education,3050,Masters,90.43,16
+STU1734,17,Female,Public,Belait,2.1,3.3,5,1,Business,International Graduate Studies College,0,IT,High,Science Fair,1,Humanities,IT,2702,High School,99.92,7
+STU1735,20,Female,Public,Tutong,8.57,7.72,7,1,Education,International Graduate Studies College,1,Education,High,Arts,1,Business,Education,3956,High School,86.42,7
+STU1736,18,Male,Private,Brunei-Muara,5.8,8.19,4,4,Health Sciences,International Graduate Studies College,1,Business,Medium,Sports,0,Humanities,Health Sciences,3918,Degree,78.62,18
+STU1737,19,Male,Private,Temburong,6.23,2.3,9,1,Business,Politeknik Brunei,0,Business,Low,None,0,Arts,IT,2978,Masters,81.38,17
+STU1738,20,Female,Public,Brunei-Muara,5.68,7.68,4,4,Engineering,International Graduate Studies College,1,Education,Low,None,1,Humanities,IT,4904,Masters,75.59,13
+STU1739,19,Female,Private,Belait,7.63,3.84,8,4,Business,International Graduate Studies College,0,IT,High,Sports,1,Arts,IT,3221,Masters,86.65,8
+STU1740,17,Female,Private,Belait,7.87,6.3,6,4,Business,Politeknik Brunei,0,Business,High,Arts,1,Humanities,IT,2817,Degree,91.77,16
+STU1741,18,Male,Private,Belait,3.69,3.59,5,3,IT,Politeknik Brunei,0,Health Sciences,Low,None,1,Humanities,Engineering,3152,Degree,81.28,11
+STU1742,19,Male,Private,Brunei-Muara,3.49,4.09,6,2,Engineering,Universiti Brunei Darussalam,0,Business,High,Debate,0,Technology,Health Sciences,3056,High School,87.98,6
+STU1743,20,Female,Private,Tutong,3.21,2.87,7,1,Business,Universiti Brunei Darussalam,1,Business,Medium,Arts,0,Business,Engineering,4905,Degree,93.54,9
+STU1744,18,Male,Private,Brunei-Muara,4.11,5.81,6,1,Health Sciences,International Graduate Studies College,1,Engineering,Medium,Arts,0,Business,Education,2309,Degree,98.88,5
+STU1745,18,Male,Private,Tutong,4.77,6.61,9,4,Health Sciences,Politeknik Brunei,0,Business,Medium,Science Fair,1,Technology,Engineering,1239,Diploma,90.41,13
+STU1746,21,Male,Private,Brunei-Muara,7.65,4.16,6,4,Engineering,International Graduate Studies College,0,Education,Medium,Science Fair,1,Technology,Business,3324,Degree,83.72,19
+STU1747,17,Female,Public,Belait,7.16,2.05,9,3,Engineering,Micronet International College,1,Engineering,Medium,None,1,Arts,Health Sciences,3086,Degree,78.85,13
+STU1748,18,Male,Public,Tutong,5.85,7.96,4,3,Education,Politeknik Brunei,0,IT,Low,Sports,0,Science,Health Sciences,1862,High School,92.07,14
+STU1749,20,Male,Private,Belait,3.86,7.68,4,3,Health Sciences,Politeknik Brunei,1,Health Sciences,High,Sports,1,Technology,Health Sciences,1521,Degree,92.86,11
+STU1750,21,Female,Public,Tutong,2.7,3.13,9,2,IT,Politeknik Brunei,1,Business,Medium,None,1,Business,Business,1038,Diploma,86.37,18
+STU1751,18,Female,Private,Tutong,3.36,2.01,5,3,Business,Politeknik Brunei,0,IT,Medium,None,0,Technology,IT,4533,Diploma,99.01,8
+STU1752,18,Male,Private,Belait,4.11,7.8,5,2,IT,Universiti Brunei Darussalam,1,Health Sciences,High,None,1,Business,Education,3251,Diploma,99.72,13
+STU1753,19,Male,Private,Brunei-Muara,6.22,3.21,9,1,Health Sciences,Universiti Brunei Darussalam,1,IT,Medium,Science Fair,1,Business,Health Sciences,1285,Degree,88.85,12
+STU1754,20,Male,Public,Temburong,6.96,8.05,9,1,Engineering,Universiti Brunei Darussalam,0,Health Sciences,Medium,Sports,0,Business,Education,2742,Diploma,84.41,17
+STU1755,19,Male,Private,Temburong,4.36,2.89,5,1,Health Sciences,Micronet International College,1,Engineering,High,Debate,1,Business,Education,4395,High School,77.53,10
+STU1756,21,Female,Private,Belait,5.18,4.39,9,4,Business,International Graduate Studies College,1,Business,High,Sports,0,Science,IT,3765,Diploma,80.08,14
+STU1757,18,Female,Private,Tutong,8.46,3.04,8,4,Business,Universiti Brunei Darussalam,0,IT,Medium,Debate,0,Technology,Health Sciences,1281,Degree,87.06,6
+STU1758,17,Female,Private,Brunei-Muara,5.4,3.52,8,1,Education,International Graduate Studies College,0,Engineering,High,Sports,0,Technology,Health Sciences,1088,Diploma,87.58,6
+STU1759,18,Male,Private,Temburong,5.52,6.01,7,1,Health Sciences,Universiti Brunei Darussalam,1,IT,High,Science Fair,0,Arts,Education,4564,Masters,83.8,17
+STU1760,19,Male,Public,Belait,8.69,6.17,4,2,Business,Universiti Brunei Darussalam,0,IT,Medium,Arts,1,Business,Health Sciences,4259,Degree,93.6,13
+STU1761,21,Male,Private,Temburong,5.16,6.81,6,1,IT,Micronet International College,0,Education,Low,Science Fair,0,Science,Engineering,2970,High School,77.63,12
+STU1762,21,Female,Private,Tutong,7.59,7.91,5,1,IT,Micronet International College,0,IT,High,Debate,0,Humanities,IT,4702,Masters,79.64,11
+STU1763,19,Female,Public,Tutong,4.18,8.79,8,2,Education,Politeknik Brunei,1,IT,Low,Science Fair,1,Humanities,Education,2481,Degree,95.88,15
+STU1764,20,Male,Private,Tutong,6.54,4.22,4,1,Business,Universiti Brunei Darussalam,0,IT,Medium,None,1,Arts,Business,2462,Masters,91.11,17
+STU1765,18,Female,Private,Belait,8.34,6.26,8,2,Health Sciences,Politeknik Brunei,0,Engineering,High,Debate,1,Science,Business,1104,Diploma,95.29,17
+STU1766,19,Male,Private,Brunei-Muara,4.91,5.54,5,3,Health Sciences,Micronet International College,1,IT,Medium,Sports,0,Science,IT,1216,Diploma,99.68,11
+STU1767,20,Male,Private,Brunei-Muara,2.35,2.39,9,1,Engineering,Micronet International College,1,Health Sciences,Low,Debate,1,Humanities,IT,1799,Masters,78.54,12
+STU1768,19,Male,Public,Tutong,3.12,7.07,9,4,Health Sciences,Politeknik Brunei,0,Engineering,Medium,None,1,Humanities,IT,2232,Masters,81.41,13
+STU1769,21,Female,Private,Tutong,3.29,5.61,6,4,Education,Micronet International College,1,IT,Medium,None,0,Technology,Health Sciences,2617,Diploma,80.29,6
+STU1770,21,Female,Public,Brunei-Muara,7.9,7.84,4,2,Engineering,International Graduate Studies College,0,Education,Low,Science Fair,1,Science,Engineering,1468,Diploma,87.19,14
+STU1771,18,Female,Public,Belait,4.43,3.95,7,3,Engineering,International Graduate Studies College,0,Business,Medium,None,1,Science,Health Sciences,3555,Masters,93.12,15
+STU1772,20,Female,Public,Belait,2.65,5.96,9,4,Education,International Graduate Studies College,1,Health Sciences,Low,Arts,0,Technology,IT,3929,Masters,77.8,16
+STU1773,19,Male,Public,Brunei-Muara,7.45,5.33,5,4,Business,Politeknik Brunei,1,Engineering,Low,Science Fair,0,Technology,Engineering,4158,High School,77.94,18
+STU1774,21,Female,Private,Belait,8.24,3.59,5,2,Health Sciences,Micronet International College,0,Health Sciences,Medium,None,1,Business,Engineering,2150,High School,76.52,6
+STU1775,19,Female,Private,Tutong,4.79,8.49,7,2,Education,International Graduate Studies College,0,IT,High,Science Fair,0,Humanities,Health Sciences,4074,Masters,86.01,10
+STU1776,18,Female,Private,Temburong,3.63,6.18,8,4,Engineering,Politeknik Brunei,1,Education,Low,Debate,1,Arts,IT,3015,Degree,80.99,8
+STU1777,18,Female,Private,Temburong,2.74,4.46,7,4,Engineering,International Graduate Studies College,1,Engineering,Medium,Debate,1,Science,Business,2280,Diploma,94.69,14
+STU1778,19,Female,Private,Temburong,6.07,5.6,9,3,Education,Universiti Brunei Darussalam,0,Education,Medium,Arts,0,Science,Health Sciences,1003,Diploma,91.93,11
+STU1779,18,Male,Public,Temburong,8.74,2.25,7,3,Education,Universiti Brunei Darussalam,1,IT,Medium,Science Fair,0,Humanities,Business,3167,Degree,98.4,9
+STU1780,21,Male,Private,Brunei-Muara,5.4,4.88,5,1,Health Sciences,Micronet International College,1,Education,Medium,Science Fair,1,Technology,Business,3869,Degree,99.56,12
+STU1781,21,Male,Private,Brunei-Muara,7.43,4.11,4,4,Engineering,Micronet International College,1,Health Sciences,High,Debate,1,Arts,IT,3620,Masters,80.41,16
+STU1782,18,Female,Public,Tutong,6.88,3.96,4,3,Engineering,International Graduate Studies College,0,Health Sciences,High,Science Fair,1,Technology,Education,2434,Degree,96.38,15
+STU1783,20,Female,Public,Brunei-Muara,6.35,5.42,5,2,Engineering,Micronet International College,1,Business,Medium,None,1,Humanities,IT,4274,High School,99.6,5
+STU1784,21,Male,Public,Tutong,5.74,6.06,4,3,Business,Universiti Brunei Darussalam,0,Engineering,Low,Debate,0,Humanities,Business,4207,Degree,78.52,6
+STU1785,18,Male,Public,Temburong,2.01,8.79,8,2,IT,Universiti Brunei Darussalam,1,Business,High,Science Fair,0,Arts,IT,1856,Degree,92.75,17
+STU1786,20,Male,Private,Belait,3.3,8.93,8,2,Business,Universiti Brunei Darussalam,1,IT,High,Arts,0,Humanities,Business,1140,Diploma,79.66,14
+STU1787,19,Female,Private,Tutong,2.43,2.96,8,3,Education,Universiti Brunei Darussalam,0,Health Sciences,High,Sports,1,Business,Business,1844,Masters,78.34,17
+STU1788,17,Male,Public,Temburong,4.89,8.23,5,1,IT,Universiti Brunei Darussalam,0,Business,Medium,Debate,1,Technology,Engineering,2718,Diploma,95.58,16
+STU1789,18,Female,Public,Brunei-Muara,5.39,5.66,8,4,Engineering,Micronet International College,1,Engineering,Low,Debate,0,Business,Business,1887,High School,85.07,10
+STU1790,21,Male,Public,Tutong,5.99,3.64,8,4,Education,Universiti Brunei Darussalam,1,Business,Medium,Debate,0,Business,Education,3430,Degree,90.29,12
+STU1791,19,Female,Private,Temburong,6.8,6.32,6,1,Engineering,Micronet International College,0,Engineering,Low,Arts,0,Business,Health Sciences,1809,Degree,95,11
+STU1792,19,Female,Public,Temburong,8.62,4.54,8,4,Health Sciences,Politeknik Brunei,1,IT,High,Sports,1,Science,IT,1686,High School,99.14,17
+STU1793,20,Female,Private,Tutong,8.61,7.56,4,2,Health Sciences,Micronet International College,1,Education,High,Arts,1,Humanities,Business,2779,Diploma,91.63,5
+STU1794,18,Male,Public,Brunei-Muara,3.48,6.51,9,3,Engineering,International Graduate Studies College,1,Health Sciences,High,Science Fair,0,Humanities,Education,2864,Degree,94.9,6
+STU1795,19,Male,Private,Tutong,2.91,6.46,9,2,IT,International Graduate Studies College,1,Education,High,Science Fair,1,Business,Engineering,3403,Degree,93,6
+STU1796,19,Male,Private,Temburong,7.03,6.56,6,4,Business,Politeknik Brunei,0,Business,Low,Debate,0,Technology,Health Sciences,2060,Masters,88.54,16
+STU1797,18,Male,Public,Temburong,8.48,8.45,9,2,Education,International Graduate Studies College,1,Business,High,None,1,Arts,Engineering,4783,Degree,94.04,11
+STU1798,20,Male,Public,Tutong,2.95,8.7,4,4,Business,Micronet International College,1,Education,Medium,Arts,0,Humanities,Engineering,3703,Degree,79.2,16
+STU1799,20,Female,Private,Brunei-Muara,5.49,7.73,8,2,IT,Micronet International College,1,Education,Low,Debate,0,Arts,Business,2402,Degree,90.03,7
+STU1800,19,Female,Private,Temburong,2.13,6.85,6,2,Business,Micronet International College,1,Business,Low,Sports,1,Business,Health Sciences,2828,Degree,88.79,19
+STU1801,21,Male,Private,Tutong,3.88,6.46,5,2,Health Sciences,Politeknik Brunei,0,IT,Medium,Debate,0,Arts,IT,1753,Degree,80.84,11
+STU1802,20,Male,Private,Temburong,3.97,4.24,5,4,Education,Politeknik Brunei,1,IT,Medium,None,0,Science,IT,3297,High School,97.71,7
+STU1803,21,Male,Private,Belait,3.49,8.79,9,2,Business,Universiti Brunei Darussalam,1,Business,High,Sports,1,Business,Business,3107,Masters,89.76,9
+STU1804,17,Female,Private,Temburong,3.55,2.83,5,4,Health Sciences,International Graduate Studies College,1,Education,Low,Debate,1,Arts,IT,2129,High School,88.99,19
+STU1805,17,Male,Private,Tutong,8.59,5.81,5,3,Education,International Graduate Studies College,0,Education,Low,Debate,1,Science,Education,2431,Degree,99.11,19
+STU1806,21,Male,Public,Brunei-Muara,6.62,5.62,8,4,Education,Politeknik Brunei,0,Education,Medium,Sports,1,Business,Education,2681,Masters,75.44,17
+STU1807,18,Male,Private,Tutong,8.33,3.06,8,3,Business,International Graduate Studies College,1,Business,High,Arts,0,Technology,IT,1778,Degree,93.88,11
+STU1808,20,Female,Private,Tutong,4.31,4.64,6,1,Business,International Graduate Studies College,0,Education,Low,None,0,Arts,Education,1933,Degree,90.04,9
+STU1809,18,Male,Private,Tutong,8.83,4.01,9,1,Engineering,Politeknik Brunei,0,Health Sciences,High,Science Fair,1,Humanities,IT,4531,Diploma,76.35,15
+STU1810,19,Male,Private,Tutong,6.13,4.52,7,3,Business,Micronet International College,0,Engineering,Medium,Science Fair,1,Business,Business,2070,Masters,97.46,6
+STU1811,19,Male,Public,Temburong,3.49,3.7,8,4,Health Sciences,International Graduate Studies College,0,Engineering,Medium,None,0,Science,Engineering,4115,Degree,96.5,17
+STU1812,17,Female,Private,Temburong,6.13,2.69,4,4,Health Sciences,Micronet International College,0,Engineering,Medium,Arts,0,Business,Engineering,1016,Diploma,76.76,11
+STU1813,19,Male,Public,Belait,6.61,2.82,9,3,Health Sciences,Universiti Brunei Darussalam,1,IT,Medium,Sports,0,Arts,IT,1397,High School,98.26,11
+STU1814,20,Female,Private,Brunei-Muara,8.55,5.52,7,3,IT,Micronet International College,1,Education,Low,Arts,1,Technology,IT,4565,High School,77.83,16
+STU1815,17,Male,Private,Brunei-Muara,3.75,6.68,8,4,Engineering,Micronet International College,1,Engineering,Low,Debate,1,Technology,IT,1181,Masters,75.25,16
+STU1816,18,Male,Private,Tutong,3.48,5.29,6,4,Business,International Graduate Studies College,1,IT,Medium,Science Fair,0,Science,Education,2732,Diploma,79.09,11
+STU1817,19,Female,Public,Tutong,7.04,7.57,6,1,Health Sciences,Politeknik Brunei,0,Education,Low,Debate,0,Business,Engineering,2068,Masters,99.7,11
+STU1818,21,Male,Public,Tutong,4.95,6.22,8,1,Engineering,Universiti Brunei Darussalam,1,Engineering,Low,Science Fair,0,Humanities,IT,2796,Masters,93.48,17
+STU1819,21,Female,Public,Brunei-Muara,2.71,8.89,9,4,Engineering,Micronet International College,0,Education,Low,Sports,0,Humanities,Education,3458,Diploma,81.02,16
+STU1820,18,Male,Public,Temburong,5.44,2.54,8,1,Education,International Graduate Studies College,0,Health Sciences,High,Arts,1,Science,Health Sciences,3506,Masters,99.41,15
+STU1821,20,Male,Private,Belait,2,4.43,5,2,IT,Politeknik Brunei,1,Education,Medium,Science Fair,0,Arts,Business,2272,High School,77.81,7
+STU1822,18,Male,Public,Brunei-Muara,6.93,8.77,4,2,Health Sciences,Universiti Brunei Darussalam,1,Education,Low,Science Fair,1,Science,IT,2766,Diploma,76.02,5
+STU1823,18,Male,Private,Belait,7.78,7.63,7,1,Business,International Graduate Studies College,0,Health Sciences,Low,Science Fair,1,Humanities,Health Sciences,4713,High School,79.69,15
+STU1824,19,Female,Private,Belait,6.9,7.68,5,1,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,Debate,1,Arts,IT,2529,Diploma,99.34,17
+STU1825,17,Male,Private,Brunei-Muara,6.46,2.27,5,2,Engineering,Politeknik Brunei,1,Engineering,Medium,None,0,Arts,Engineering,2243,High School,96.39,13
+STU1826,18,Male,Public,Brunei-Muara,5.32,4.49,8,4,Business,Politeknik Brunei,0,Engineering,High,None,0,Humanities,IT,2518,Diploma,99.85,18
+STU1827,17,Male,Public,Brunei-Muara,5.69,3.89,7,2,IT,Micronet International College,0,Health Sciences,Low,Debate,1,Science,Business,1833,High School,91.04,7
+STU1828,19,Male,Public,Tutong,6.83,2.5,9,3,IT,Politeknik Brunei,1,Business,Low,Arts,0,Science,Education,3687,Degree,77.73,16
+STU1829,18,Female,Public,Temburong,7.9,4.21,4,3,IT,Universiti Brunei Darussalam,0,Business,High,Sports,0,Technology,Health Sciences,2603,Degree,81.29,11
+STU1830,17,Female,Public,Temburong,7.88,2.91,8,4,Health Sciences,International Graduate Studies College,0,Engineering,Medium,Sports,1,Science,Engineering,2382,Masters,78.07,8
+STU1831,20,Female,Private,Belait,3.52,4.68,7,1,Business,International Graduate Studies College,1,Health Sciences,Low,Sports,1,Technology,Health Sciences,4304,High School,99.28,15
+STU1832,19,Female,Public,Temburong,2.8,4.8,7,1,IT,Politeknik Brunei,1,Health Sciences,Low,Debate,1,Arts,Education,2183,High School,90.3,13
+STU1833,18,Male,Private,Tutong,2.33,6.42,6,2,Business,International Graduate Studies College,1,Education,Low,None,0,Technology,IT,3066,Diploma,84.02,10
+STU1834,20,Female,Private,Tutong,4.67,4.15,4,3,Health Sciences,Politeknik Brunei,1,Business,Low,Science Fair,1,Science,IT,3291,Masters,79.54,13
+STU1835,20,Male,Public,Temburong,6.37,4.67,8,3,IT,Politeknik Brunei,0,Health Sciences,Medium,Debate,0,Arts,IT,1076,High School,76.21,17
+STU1836,17,Female,Private,Belait,3.89,3.26,4,3,Health Sciences,Micronet International College,0,Engineering,Low,Science Fair,1,Business,Education,3388,High School,75.71,6
+STU1837,17,Female,Private,Temburong,6.27,3.11,4,4,Education,Politeknik Brunei,0,Business,Low,Sports,0,Technology,IT,4595,High School,84.77,15
+STU1838,18,Female,Public,Belait,6.18,5.71,9,3,Education,International Graduate Studies College,0,IT,Low,Sports,0,Humanities,Engineering,3586,Diploma,92.46,16
+STU1839,21,Female,Private,Temburong,3.77,5.9,4,2,Business,Universiti Brunei Darussalam,1,Education,High,None,1,Business,Education,2934,Masters,82.87,11
+STU1840,19,Female,Private,Brunei-Muara,5.17,3.72,9,1,Education,International Graduate Studies College,0,Health Sciences,Low,None,0,Humanities,Engineering,3376,Masters,87.64,10
+STU1841,20,Female,Public,Temburong,2.76,8.88,5,1,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,Medium,Arts,1,Science,Health Sciences,3245,Diploma,76.62,19
+STU1842,20,Male,Private,Temburong,2.19,7.24,5,4,IT,Politeknik Brunei,1,Health Sciences,Low,Arts,0,Humanities,Business,3962,High School,83.03,18
+STU1843,20,Female,Public,Brunei-Muara,3.76,8.54,4,3,IT,Universiti Brunei Darussalam,1,Engineering,High,Debate,1,Humanities,IT,1745,Diploma,85.22,13
+STU1844,17,Female,Private,Brunei-Muara,7.3,8.64,6,1,Health Sciences,Universiti Brunei Darussalam,1,IT,Low,Science Fair,0,Humanities,Health Sciences,2745,Diploma,93.49,19
+STU1845,18,Female,Private,Tutong,2.59,6.2,4,2,Engineering,Micronet International College,0,Health Sciences,Low,Arts,1,Business,Engineering,1702,Diploma,77.78,15
+STU1846,21,Male,Private,Brunei-Muara,6.6,5.56,4,3,Engineering,International Graduate Studies College,1,Education,Medium,None,0,Science,Education,1860,Masters,80.56,8
+STU1847,19,Female,Private,Belait,8.14,3.1,7,4,IT,Micronet International College,1,Education,High,None,1,Arts,Health Sciences,1385,Degree,90.63,13
+STU1848,17,Male,Private,Brunei-Muara,4.63,6.74,8,1,Education,International Graduate Studies College,0,Engineering,High,Debate,0,Arts,Education,3326,High School,77.95,16
+STU1849,21,Male,Private,Tutong,8.35,7.38,6,2,Health Sciences,Micronet International College,0,Business,High,Arts,0,Humanities,Business,1286,Diploma,92.91,17
+STU1850,20,Female,Public,Tutong,7.66,3.01,9,4,Education,Universiti Brunei Darussalam,1,IT,High,None,1,Technology,IT,4687,Diploma,99.1,14
+STU1851,21,Female,Public,Temburong,7.38,3.96,6,4,Engineering,Politeknik Brunei,1,Education,High,None,1,Humanities,IT,3490,High School,82.91,17
+STU1852,19,Male,Private,Belait,7.98,5.16,5,3,Health Sciences,Universiti Brunei Darussalam,1,IT,High,Sports,1,Technology,Engineering,4157,Degree,76.69,13
+STU1853,19,Male,Private,Temburong,7.62,5.91,5,4,Education,Micronet International College,0,Business,Medium,Debate,1,Business,Education,2624,Masters,88.25,11
+STU1854,18,Male,Public,Tutong,7.01,5.66,7,2,Business,Micronet International College,0,Health Sciences,High,Sports,0,Science,Health Sciences,1626,High School,89.16,9
+STU1855,19,Male,Public,Brunei-Muara,7.06,8.21,7,1,Health Sciences,Micronet International College,0,IT,High,Science Fair,1,Humanities,Engineering,2637,High School,80,12
+STU1856,20,Female,Private,Brunei-Muara,3.72,4.77,9,2,IT,Politeknik Brunei,1,Business,Low,None,1,Business,Health Sciences,3921,Masters,91.94,10
+STU1857,21,Male,Public,Brunei-Muara,8.83,2.86,7,2,Health Sciences,Universiti Brunei Darussalam,1,Health Sciences,Low,Arts,1,Business,Education,1495,Degree,78.58,12
+STU1858,18,Male,Public,Tutong,2.89,6.45,8,1,Business,International Graduate Studies College,0,Education,Low,Science Fair,0,Business,IT,2758,Masters,98.83,10
+STU1859,20,Female,Public,Temburong,5.93,5.85,8,3,Education,International Graduate Studies College,1,Engineering,Low,None,1,Arts,Engineering,4322,Masters,80.28,6
+STU1860,17,Male,Private,Brunei-Muara,7.31,3.37,5,2,Engineering,Micronet International College,0,Business,Medium,None,1,Humanities,Health Sciences,3513,Masters,99.97,19
+STU1861,19,Female,Private,Brunei-Muara,5.55,5.14,8,1,IT,Universiti Brunei Darussalam,1,IT,High,Debate,1,Humanities,Education,1469,Masters,91.17,10
+STU1862,18,Male,Public,Belait,5.3,4.07,8,3,Business,Politeknik Brunei,0,IT,Low,Arts,1,Business,Business,2545,High School,84.66,14
+STU1863,18,Female,Public,Tutong,5.11,7.82,5,4,Health Sciences,International Graduate Studies College,1,Business,High,Debate,1,Business,Business,1719,Degree,79.08,19
+STU1864,18,Male,Private,Tutong,2.5,8.94,8,3,Education,Micronet International College,1,Engineering,Low,None,0,Technology,Education,4677,High School,82.98,12
+STU1865,17,Male,Public,Belait,7.97,7.05,8,3,Engineering,Micronet International College,0,Health Sciences,High,Debate,0,Technology,Health Sciences,2780,High School,84.93,16
+STU1866,21,Female,Private,Tutong,2.23,8.81,8,1,Engineering,International Graduate Studies College,1,Business,High,Arts,0,Science,Engineering,2091,Diploma,97.04,8
+STU1867,20,Female,Public,Tutong,8.7,3.06,8,1,IT,International Graduate Studies College,0,Engineering,Low,None,1,Technology,Business,3771,Diploma,99.22,9
+STU1868,17,Male,Public,Brunei-Muara,5.96,5.2,4,3,Education,Politeknik Brunei,1,Business,Low,Science Fair,0,Science,Education,3834,High School,77.64,16
+STU1869,21,Female,Private,Brunei-Muara,4.99,7.24,6,3,Education,International Graduate Studies College,1,Business,High,None,0,Business,Education,4708,Diploma,85.1,18
+STU1870,20,Male,Public,Temburong,7.15,7.54,5,4,Business,Micronet International College,1,Business,High,None,0,Science,Engineering,1799,Masters,86.93,11
+STU1871,21,Male,Public,Temburong,5.86,8.14,7,3,IT,Micronet International College,0,IT,High,Science Fair,0,Science,Education,3757,Masters,90.72,17
+STU1872,21,Male,Private,Tutong,8.84,2.21,5,1,Engineering,International Graduate Studies College,1,Health Sciences,Medium,Sports,0,Technology,Engineering,1367,Diploma,88.24,9
+STU1873,20,Male,Public,Temburong,2.28,3.17,6,3,IT,Universiti Brunei Darussalam,0,Health Sciences,High,Debate,1,Arts,Education,1668,Degree,85.28,13
+STU1874,17,Male,Private,Brunei-Muara,3.84,4.53,8,2,IT,Universiti Brunei Darussalam,0,Business,Medium,Debate,1,Humanities,Education,3989,High School,90.45,11
+STU1875,21,Male,Public,Belait,2.81,6.45,5,2,Education,Universiti Brunei Darussalam,0,Health Sciences,High,Science Fair,1,Arts,Education,4393,High School,92.97,8
+STU1876,21,Female,Private,Temburong,7.36,6.66,8,4,IT,International Graduate Studies College,1,Engineering,Medium,Debate,1,Humanities,Education,3206,Masters,99.35,10
+STU1877,19,Female,Private,Brunei-Muara,4.46,8.57,5,4,Health Sciences,Politeknik Brunei,1,Education,High,None,1,Humanities,IT,4133,Degree,84.43,14
+STU1878,20,Female,Public,Brunei-Muara,5.14,7.7,7,3,Health Sciences,Politeknik Brunei,1,Education,Medium,Debate,0,Arts,Health Sciences,3822,Diploma,96.08,16
+STU1879,19,Male,Public,Tutong,2.98,7.46,9,1,Engineering,Micronet International College,1,IT,Medium,None,0,Arts,Engineering,2238,Diploma,96.87,15
+STU1880,20,Female,Public,Brunei-Muara,2.21,2.19,7,2,Education,Politeknik Brunei,1,Education,Medium,Sports,0,Science,Engineering,4425,Diploma,94.61,11
+STU1881,18,Male,Private,Belait,5.89,2.87,7,1,Engineering,Micronet International College,1,Engineering,Low,Debate,0,Technology,Education,1954,Diploma,90.66,15
+STU1882,20,Female,Private,Belait,8.11,2.26,4,4,Engineering,Universiti Brunei Darussalam,0,IT,Low,None,0,Humanities,Health Sciences,2156,Masters,83.6,15
+STU1883,21,Female,Private,Tutong,2.96,6.7,8,4,Business,Micronet International College,1,Education,Medium,Debate,0,Humanities,IT,4010,High School,96.73,14
+STU1884,19,Male,Public,Brunei-Muara,4.64,7.48,7,3,Engineering,Micronet International College,1,Engineering,Medium,None,1,Arts,IT,3583,Degree,76.99,5
+STU1885,18,Female,Private,Temburong,3.58,8.4,9,3,Engineering,Universiti Brunei Darussalam,0,Engineering,Medium,Debate,0,Technology,Education,1694,Degree,99.37,13
+STU1886,18,Male,Public,Temburong,7.32,8.2,8,4,Education,Micronet International College,1,IT,High,Arts,1,Humanities,Business,1484,Degree,93.2,9
+STU1887,20,Female,Private,Temburong,6.56,8.2,6,2,Health Sciences,International Graduate Studies College,0,Health Sciences,Low,None,1,Business,Education,3952,Masters,99.38,16
+STU1888,21,Male,Public,Belait,8.14,2.98,8,3,Education,Politeknik Brunei,1,IT,Low,Arts,1,Technology,Health Sciences,2918,Masters,81.19,13
+STU1889,18,Male,Private,Brunei-Muara,2.41,5.52,6,1,Business,Politeknik Brunei,1,Health Sciences,Low,Arts,1,Humanities,Business,4627,Diploma,91.72,12
+STU1890,18,Male,Private,Brunei-Muara,3.26,4.4,8,3,Education,Universiti Brunei Darussalam,1,IT,Medium,None,1,Science,Business,1029,Masters,79.87,10
+STU1891,20,Male,Private,Tutong,3.69,6.37,4,2,Education,Universiti Brunei Darussalam,0,Education,High,Sports,1,Humanities,Engineering,4835,Masters,98.56,5
+STU1892,18,Female,Private,Belait,4.12,8.71,9,1,IT,Politeknik Brunei,0,IT,Medium,Debate,0,Humanities,Education,1732,Masters,97.83,17
+STU1893,20,Female,Private,Temburong,3.45,8.42,9,2,Business,International Graduate Studies College,0,Business,High,None,0,Technology,Education,3804,High School,88.03,15
+STU1894,19,Female,Private,Belait,7.44,6.71,8,1,Health Sciences,Universiti Brunei Darussalam,0,Education,Low,Sports,1,Technology,Health Sciences,2763,Masters,92.79,9
+STU1895,17,Female,Public,Temburong,2.32,4.97,5,2,IT,Micronet International College,0,Business,High,Sports,0,Arts,Education,1460,High School,75.78,13
+STU1896,20,Female,Public,Brunei-Muara,6.45,6.92,5,4,IT,International Graduate Studies College,0,Business,Medium,Arts,0,Technology,Education,1262,Diploma,96.5,18
+STU1897,19,Female,Private,Brunei-Muara,7.94,5.44,4,1,Business,Politeknik Brunei,1,Health Sciences,High,Science Fair,0,Humanities,Education,1857,Diploma,98.2,9
+STU1898,21,Female,Private,Belait,5.98,7.56,9,3,Education,International Graduate Studies College,1,Business,Low,Debate,1,Science,Business,1048,High School,77.07,19
+STU1899,20,Male,Private,Brunei-Muara,4.53,2.94,8,1,IT,International Graduate Studies College,1,Education,Medium,Debate,1,Humanities,Health Sciences,4071,Degree,80.65,8
+STU1900,18,Male,Private,Temburong,4.66,7.61,4,3,IT,Micronet International College,1,Engineering,High,Debate,1,Business,Engineering,4663,Degree,90.73,18
+STU1901,20,Female,Public,Belait,7.95,7.12,6,1,Health Sciences,Universiti Brunei Darussalam,0,Health Sciences,High,Science Fair,0,Business,Health Sciences,4550,Diploma,98.91,9
+STU1902,18,Female,Private,Belait,3.33,5.11,8,3,Health Sciences,Politeknik Brunei,0,Business,Low,Science Fair,0,Humanities,Engineering,3927,High School,82.84,16
+STU1903,21,Female,Private,Brunei-Muara,5.49,7.32,4,4,Health Sciences,International Graduate Studies College,1,Health Sciences,Low,Sports,0,Arts,Business,1446,Diploma,77.27,17
+STU1904,19,Male,Public,Temburong,5.07,2.72,4,1,Engineering,Micronet International College,1,IT,Low,None,0,Science,Business,4697,High School,76.61,17
+STU1905,18,Male,Public,Temburong,8.96,5.38,6,1,Business,Universiti Brunei Darussalam,0,Education,High,Debate,0,Humanities,Health Sciences,2205,Diploma,79,5
+STU1906,20,Male,Public,Tutong,4.48,6.61,5,4,Education,International Graduate Studies College,0,Education,High,Science Fair,1,Arts,Health Sciences,3277,Diploma,92.54,16
+STU1907,17,Male,Public,Tutong,4.5,6.29,5,4,Engineering,Universiti Brunei Darussalam,0,Health Sciences,Low,Sports,0,Science,Business,2452,High School,91.63,11
+STU1908,21,Female,Public,Belait,2.92,3.72,4,3,Health Sciences,Micronet International College,0,Education,Low,Debate,1,Business,Education,3387,Masters,91.69,9
+STU1909,17,Female,Public,Tutong,4.98,7.59,6,1,Education,Politeknik Brunei,0,Business,High,None,0,Arts,Engineering,2380,Diploma,75.1,15
+STU1910,18,Male,Private,Temburong,8.65,5.13,5,3,IT,Universiti Brunei Darussalam,0,Health Sciences,Low,None,1,Humanities,Business,2003,Degree,80.98,6
+STU1911,20,Male,Private,Brunei-Muara,3.97,6.91,7,4,Business,Micronet International College,1,Engineering,Medium,None,0,Arts,IT,2389,High School,86.5,18
+STU1912,18,Male,Public,Temburong,7.24,8.75,6,1,Health Sciences,Micronet International College,1,Engineering,Low,Science Fair,1,Business,Business,4263,Degree,78.14,18
+STU1913,21,Male,Private,Tutong,3.11,8.87,5,4,Business,International Graduate Studies College,1,Health Sciences,Low,None,1,Technology,Engineering,4547,Degree,90.61,16
+STU1914,19,Female,Private,Tutong,4.02,4.85,5,1,Education,Micronet International College,1,Health Sciences,Medium,Arts,0,Humanities,Health Sciences,1087,High School,77.77,18
+STU1915,17,Male,Private,Brunei-Muara,5.96,5.14,9,3,Engineering,Universiti Brunei Darussalam,0,Engineering,Medium,Debate,1,Technology,IT,1173,Degree,93.26,7
+STU1916,21,Male,Private,Tutong,4.3,4.27,8,3,Engineering,Politeknik Brunei,0,IT,Low,Debate,0,Technology,Business,4220,Diploma,98.93,19
+STU1917,19,Female,Public,Brunei-Muara,2.35,4,8,2,Business,Universiti Brunei Darussalam,1,IT,High,None,0,Humanities,Engineering,2448,High School,76.1,8
+STU1918,21,Male,Private,Brunei-Muara,7.05,2.01,8,2,Engineering,Universiti Brunei Darussalam,0,Health Sciences,Low,Sports,1,Technology,Engineering,1059,High School,92.27,6
+STU1919,21,Female,Public,Brunei-Muara,7.67,4.35,7,2,IT,Universiti Brunei Darussalam,1,Business,Medium,Debate,0,Business,Engineering,1451,Diploma,88.65,16
+STU1920,19,Female,Private,Brunei-Muara,3.88,7.51,5,4,Engineering,Politeknik Brunei,0,IT,Medium,Debate,1,Technology,Health Sciences,3388,Degree,99.32,7
+STU1921,19,Male,Public,Belait,2.14,6.33,4,3,IT,International Graduate Studies College,1,Education,Medium,None,0,Business,Engineering,2809,Masters,91.98,19
+STU1922,18,Female,Public,Tutong,6.9,4.75,6,1,Education,Politeknik Brunei,1,Health Sciences,Low,Debate,1,Business,Business,4287,Masters,76.98,16
+STU1923,18,Female,Public,Temburong,2.18,6.89,8,1,Business,Micronet International College,0,Education,High,Arts,1,Science,Business,4255,High School,85,19
+STU1924,18,Female,Public,Tutong,6.12,7.19,6,3,Business,Universiti Brunei Darussalam,0,Health Sciences,Medium,Sports,0,Science,Business,1827,Degree,95.73,5
+STU1925,17,Female,Public,Brunei-Muara,2.73,4.11,9,4,Health Sciences,Micronet International College,1,Engineering,High,Science Fair,1,Humanities,IT,4882,High School,81.44,19
+STU1926,18,Female,Public,Belait,3.32,6.57,4,4,Engineering,Micronet International College,0,Health Sciences,High,Arts,1,Science,Engineering,1125,Degree,90.75,9
+STU1927,18,Female,Private,Belait,7.57,2.99,4,1,Engineering,International Graduate Studies College,1,Health Sciences,Low,Science Fair,0,Arts,Engineering,4161,Masters,94.06,19
+STU1928,20,Female,Public,Temburong,7.44,8.6,4,1,IT,Micronet International College,0,IT,High,Science Fair,0,Humanities,Business,2310,Diploma,85.52,8
+STU1929,19,Male,Public,Brunei-Muara,4.71,7.01,5,2,IT,Micronet International College,1,Business,Medium,Science Fair,1,Arts,IT,2085,Degree,81.87,6
+STU1930,19,Female,Public,Temburong,7.29,5.52,5,3,IT,International Graduate Studies College,0,IT,High,Arts,1,Technology,Education,1965,Degree,92.77,14
+STU1931,18,Female,Private,Tutong,7.7,2.38,9,1,Engineering,Micronet International College,0,Business,Medium,Arts,1,Arts,Business,1590,Masters,96.72,14
+STU1932,21,Male,Public,Brunei-Muara,2.8,5.94,7,4,Education,Universiti Brunei Darussalam,0,IT,Low,Arts,0,Science,IT,1621,Diploma,97.87,9
+STU1933,21,Female,Public,Temburong,4.2,5.19,6,2,IT,International Graduate Studies College,0,Education,Low,Sports,0,Humanities,Engineering,2393,High School,96.81,13
+STU1934,18,Female,Public,Tutong,7.59,2.41,9,2,IT,Politeknik Brunei,1,Education,High,Debate,0,Business,IT,2483,Degree,76.88,14
+STU1935,19,Male,Private,Temburong,8.57,6.02,6,2,Health Sciences,Universiti Brunei Darussalam,1,Education,Low,Sports,1,Science,Health Sciences,3074,High School,75.89,16
+STU1936,17,Male,Public,Temburong,5.01,3.47,6,2,IT,Micronet International College,1,Health Sciences,Medium,Arts,0,Business,Business,1134,Masters,99.08,18
+STU1937,21,Male,Private,Tutong,8.2,2.94,4,2,Business,Universiti Brunei Darussalam,0,Health Sciences,Low,None,0,Arts,Engineering,1273,Diploma,88.4,13
+STU1938,20,Male,Private,Brunei-Muara,5.7,8.63,9,1,Engineering,Politeknik Brunei,0,Education,Low,Sports,0,Business,Engineering,2245,Masters,77.54,7
+STU1939,18,Male,Public,Belait,3.24,8.06,7,4,Business,Universiti Brunei Darussalam,0,IT,Medium,Sports,1,Technology,Engineering,4430,High School,86.9,15
+STU1940,17,Male,Private,Belait,3.62,3.01,4,4,Engineering,Micronet International College,1,Business,Medium,None,1,Technology,Education,3192,Diploma,77.36,12
+STU1941,19,Male,Private,Belait,3.42,8.54,5,2,Engineering,International Graduate Studies College,1,Business,High,Arts,0,Arts,Engineering,1005,Diploma,77.18,13
+STU1942,21,Male,Private,Temburong,5.38,6.99,9,4,Engineering,International Graduate Studies College,1,Education,Low,None,1,Arts,Education,1012,Diploma,91.21,14
+STU1943,18,Female,Public,Brunei-Muara,3.73,5.57,4,2,Engineering,Universiti Brunei Darussalam,1,Health Sciences,Medium,Arts,1,Arts,Engineering,4495,Diploma,92.66,10
+STU1944,21,Male,Private,Belait,2.73,2.93,7,3,IT,International Graduate Studies College,0,Health Sciences,High,Sports,0,Science,Education,2896,Degree,77.94,7
+STU1945,20,Female,Public,Brunei-Muara,2.72,2.54,8,4,Business,Universiti Brunei Darussalam,1,Health Sciences,Low,None,1,Science,Business,3874,Degree,81.47,9
+STU1946,19,Female,Public,Belait,4.29,2.96,9,2,IT,Micronet International College,1,Engineering,Low,Arts,1,Business,Health Sciences,3841,High School,95.11,10
+STU1947,18,Female,Public,Belait,5.42,3.14,8,2,Business,Universiti Brunei Darussalam,0,Health Sciences,Medium,None,0,Technology,Business,3188,Masters,95.63,7
+STU1948,17,Male,Private,Temburong,7.7,2.86,7,3,Health Sciences,Micronet International College,0,Engineering,High,Arts,0,Business,IT,2335,Masters,88.48,9
+STU1949,19,Male,Public,Temburong,3.93,2.18,7,1,IT,International Graduate Studies College,1,IT,High,Science Fair,0,Humanities,IT,2327,Diploma,87.28,7
+STU1950,19,Male,Private,Brunei-Muara,2.95,3.43,9,4,Engineering,International Graduate Studies College,0,Business,High,Arts,0,Technology,Engineering,4844,Degree,80.55,17
+STU1951,18,Female,Private,Brunei-Muara,6.16,6.56,8,4,Engineering,Politeknik Brunei,1,Business,Medium,Arts,1,Arts,Health Sciences,2782,Degree,86.07,8
+STU1952,21,Female,Public,Tutong,7.47,6.71,4,4,Business,Micronet International College,0,IT,Medium,Sports,0,Arts,Engineering,3106,Diploma,96.63,15
+STU1953,21,Female,Public,Tutong,4.57,6.84,5,3,Business,Politeknik Brunei,1,IT,Medium,Arts,0,Humanities,Health Sciences,3975,Degree,78.88,5
+STU1954,20,Female,Public,Tutong,6.61,3.06,5,4,IT,Politeknik Brunei,1,IT,High,Science Fair,0,Science,Health Sciences,4164,High School,91.9,7
+STU1955,20,Female,Public,Tutong,3.32,3.97,4,2,Education,Micronet International College,1,Engineering,Medium,Sports,1,Humanities,Health Sciences,1599,High School,76.07,15
+STU1956,20,Male,Private,Temburong,3.88,7.85,6,3,Business,Universiti Brunei Darussalam,1,Education,High,Debate,1,Business,Business,1480,Diploma,96.51,13
+STU1957,17,Male,Public,Tutong,2.54,2.5,5,4,Business,Politeknik Brunei,1,Health Sciences,Low,Sports,1,Technology,Engineering,4106,Masters,90.8,17
+STU1958,21,Female,Private,Belait,4.02,5.01,8,2,Education,Politeknik Brunei,0,Health Sciences,Medium,Debate,1,Arts,Business,4094,Diploma,88.17,13
+STU1959,17,Female,Public,Temburong,8.88,6.11,8,4,Health Sciences,Politeknik Brunei,1,IT,Medium,None,0,Humanities,Engineering,3817,Masters,82.32,16
+STU1960,21,Male,Private,Brunei-Muara,8.87,3.07,6,3,Education,Micronet International College,0,Education,Low,None,1,Technology,Business,4237,High School,77.77,12
+STU1961,19,Female,Private,Temburong,4.41,8.7,9,3,Health Sciences,Micronet International College,1,Education,Low,Sports,0,Business,Education,3691,Masters,81.97,16
+STU1962,21,Male,Private,Belait,4.1,4.74,6,3,Health Sciences,Politeknik Brunei,1,IT,High,Arts,1,Science,Health Sciences,2619,High School,86.8,16
+STU1963,19,Female,Private,Belait,6.96,3.83,8,4,Health Sciences,Micronet International College,0,Health Sciences,Low,None,0,Science,Business,3339,Masters,92.69,13
+STU1964,20,Male,Private,Belait,2.98,3.14,8,1,Health Sciences,Universiti Brunei Darussalam,1,IT,Low,Sports,1,Business,Engineering,1452,Diploma,76.14,10
+STU1965,18,Male,Public,Tutong,7.58,5.33,9,1,Health Sciences,Micronet International College,0,IT,High,Sports,1,Arts,Education,1289,Degree,93.65,13
+STU1966,21,Male,Public,Belait,3.68,4.17,8,3,Health Sciences,Politeknik Brunei,1,Education,Medium,Arts,1,Humanities,Health Sciences,1946,Masters,92.28,8
+STU1967,19,Female,Private,Temburong,3.31,3.98,5,1,Business,Micronet International College,0,Education,Low,Science Fair,1,Business,Health Sciences,3580,Degree,94.88,13
+STU1968,19,Female,Private,Brunei-Muara,5.52,6.76,7,2,IT,Politeknik Brunei,0,Engineering,Low,Arts,1,Science,Business,4609,Masters,82.06,7
+STU1969,17,Male,Private,Belait,5.97,3.38,9,4,IT,Universiti Brunei Darussalam,1,Education,High,Science Fair,0,Arts,Education,1297,Diploma,96.82,10
+STU1970,21,Male,Private,Belait,8.1,7.57,6,2,Health Sciences,Micronet International College,0,IT,Medium,None,1,Technology,IT,4053,Masters,89.84,10
+STU1971,18,Male,Public,Tutong,3.22,7.03,7,2,Health Sciences,Politeknik Brunei,1,Business,Medium,None,0,Science,Business,2864,Degree,92.1,9
+STU1972,17,Female,Private,Belait,4.9,8.97,9,1,Education,Politeknik Brunei,1,Business,Low,Science Fair,1,Arts,Health Sciences,3523,Diploma,83.62,19
+STU1973,21,Female,Private,Brunei-Muara,4.65,4.29,6,1,Business,Politeknik Brunei,1,Business,Medium,Arts,1,Arts,Engineering,2766,Diploma,83.13,7
+STU1974,17,Female,Public,Tutong,7.46,8.01,7,4,Health Sciences,Politeknik Brunei,1,Business,Low,Sports,1,Science,Business,2176,High School,78.69,10
+STU1975,17,Male,Public,Temburong,7.37,4.62,4,1,Education,Micronet International College,0,Engineering,Low,Debate,0,Arts,Education,2669,High School,82.36,7
+STU1976,20,Male,Public,Tutong,3.95,5.65,7,4,Health Sciences,Universiti Brunei Darussalam,0,Engineering,High,None,1,Arts,Business,3164,Degree,94.81,12
+STU1977,18,Male,Public,Tutong,2.89,6.27,8,1,Business,Politeknik Brunei,0,Engineering,Low,None,1,Business,Education,1495,Degree,87.35,10
+STU1978,17,Male,Public,Tutong,7.8,5.64,8,2,Education,Micronet International College,0,IT,High,Debate,1,Science,Health Sciences,2289,Diploma,90.74,17
+STU1979,21,Female,Public,Tutong,7.74,2.31,6,3,Business,Universiti Brunei Darussalam,1,Business,High,None,0,Science,Engineering,1868,Masters,84.83,5
+STU1980,20,Male,Public,Temburong,8.77,4.64,7,4,Engineering,International Graduate Studies College,1,Education,Medium,None,0,Business,Education,4429,High School,83.66,11
+STU1981,17,Male,Public,Belait,5.53,6.32,6,3,Business,Politeknik Brunei,1,Business,Low,None,0,Humanities,Business,3275,High School,99.14,15
+STU1982,19,Female,Private,Tutong,7.33,4.75,7,2,IT,Universiti Brunei Darussalam,0,Education,High,Debate,1,Science,Education,2059,Degree,96.4,11
+STU1983,19,Female,Private,Tutong,7.07,6.09,7,2,Business,Micronet International College,0,Health Sciences,High,Sports,0,Arts,Health Sciences,4585,Diploma,93.8,16
+STU1984,19,Male,Public,Brunei-Muara,4.21,2.94,4,1,Health Sciences,Micronet International College,0,Engineering,Low,None,1,Business,Education,2231,High School,76.86,11
+STU1985,17,Female,Private,Brunei-Muara,4.9,6.04,4,3,Engineering,Universiti Brunei Darussalam,0,Business,Medium,Debate,1,Humanities,Health Sciences,4337,Masters,75.6,10
+STU1986,18,Male,Private,Brunei-Muara,5.28,5.84,5,3,Education,Universiti Brunei Darussalam,1,IT,Medium,None,0,Business,IT,4176,Diploma,96.02,5
+STU1987,17,Female,Private,Tutong,3.06,3.84,7,3,Business,International Graduate Studies College,1,Education,Low,Debate,1,Science,Education,2596,Degree,99.01,8
+STU1988,19,Male,Private,Belait,5.78,5.11,5,2,Business,Universiti Brunei Darussalam,1,Business,Medium,Sports,0,Arts,Engineering,4923,High School,87.62,19
+STU1989,20,Female,Private,Brunei-Muara,6.26,2.67,8,3,Health Sciences,Politeknik Brunei,0,Education,High,Debate,1,Technology,Engineering,4501,High School,75.2,18
+STU1990,18,Male,Private,Brunei-Muara,6.41,8.63,6,3,IT,Micronet International College,1,Engineering,Low,Arts,1,Science,Education,3943,High School,88.16,11
+STU1991,18,Male,Public,Tutong,6.69,7.62,5,3,IT,Universiti Brunei Darussalam,0,IT,Medium,Science Fair,0,Humanities,Education,3215,Degree,77.07,9
+STU1992,21,Female,Public,Belait,8.91,4.19,9,4,Business,International Graduate Studies College,0,Engineering,High,Science Fair,0,Arts,Business,4728,Diploma,93.07,7
+STU1993,18,Female,Private,Temburong,4.66,6.15,5,1,Education,Micronet International College,0,Education,Low,Arts,1,Humanities,Business,4479,Diploma,78.39,10
+STU1994,21,Female,Private,Temburong,2.64,3.26,4,1,Health Sciences,International Graduate Studies College,0,Health Sciences,High,Debate,0,Business,IT,2011,Masters,81.66,14
+STU1995,21,Male,Private,Tutong,8.08,5.92,7,1,Business,International Graduate Studies College,0,Health Sciences,High,Sports,0,Technology,IT,4131,Diploma,82.78,16
+STU1996,21,Male,Private,Brunei-Muara,6.26,3.18,4,3,Health Sciences,Universiti Brunei Darussalam,1,Education,High,Arts,1,Business,Health Sciences,4864,Degree,94.84,8
+STU1997,18,Female,Public,Tutong,8.55,8.14,5,1,Engineering,Universiti Brunei Darussalam,1,Business,High,None,1,Arts,Business,3754,Masters,82.36,8
+STU1998,21,Male,Public,Brunei-Muara,4.2,2.14,4,2,Business,Universiti Brunei Darussalam,0,Engineering,Low,None,1,Business,Business,2630,Degree,86.02,5
+STU1999,18,Female,Private,Tutong,4.36,4.68,8,4,IT,International Graduate Studies College,0,Health Sciences,Medium,None,1,Business,Business,4334,Diploma,87.04,15
