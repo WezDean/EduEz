@@ -252,7 +252,7 @@ def EducationAnalysis():
     """, unsafe_allow_html=True)
 
     # Display the charts side by side
-    tabs = st.tabs(["Results", "Demographics"])
+    tabs = st.tabs(["Results", "Demographics", "Additional"])
     # EduEZ Tab
     with tabs[0]:
         col1, col2 = st.columns(2)
@@ -292,3 +292,155 @@ def EducationAnalysis():
             # A Level Distribution
         with col6:
             a_level_dist.plot_distribution()
+
+    with tabs[1]:
+
+        import streamlit as st
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        import seaborn as sns
+
+        # Load the dataset
+        file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/Bruneian_Students_Simulated_Dataset.csv"
+        df = pd.read_csv(file_path)
+
+        st.title('Bruneian Students Data Analysis')
+
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            # 1. Gender Distribution Across Different School Types
+            st.subheader('Gender Distribution Across Different School Types')
+            selected_school_type = st.selectbox("Select School Type", df['School_Type'].unique())
+            gender_school_type = df[df['School_Type'] == selected_school_type].groupby(['Gender']).size()
+            st.bar_chart(gender_school_type)
+
+            # 2. Family Income Distribution by District
+            st.subheader('Family Income Distribution by District')
+            selected_district = st.multiselect("Select District(s)", df['District'].unique(), df['District'].unique())
+            filtered_df = df[df['District'].isin(selected_district)]
+            fig, ax = plt.subplots()
+            sns.boxplot(x='District', y='Family_Income', data=filtered_df, ax=ax)
+            ax.set_title('Family Income Distribution by District')
+            st.pyplot(fig)
+
+        with col2:
+            # 3. Preferred Programs vs. Recommended Programs
+            st.subheader('Preferred Programs vs. Recommended Programs')
+            selected_program = st.selectbox("Select Preferred Program", df['Preferred_Program'].unique())
+            program_df = df[df['Preferred_Program'] == selected_program].groupby(['Preferred_Program', 'Recommended_Program']).size().unstack().fillna(0)
+            fig, ax = plt.subplots(figsize=(10, 8))
+            sns.heatmap(program_df, annot=True, cmap="YlGnBu", ax=ax)
+            ax.set_title('Preferred vs. Recommended Programs for ' + selected_program)
+            st.pyplot(fig)
+
+            # 4. Family Income vs. A-Level Credits by Gender and Parent Education Level
+            st.subheader('Family Income vs. A-Level Credits')
+            selected_gender = st.selectbox("Select Gender", df['Gender'].unique())
+            selected_parent_education = st.multiselect("Select Parent Education Level", df['Parent_Education_Level'].unique(), df['Parent_Education_Level'].unique())
+            filtered_income_df = df[(df['Gender'] == selected_gender) & (df['Parent_Education_Level'].isin(selected_parent_education))]
+            fig, ax = plt.subplots()
+            sns.scatterplot(x='Family_Income', y='A_Level_Credits', hue='Parent_Education_Level', data=filtered_income_df, ax=ax)
+            ax.set_title('Family Income vs. A-Level Credits (' + selected_gender + ')')
+            st.pyplot(fig)
+    
+    with tabs[2]:
+        import streamlit as st
+        import pandas as pd
+        import plotly.express as px
+
+        file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/Bruneian_Students_Simulated_Dataset.csv"
+        df = pd.read_csv(file_path)
+
+        col7, col8 = st.columns(2)
+    
+        #1 Gender vs O level/ Alevel credits
+        with col7:
+
+            st.markdown("<h4 style='text-align: center; color: black;'>Gender vs. O_Level/A_Level Credits</h4>", unsafe_allow_html=True)
+
+            selected_credits = st.selectbox('Select Credit Type:', ['O_Level_Credits', 'A_Level_Credits'])
+
+            avg_credits = df.groupby('Gender')[selected_credits].mean().reset_index()
+
+            fig = px.bar(avg_credits, x='Gender', 
+                        y=selected_credits, 
+                        color='Gender',
+                        title=f"Average {selected_credits} by Gender",
+                        labels={'Gender': 'Gender', selected_credits: 'Average Credits'},
+                        color_discrete_map={
+                            'Male': 'blue',
+                            'Female': 'pink'
+                        }
+                        )
+
+            st.plotly_chart(fig, use_container_width=True)
+
+        #4 Parent education vs O level
+        with col8:
+
+            st.markdown("<h4 style='text-align: center; color: black;'>Impact of Parent Education Level on Credits</h4>", unsafe_allow_html=True)
+
+            selected_credits = st.selectbox('Select Credit Type:', ['O_Level_Credits', 'A_Level_Credits'], key='credits_selectbox')
+
+            avg_credits_by_education = df.groupby('Parent_Education_Level')[selected_credits].mean().reset_index()
+
+            fig = px.bar(avg_credits_by_education,
+                        x='Parent_Education_Level', 
+                        y=selected_credits,
+                        color='Parent_Education_Level',
+                        title=f"Average {selected_credits} by Parent Education Level",
+                        labels={'Parent_Education_Level': 'Parent Education Level', selected_credits: 'Average Credits'},
+                        color_discrete_sequence=px.colors.qualitative.Pastel)  
+
+            st.plotly_chart(fig, use_container_width=True)
+
+        #2 Family income vs success level 
+        with st.container():
+        
+            st.markdown("<h4 style='text-align: center; color: black;'>Effect of Study Hours on Credits</h4>", unsafe_allow_html=True)
+
+            hours_slider = st.slider('Maximum Study Hours per Week', min_value=int(df['Study_Hours'].min()), 
+                                    max_value=int(df['Study_Hours'].max()), value=int(df['Study_Hours'].min()))
+
+            
+            credit_options = st.multiselect('Select Credits to Display', ['O_Level_Credits', 'A_Level_Credits'],
+                                            default=['O_Level_Credits', 'A_Level_Credits'])
+
+            df_filtered = df[df['Study_Hours'] <= hours_slider]
+
+            df_filtered = df_filtered.sort_values('Study_Hours')
+
+            fig = px.line(df_filtered,
+                        x='Study_Hours',
+                        y=credit_options,
+                        labels={'value': 'Credits', 'Study_Hours': 'Study Hours per Week'},
+                        title='Study Hours vs. Selected Credits',
+                        markers=True) 
+
+            st.plotly_chart(fig, use_container_width=True)
+
+        #3 FRamiy income vs Success level
+        with st.container():
+
+            st.markdown("<h4 style='text-align: center; color: black;'>Effect of Family Income on Success Level</h4>", unsafe_allow_html=True)
+
+            income_slider = st.slider('Select Family Income Range:', 
+                                    min_value=int(df['Family_Income'].min()), 
+                                    max_value=int(df['Family_Income'].max()), 
+                                    value=(int(df['Family_Income'].min()), int(df['Family_Income'].max())))
+
+            df_filtered = df[(df['Family_Income'] >= income_slider[0]) & (df['Family_Income'] <= income_slider[1])]
+
+            fig = px.scatter(df_filtered, 
+                            x='Family_Income', 
+                            y='Success_Level', 
+                            color='Gender',
+                            title='Family Income vs. Success Level',
+                            labels={'Family_Income': 'Family Income', 'Success_Level': 'Success Level'},
+                            color_discrete_map={
+                                'Male': 'blue',
+                                'Female': 'pink'
+                            })
+
+            st.plotly_chart(fig, use_container_width=True)
