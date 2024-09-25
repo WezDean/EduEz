@@ -33,6 +33,8 @@ styles = {
     },
 }
 
+
+
 page = st_navbar(page, styles=styles)
 
 if page == "Home":

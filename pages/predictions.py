@@ -1,145 +1,181 @@
-import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
-
 def predictions():
-    # Create tabs for Enrollment Success, Academic Success, and Preferred Program Success
-    tabs = st.tabs(["Enrollment Success", "Academic Success", "Preferred Program Success"])
+    import streamlit as st
+    import pandas as pd
+    from sklearn.model_selection import train_test_split, RandomizedSearchCV
+    from sklearn.preprocessing import LabelEncoder
+    from sklearn.metrics import accuracy_score
+    from xgboost import XGBClassifier
+    from xgboost import plot_importance
+    from lightgbm import LGBMClassifier
+    from sklearn.ensemble import StackingClassifier, RandomForestClassifier
+    from imblearn.over_sampling import SMOTE
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
-    # Load the dataset only once to avoid redundancy
-    file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/Bruneian_Students_Simulated_Dataset.csv"
-    student_data = pd.read_csv(file_path)
+    # Load the dataset
+    file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Updated_Bruneian_Students_Simulated_Dataset.csv"
+    df = pd.read_csv(file_path)
 
-    # Label encode the Success_Level and Preferred_Program to create target variables
-    label_encoder_success = LabelEncoder()
-    student_data['Enroll'] = label_encoder_success.fit_transform(student_data['Success_Level'])
-    
-    label_encoder_program = LabelEncoder()
-    student_data['Program_Success'] = label_encoder_program.fit_transform(student_data['Preferred_Program'])
+    st.title("Comprehensive Model Improvement for Enrollment Success Prediction")
 
-    # Define the features for the first two predictions
-    features = [
-        'O_Level_Results', 'A_Level_Results', 'O_Level_Credits', 'A_Level_Credits',
-        'Gender', 'Age', 'School_Type', 'District', 'Preferred_Program'
+    # Feature Engineering: Break down performance by subject or credits
+    features = ['Gender', 'Age', 'School_Type', 'District', 'Parent_Education_Level', 
+                'O_Level_Credits', 'A_Level_Credits', 'Preferred_Program', 'Study_Hours']
+    target = 'Enrolled'
+
+    # Encode categorical variables
+    label_encoders = {}
+    for column in ['Gender', 'School_Type', 'District', 'Parent_Education_Level', 'Preferred_Program']:
+        le = LabelEncoder()
+        df[column] = le.fit_transform(df[column])
+        label_encoders[column] = le
+
+    # Split dataset into features (X) and target (y)
+    X = df[features]
+    y = df[target]
+
+    # Handle class imbalance using SMOTE
+    smote = SMOTE(random_state=42)
+    X_resampled, y_resampled = smote.fit_resample(X, y)
+
+    # Split data into training and test sets
+    X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42)
+
+    ### Step 1: XGBoost with Hyperparameter Tuning
+    param_distributions = {
+        'n_estimators': np.arange(100, 1000, 100),
+        'learning_rate': np.linspace(0.01, 0.3, 30),
+        'max_depth': np.arange(3, 15),
+        'min_child_weight': np.arange(1, 10),
+        'subsample': np.linspace(0.5, 1, 10),
+        'colsample_bytree': np.linspace(0.5, 1, 10)
+    }
+
+    xgb = XGBClassifier(random_state=42)
+    random_search = RandomizedSearchCV(xgb, param_distributions, n_iter=100, cv=3, random_state=42, n_jobs=-1)
+    random_search.fit(X_train, y_train)
+
+    best_xgb_model = random_search.best_estimator_
+    y_pred_xgb = best_xgb_model.predict(X_test)
+    accuracy_xgb = accuracy_score(y_test, y_pred_xgb)
+
+    ### Step 2: LightGBM Classifier
+    lgbm = LGBMClassifier(random_state=42)
+    lgbm.fit(X_train, y_train)
+    y_pred_lgbm = lgbm.predict(X_test)
+    accuracy_lgbm = accuracy_score(y_test, y_pred_lgbm)
+
+    ### Step 3: Stacking Ensemble (XGBoost + Random Forest)
+    estimators = [
+        ('xgb', best_xgb_model),
+        ('rf', RandomForestClassifier(random_state=42))
     ]
-    X = pd.get_dummies(student_data[features], drop_first=True)
 
-    # Handle missing values if any
-    X.fillna(X.median(), inplace=True)
+    stacking_model = StackingClassifier(estimators=estimators, final_estimator=LGBMClassifier(random_state=42))
+    stacking_model.fit(X_train, y_train)
 
-    # First prediction - Enrollment Success
-    y_enroll = student_data['Enroll']
-    X_train, X_test, y_train, y_test = train_test_split(X, y_enroll, test_size=0.3, random_state=42)
+    y_pred_stack = stacking_model.predict(X_test)
+    accuracy_stack = accuracy_score(y_test, y_pred_stack)
 
-    with tabs[0]:
-        st.title('Enrollment Success Prediction with GaussianNB')
-        st.markdown("### Overview")
+    # Display model evaluation in a CSS-formatted box with model accuracy leading
+    st.markdown(
+        f"""
+        <style>
+        .model-eval-box {{
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+        }}
+        .accuracy-lead {{
+            color: #2ecc71;
+            font-size: 24px;
+            font-weight: bold;
+        }}
+        .evaluation {{
+            font-size: 16px;
+            color: #555;
+        }}
+        </style>
 
-        # Implement Gaussian Naive Bayes
-        model = GaussianNB()
-        model.fit(X_train, y_train)
+        <div class="model-eval-box">
+            <div class="accuracy-lead">XGBoost Accuracy: {accuracy_xgb * 100:.2f}%</div>
+            <div class="accuracy-lead">LightGBM Accuracy: {accuracy_lgbm * 100:.2f}%</div>
+            <div class="accuracy-lead">Stacking Model Accuracy: {accuracy_stack * 100:.2f}%</div>
+            <div class="evaluation">Best Model: Stacking (XGBoost + Random Forest)</div>
+            <div class="evaluation">Training set size: {len(X_train)}</div>
+            <div class="evaluation">Test set size: {len(X_test)}</div>
+        </div>
+        """, unsafe_allow_html=True
+    )
 
-        y_pred = model.predict(X_test)
+    # User Inputs for Prediction
+    st.subheader("Enter Student Details for Prediction")
 
-        accuracy = accuracy_score(y_test, y_pred)
-        report = classification_report(y_test, y_pred, target_names=label_encoder_success.classes_)
+    col1, col2, col3 = st.columns(3)
 
-        col1, col2 = st.columns([1, 1])
+    with col1:
+        gender = st.selectbox("Gender", label_encoders['Gender'].classes_)
+        preferred_program = st.selectbox("Preferred Program", label_encoders['Preferred_Program'].classes_)
 
-        with col1:
-            st.write("### Model Evaluation")
-            st.metric(label="Model Accuracy", value=f"{accuracy:.2f}")
-            st.write("**Classification Report:**")
-            st.text(report)
+    with col2:
+        age = st.number_input("Age", min_value=16, max_value=25)
+        school_type = st.selectbox("School Type", label_encoders['School_Type'].classes_)
 
-        with col2:
-            st.write("### Confusion Matrix")
-            cm = confusion_matrix(y_test, y_pred)
-            fig, ax = plt.subplots()
-            sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=label_encoder_success.classes_, yticklabels=label_encoder_success.classes_, ax=ax)
-            ax.set_xlabel("Predicted")
-            ax.set_ylabel("Actual")
-            st.pyplot(fig)
+    with col3:
+        district = st.selectbox("District", label_encoders['District'].classes_)
+        parent_education = st.selectbox("Parent's Education Level", label_encoders['Parent_Education_Level'].classes_)
 
-    # Second prediction - Academic Success
-    y_academic = student_data['Enroll']
-    X_train, X_test, y_train, y_test = train_test_split(X, y_academic, test_size=0.3, random_state=42)
+    o_level_credits = st.number_input("O Level Credits Obtained", min_value=0, max_value=9)
+    a_level_credits = st.number_input("A Level Credits Obtained (if applicable)", min_value=0, max_value=5)
+    study_hours = st.slider("Weekly Study Hours", 0, 40, 10)
 
-    with tabs[1]:
-        st.title('Academic Success Prediction with Random Forest')
-        st.markdown("### Overview")
-        st.write("This tab predicts the likelihood of academic success using the Random Forest Classifier.")
+    # Convert user input into model format
+    user_input = pd.DataFrame({
+        'Gender': [label_encoders['Gender'].transform([gender])[0]],
+        'Age': [age],
+        'School_Type': [label_encoders['School_Type'].transform([school_type])[0]],
+        'District': [label_encoders['District'].transform([district])[0]],
+        'Parent_Education_Level': [label_encoders['Parent_Education_Level'].transform([parent_education])[0]],
+        'O_Level_Credits': [o_level_credits],
+        'A_Level_Credits': [a_level_credits],
+        'Preferred_Program': [label_encoders['Preferred_Program'].transform([preferred_program])[0]],
+        'Study_Hours': [study_hours]
+    })
 
-        model = RandomForestClassifier(random_state=42)
-        model.fit(X_train, y_train)
-
-        y_pred = model.predict(X_test)
-
-        accuracy = accuracy_score(y_test, y_pred)
-        report = classification_report(y_test, y_pred, target_names=label_encoder_success.classes_)
-
-        col3, col4 = st.columns([1, 1])
-
-        with col3:
-            st.write("### Model Evaluation")
-            st.metric(label="Model Accuracy", value=f"{accuracy:.2f}")
-            st.write("**Classification Report:**")
-            st.text(report)
-
-        with col4:
-            st.write("### Feature Importance")
-            feature_importance = model.feature_importances_
-            sorted_idx = feature_importance.argsort()
-            fig, ax = plt.subplots(figsize=(8, 6))
-            ax.barh(X.columns[sorted_idx], feature_importance[sorted_idx], color='teal')
-            ax.set_xlabel("Feature Importance")
-            ax.set_title("Feature Importance in Random Forest Model")
-            st.pyplot(fig)
-
-    # Third prediction - Preferred Program Success
-    y_program_success = student_data['Program_Success']
-    X_train, X_test, y_train, y_test = train_test_split(X, y_program_success, test_size=0.3, random_state=42)
-
-    with tabs[2]:
-        st.title('Preferred Program Success Prediction with Random Forest')
-        st.markdown("### Overview")
-        st.write("This tab predicts the likelihood of success in the preferred program using the Random Forest Classifier.")
-
-        model = RandomForestClassifier(random_state=42)
-        model.fit(X_train, y_train)
-
-        y_pred = model.predict(X_test)
-
-        accuracy = accuracy_score(y_test, y_pred)
-        report = classification_report(y_test, y_pred, target_names=label_encoder_program.classes_)
-
-        col5, col6 = st.columns([1, 1])
-
-        with col5:
-            st.write("### Model Evaluation")
-            st.metric(label="Model Accuracy", value=f"{accuracy:.2f}")
-            st.write("**Classification Report:**")
-            st.text(report)
-
-        with col6:
-            st.write("### Feature Importance")
-            feature_importance = model.feature_importances_
-            sorted_idx = feature_importance.argsort()
-            fig, ax = plt.subplots(figsize=(8, 6))
-            ax.barh(X.columns[sorted_idx], feature_importance[sorted_idx], color='purple')
-            ax.set_xlabel("Feature Importance")
-            ax.set_title("Feature Importance in Preferred Program Success Model")
-            st.pyplot(fig)
-
-# Run the prediction function
-if __name__ == "__main__":
-    predictions()
+    # Prediction Button
+    if st.button("Predict Enrollment Success"):
+        # Make prediction with the Stacking Model (best model)
+        prediction = stacking_model.predict(user_input)
+        
+        st.markdown(
+            f"""
+            <style>
+            .success {{
+                color: green;
+                font-size: 24px;
+                font-weight: bold;
+                border: 2px solid green;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #eaffea;
+            }}
+            .failure {{
+                color: red;
+                font-size: 24px;
+                font-weight: bold;
+                border: 2px solid red;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #ffeded;
+            }}
+            </style>
+            """, unsafe_allow_html=True
+        )
+        
+        if prediction[0] == 1:
+            st.markdown('<div class="success">This student is likely to successfully enroll.</div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="failure">This student may not successfully enroll.</div>', unsafe_allow_html=True)

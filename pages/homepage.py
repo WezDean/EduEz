@@ -9,16 +9,19 @@ def homepage():
     """
     <div style="display: flex; gap: 20px; margin-top: 20px;">
         <div style="flex: 1; padding: 10px; background-color: #f4faff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <h4 style="text-align: center;">📊 Data Analysis</h4>
-            <p>In-depth analysis of the students in Brunei Darussalam.</p>
+            <h4 style="text-align: center;">📊 Data Analysis & Insights</h4>
+            <p>Comprehensive analysis of 'O' & 'A' Level students performance, demographics, and educational trends in Brunei Darussalam.</p>
+            <p>Explore interactive dashboards that visualize trends across programmes, institutions, districts, and student demographics.</p>
         </div>
         <div style="flex: 1; padding: 10px; background-color: #f4faff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <h4 style="text-align: center;">🔍 What's Next?</h4>
-            <p>EduEz - Simple feature for students to know their eligible institutions.</p>
+            <h4 style="text-align: center;">🔍 EduEZ: Pathway Recommendations</h4>
+            <p>Help students easily discover which institutions and programs they are eligible for based on their results.</p>
+            <p>Provide actionable recommendations for students to make informed decisions about their academic future.</p>
         </div>
         <div style="flex: 1; padding: 10px; background-color: #f4faff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <h4 style="text-align: center;">🤖 Predictive Models</h4>
-            <p>Machine learning models to forecast several factors on quality education of students.</p>
+            <h4 style="text-align: center;">🤖 Predictive Models & Forecasts</h4>
+            <p>Leverage machine learning models to predict educational outcomes : enrollment success and admission rates.</p>
+            <p>Forecast future trends in student enrollment and academic success to support data-driven decision-making and policy improvements.</p>
         </div>
     </div>
     """,
@@ -96,7 +99,7 @@ def homepage():
 
         # Title and header
         st.markdown('<div class="title">Quality Education in Brunei Darussalam</div>', unsafe_allow_html=True)
-        st.markdown('<div class="header">Analysis on Students of Brunei Darussalam</div>', unsafe_allow_html=True)
+        st.markdown('<div class="header">Analysis on O & A Level students Students of Brunei Darussalam</div>', unsafe_allow_html=True)
 
     # Image in the third column
     with col3:
