@@ -4,20 +4,16 @@ def predictions():
     from sklearn.model_selection import train_test_split, RandomizedSearchCV
     from sklearn.preprocessing import LabelEncoder
     from sklearn.metrics import accuracy_score
-    from xgboost import XGBClassifier
-    from xgboost import plot_importance
-    from lightgbm import LGBMClassifier
-    from sklearn.ensemble import StackingClassifier, RandomForestClassifier
+    from xgboost import XGBClassifier, plot_importance
     from imblearn.over_sampling import SMOTE
     import numpy as np
     import matplotlib.pyplot as plt
-    import seaborn as sns
 
     # Load the dataset
     file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Updated_Bruneian_Students_Simulated_Dataset.csv"
     df = pd.read_csv(file_path)
 
-    st.title("Comprehensive Model Improvement for Enrollment Success Prediction")
+    st.title("Enrollment Success Prediction")
 
     # Feature Engineering: Break down performance by subject or credits
     features = ['Gender', 'Age', 'School_Type', 'District', 'Parent_Education_Level', 
@@ -42,43 +38,22 @@ def predictions():
     # Split data into training and test sets
     X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42)
 
-    ### Step 1: XGBoost with Hyperparameter Tuning
+    # XGBoost Classifier with Hyperparameter Tuning
     param_distributions = {
-        'n_estimators': np.arange(100, 1000, 100),
-        'learning_rate': np.linspace(0.01, 0.3, 30),
-        'max_depth': np.arange(3, 15),
-        'min_child_weight': np.arange(1, 10),
-        'subsample': np.linspace(0.5, 1, 10),
-        'colsample_bytree': np.linspace(0.5, 1, 10)
+        'n_estimators': np.arange(100, 500, 50),
+        'learning_rate': np.linspace(0.01, 0.3, 10),
+        'max_depth': np.arange(3, 10),
     }
 
     xgb = XGBClassifier(random_state=42)
-    random_search = RandomizedSearchCV(xgb, param_distributions, n_iter=100, cv=3, random_state=42, n_jobs=-1)
+    random_search = RandomizedSearchCV(xgb, param_distributions, n_iter=50, cv=3, random_state=42, n_jobs=-1)
     random_search.fit(X_train, y_train)
 
     best_xgb_model = random_search.best_estimator_
     y_pred_xgb = best_xgb_model.predict(X_test)
     accuracy_xgb = accuracy_score(y_test, y_pred_xgb)
 
-    ### Step 2: LightGBM Classifier
-    lgbm = LGBMClassifier(random_state=42)
-    lgbm.fit(X_train, y_train)
-    y_pred_lgbm = lgbm.predict(X_test)
-    accuracy_lgbm = accuracy_score(y_test, y_pred_lgbm)
-
-    ### Step 3: Stacking Ensemble (XGBoost + Random Forest)
-    estimators = [
-        ('xgb', best_xgb_model),
-        ('rf', RandomForestClassifier(random_state=42))
-    ]
-
-    stacking_model = StackingClassifier(estimators=estimators, final_estimator=LGBMClassifier(random_state=42))
-    stacking_model.fit(X_train, y_train)
-
-    y_pred_stack = stacking_model.predict(X_test)
-    accuracy_stack = accuracy_score(y_test, y_pred_stack)
-
-    # Display model evaluation in a CSS-formatted box with model accuracy leading
+    # Display model evaluation
     st.markdown(
         f"""
         <style>
@@ -102,9 +77,6 @@ def predictions():
 
         <div class="model-eval-box">
             <div class="accuracy-lead">XGBoost Accuracy: {accuracy_xgb * 100:.2f}%</div>
-            <div class="accuracy-lead">LightGBM Accuracy: {accuracy_lgbm * 100:.2f}%</div>
-            <div class="accuracy-lead">Stacking Model Accuracy: {accuracy_stack * 100:.2f}%</div>
-            <div class="evaluation">Best Model: Stacking (XGBoost + Random Forest)</div>
             <div class="evaluation">Training set size: {len(X_train)}</div>
             <div class="evaluation">Test set size: {len(X_test)}</div>
         </div>
@@ -147,8 +119,7 @@ def predictions():
 
     # Prediction Button
     if st.button("Predict Enrollment Success"):
-        # Make prediction with the Stacking Model (best model)
-        prediction = stacking_model.predict(user_input)
+        prediction = best_xgb_model.predict(user_input)
         
         st.markdown(
             f"""

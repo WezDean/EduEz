@@ -44,22 +44,23 @@ def EduEz():
         'Computer Science (9608)': '9608'
     }
 
-    # Updated grading system to A1, A2, B3, B4, etc.
-    grades = ['A1', 'A2', 'B3', 'B4', 'C5', 'C6', 'D7', 'E8', 'U']
+    # Updated grading system
+    o_level_grades_list = ['A1', 'A2', 'B3', 'B4', 'C5', 'C6', 'D7', 'E8', 'U']
+    a_level_grades_list = ['A', 'B', 'C', 'D', 'E', 'F', 'U']
 
     # O-Level grades input form
     st.subheader("O Level Grades")
     selected_o_level_subjects = st.multiselect("Select O Level Subjects:", list(o_level_subjects.keys()))
     o_level_grades = {}
     for subject in selected_o_level_subjects:
-        o_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {o_level_subjects[subject]}):', grades, key=f'o_level_{subject}')
+        o_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {o_level_subjects[subject]}):', o_level_grades_list, key=f'o_level_{subject}')
 
     # A-Level grades input form (optional)
     st.subheader("A Level Grades (if applicable)")
     selected_a_level_subjects = st.multiselect("Select A Level Subjects:", list(a_level_subjects.keys()))
     a_level_grades = {}
     for subject in selected_a_level_subjects:
-        a_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {a_level_subjects[subject]}):', grades, key=f'a_level_{subject}')
+        a_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {a_level_subjects[subject]}):', a_level_grades_list, key=f'a_level_{subject}')
 
     # Example data
     data = {
@@ -129,12 +130,15 @@ def EduEz():
     df = pd.DataFrame(data)
 
     # Grading criteria function based on the updated grading system
-    def calculate_credits(grades):
-        return sum(1 for g in grades.values() if g in ['A1', 'A2', 'B3', 'B4', 'C5', 'C6'])
+    def calculate_credits(grades, level='O'):
+        if level == 'O':
+            return sum(1 for g in grades.values() if g in ['A1', 'A2', 'B3', 'B4', 'C5', 'C6'])
+        else:
+            return sum(1 for g in grades.values() if g in ['A', 'B', 'C', 'D', 'E'])
 
     def is_eligible(o_level_grades, a_level_grades, requirements):
-        actual_o_level_credits = calculate_credits(o_level_grades)
-        actual_a_level_passes = calculate_credits(a_level_grades)
+        actual_o_level_credits = calculate_credits(o_level_grades, level='O')
+        actual_a_level_passes = calculate_credits(a_level_grades, level='A')
         
         required_o_level_credits = requirements.get("O_level_credits", 0)
         required_a_level_passes = requirements.get("A_level_passes", 0)
@@ -192,7 +196,7 @@ def EduEz():
             st.write("### Entry Requirements:")
             st.write(f"- Requires at least {data['Entry Requirements'][i]['O_level_credits']} O Level credits (grades A1 to C6)")
             if "A_level_passes" in data['Entry Requirements'][i]:
-                st.write(f"- Requires at least {data['Entry Requirements'][i]['A_level_passes']} A Level passes (grades A1 to E8)")
+                st.write(f"- Requires at least {data['Entry Requirements'][i]['A_level_passes']} A Level passes (grades A to E)")
 
             # Additional sections for each institution
             with st.expander("More Information"):
