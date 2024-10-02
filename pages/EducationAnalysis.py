@@ -1,3 +1,10 @@
+def set_background_color(fig, color='#e6ffe6'):  # Slightly greenish-white color
+    fig.update_layout(
+        paper_bgcolor=color,  # The outer background of the figure
+        plot_bgcolor=color    # The background of the actual plot
+    )
+    return fig
+
 def EducationAnalysis():
     import streamlit as st
     import pandas as pd
@@ -35,10 +42,29 @@ def EducationAnalysis():
         unsafe_allow_html=True
     )
 
-    
+    # Custom CSS to change the background color to light green
+    st.markdown(
+        """
+        <style>
+        /* Change the background color */
+        .stApp {
+            background-color: #e6ffe6; /* Slightly light green */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Function to set background color for all visualizations
+    def set_background_color(fig, color='#e6ffe6'):  # Slightly greenish-white color
+        fig.update_layout(
+            paper_bgcolor=color,  # The outer background of the figure
+            plot_bgcolor=color    # The background of the actual plot
+        )
+        return fig
 
     # Load your dataset
-    file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Updated_Bruneian_Students_Simulated_Dataset.csv"
+    file_path = "C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/modified_bruneian_students_dataset.csv"
     df = pd.read_csv(file_path)
 
     # Mapping of O Level and A Level subjects to their corresponding Syllabus Codes
@@ -46,7 +72,7 @@ def EducationAnalysis():
         'O_Level_Mathematics': 'Mathematics (Syllabus Code: 4024)',
         'O_Level_English': 'English Language (Syllabus Code: 1120)',
         'O_Level_Malay_Language': 'Bahasa Melayu (Syllabus Code: 3248)',
-        'O_Level_Islamic_Religious_Knowledge': 'Islamic Religious Knowledge (Syllabus Code: 2069)',
+        'O_Level_IRK': 'Islamic Religious Knowledge (Syllabus Code: 2069)',
         'O_Level_Chemistry': 'Chemistry (Syllabus Code: 5070)',
         'O_Level_Biology': 'Biology (Syllabus Code: 5090)',
         'O_Level_Physics': 'Physics (Syllabus Code: 5054)',
@@ -97,11 +123,19 @@ def EducationAnalysis():
 
         # 1. Bar Chart: Performance in O Level Subjects
         selected_subject = st.selectbox('Select O Level Subject', options=o_level_columns, format_func=lambda x: o_level_labels[x])
-        fig = px.histogram(filtered_df, x=selected_subject, color='School_Type', barmode='group',
-                        title=f'O Level Performance in {o_level_labels[selected_subject]}',
-                        category_orders={selected_subject: o_level_grade_order},  # Set grade order
-                        labels={'x': 'Grades', 'y': 'Count'})
+
+        fig = px.histogram(
+            filtered_df, 
+            x=selected_subject, 
+            color='School_Type', 
+            barmode='group',
+            title=f'O Level Performance in {o_level_labels[selected_subject]}',
+            category_orders={'School_Type': ['Public', 'Private', 'International'], selected_subject: o_level_grade_order},  # Set grade order for both School_Type and subject
+            labels={'x': 'Grades', 'y': 'Count'}
+        )
+        fig = set_background_color(fig)
         st.plotly_chart(fig)  # This is the first visualization (by itself)
+
 
         # 2. Pie Chart: Overall O Level Results Distribution
         fig2 = px.pie(filtered_df, names=selected_subject, title=f'O Level {o_level_labels[selected_subject]} Grade Distribution',
@@ -117,11 +151,19 @@ def EducationAnalysis():
 
         # 1. Bar Chart: Performance in A Level Subjects
         selected_subject = st.selectbox('Select A Level Subject', options=a_level_columns, format_func=lambda x: a_level_labels[x])
-        fig = px.histogram(filtered_df, x=selected_subject, color='School_Type', barmode='group',
-                        title=f'A Level Performance in {a_level_labels[selected_subject]}',
-                        category_orders={selected_subject: a_level_grade_order},  # Set grade order
-                        labels={'x': 'Grades', 'y': 'Count'})
+
+        fig = px.histogram(
+            filtered_df, 
+            x=selected_subject, 
+            color='School_Type', 
+            barmode='group',
+            title=f'A Level Performance in {a_level_labels[selected_subject]}',
+            category_orders={'School_Type': ['Public', 'Private', 'International'], selected_subject: a_level_grade_order},  # Set grade order for both School_Type and subject
+            labels={'x': 'Grades', 'y': 'Count'}
+        )
+        fig = set_background_color(fig)
         st.plotly_chart(fig)  # This is the first visualization (by itself)
+
 
         # 2. Pie Chart: Overall A Level Results Distribution
         fig2 = px.pie(filtered_df, names=selected_subject, title=f'A Level {a_level_labels[selected_subject]} Grade Distribution',
@@ -130,16 +172,31 @@ def EducationAnalysis():
     # Display the second and third visualizations side by side
     col1, col2 = st.columns(2)
     with col1:
+        fig2 = set_background_color(fig2)
         st.plotly_chart(fig2)  # Pie Chart in column 1
 
     # 3. Box plot for overall results
     if exam_level == 'O Level':
-        fig3 = px.box(filtered_df, y='O_Level_Results', color='School_Type', title='O Level Results by School Type')
+        fig3 = px.box(
+            filtered_df, 
+            y='O_Level_Results', 
+            color='School_Type', 
+            title='O Level Results by School Type',
+            category_orders={'School_Type': ['Public', 'Private', 'International']}  # Specify the order here
+        )
     else:
-        fig3 = px.box(filtered_df, y='A_Level_Results', color='School_Type', title='A Level Results by School Type')
+        fig3 = px.box(
+            filtered_df, 
+            y='A_Level_Results', 
+            color='School_Type', 
+            title='A Level Results by School Type',
+            category_orders={'School_Type': ['Public', 'Private', 'International']}  # Specify the order here
+        )
 
     with col2:
+        fig3 = set_background_color(fig3)
         st.plotly_chart(fig3)  # Box plot in column 2
+
 
     # Display the Top 5 and Bottom 5 visualizations side by side
 
@@ -167,26 +224,33 @@ def EducationAnalysis():
         o_level_averages = df[o_level_columns].mean().sort_values()
 
         # Plot top 5 and bottom 5 performing subjects for O Levels
-        top_5_o_level = o_level_averages.head(5)
-        bottom_5_o_level = o_level_averages.tail(5)
+        top_5_o_level = o_level_averages.head(5).reset_index()
+        bottom_5_o_level = o_level_averages.tail(5).reset_index()
+
+        # Rename the columns for clarity
+        top_5_o_level.columns = ['Subject', 'Average Grade']
+        bottom_5_o_level.columns = ['Subject', 'Average Grade']
 
         # Bar chart for top 5 O Level subjects
-        fig_top_o_level = px.bar(top_5_o_level, x=top_5_o_level.index, y=top_5_o_level.values,
+        fig_top_o_level = px.bar(top_5_o_level, x='Subject', y='Average Grade',
                                 title='Top 5 Performing O Level Subjects',
                                 labels={'x': 'Subject', 'y': 'Average Grade'},
-                                color=top_5_o_level.values, color_continuous_scale='Blues')
+                                color='Average Grade', color_continuous_scale='greens')
 
         # Bar chart for bottom 5 O Level subjects
-        fig_bottom_o_level = px.bar(bottom_5_o_level, x=bottom_5_o_level.index, y=bottom_5_o_level.values,
+        fig_bottom_o_level = px.bar(bottom_5_o_level, x='Subject', y='Average Grade',
                                     title='Bottom 5 Performing O Level Subjects',
                                     labels={'x': 'Subject', 'y': 'Average Grade'},
-                                    color=bottom_5_o_level.values, color_continuous_scale='Reds')
+                                    color='Average Grade', color_continuous_scale='reds')
+
 
         # Display charts in Streamlit side by side
         with col3:
+            fig_top_o_level = set_background_color(fig_top_o_level)
             st.plotly_chart(fig_top_o_level)
 
         with col4:
+            fig_bottom_o_level = set_background_color(fig_bottom_o_level)
             st.plotly_chart(fig_bottom_o_level)
 
     elif exam_level == 'A Level':
@@ -212,9 +276,11 @@ def EducationAnalysis():
 
         # Display charts in Streamlit side by side
         with col1:
+            fig_top_a_level = set_background_color(fig_top_a_level)
             st.plotly_chart(fig_top_a_level)
 
         with col2:
+            fig_bottom_a_level = set_background_color(fig_bottom_a_level)
             st.plotly_chart(fig_bottom_a_level)
 
     
@@ -231,6 +297,7 @@ def EducationAnalysis():
     # 1. Student Gender Distribution (Pie Chart)
     with col1:
         fig_gender = px.pie(filtered_df_demographics, names='Gender', title='Student Gender Distribution')
+        fig_gender = set_background_color(fig_gender)
         st.plotly_chart(fig_gender)
 
     # 2. Student Age Distribution (Line Chart)
@@ -243,6 +310,7 @@ def EducationAnalysis():
                         labels={'x': 'Age', 'y': 'Number of Students'}, markers=True)
 
     with col2:
+        fig_age_line = set_background_color(fig_age_line)
         st.plotly_chart(fig_age_line)
 
     col3, col4 = st.columns(2)
@@ -251,19 +319,31 @@ def EducationAnalysis():
         # Specify the desired order for the districts
         district_order = ['Brunei-Muara', 'Belait', 'Tutong', 'Temburong']
 
-        # 3. Students by District (Bar Chart)
-        fig_district = px.bar(filtered_df_demographics, x='District', title='Number of Students by District',
-                            labels={'x': 'District', 'y': 'Count'},
-                            category_orders={'District': district_order})  # Set the order of districts
+        # Perform the count of students by district
+        students_by_district = filtered_df_demographics['District'].value_counts().reindex(district_order).reset_index()
+        students_by_district.columns = ['District', 'No. of Students']  # Rename columns for clarity
 
+        # 3. Students by District (Bar Chart)
+        fig_district = px.bar(
+            students_by_district, 
+            x='District', 
+            y='No. of Students', 
+            title='Number of Students by District',
+            labels={'x': 'District', 'y': 'No. of Students'},  # Correct y-axis label
+            category_orders={'District': district_order}  # Set the order of districts
+        )
+
+        fig_district = set_background_color(fig_district)
         st.plotly_chart(fig_district)
+
+
 
     with col4:
         # 4. Family Income Distribution by District (Box Plot)
         fig_income = px.box(filtered_df, x='District', y='Family_Income', title='Family Income Distribution by District',
                             labels={'Family_Income': 'Family Income', 'District': 'District'},
                             category_orders={'District': district_order})  # Set the order of districts
-
+        fig_income = set_background_color(fig_income)
         st.plotly_chart(fig_income)
 
 
@@ -290,7 +370,7 @@ def EducationAnalysis():
                             color='Subject', title='Study Hours vs Exam Performance (Bubble Chart)',
                             labels={'Study_Hours': 'Study Hours', 'Average_Grade': 'Average Grade'},
                             hover_name='Subject', size_max=60)
-
+    fig_bubble = set_background_color(fig_bubble)
     st.plotly_chart(fig_bubble)
 
     # Specify the desired order for the districts
@@ -310,7 +390,7 @@ def EducationAnalysis():
     fig_district = px.bar(long_district_df, x='District', y='Average_Grade', color='Subject', barmode='group',
                         title='Performance by District', labels={'District': 'District', 'Average_Grade': 'Average Grade'},
                         category_orders={'District': district_order})  # Set the order of districts
-
+    fig_district = set_background_color(fig_district)
     st.plotly_chart(fig_district)
 
 
