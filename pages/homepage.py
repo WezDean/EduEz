@@ -28,6 +28,19 @@ def homepage():
     unsafe_allow_html=True
     )
 
+    # Custom CSS to change the background color to light green
+    st.markdown(
+        """
+        <style>
+        /* Change the background color */
+        .stApp {
+            background-color: #e6ffe6; /* Slightly light green */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
     # Middle section: Title, Header, and Image
     with col2:
         st.markdown(
@@ -104,18 +117,6 @@ def homepage():
     # Image in the third column
     with col3:
         st.image("books.png", use_column_width=False, width= 350)
-
-    # Bottom section: Motivational Quote
-    st.markdown(
-        """
-        <hr>
-        <div class="quote">
-        "Quality education is the key to success for the future generation."
-        </div>
-        <hr>
-        """, 
-        unsafe_allow_html=True
-    )
 
 # Call the homepage function to render the content
 if __name__ == "__main__":

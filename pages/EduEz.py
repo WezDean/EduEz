@@ -1,23 +1,85 @@
+import streamlit as st
+import pandas as pd
+
 def EduEz():
-    import streamlit as st
-    import pandas as pd
 
-    # Creating the cover header layout
-    header_col1, header_col2 = st.columns([1, 2])
-    with header_col1:
-        st.title("EduEZ: Educational Pathways Recommendation System")
-        st.write("""
-            EduEZ is designed to help students explore potential educational pathways based on their O Level and A Level results. 
-            Simply input your grades, and we'll recommend institutions and programs that match your qualifications.
-        """)
+      # Custom CSS to change the background color to light green
+    st.markdown(
+        """
+        <style>
+        /* Change the background color */
+        .stApp {
+            background-color: #e6ffe6; /* Slightly light green */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-    # Adding the image on the left
-    with header_col2:
-        st.image("SDG4.jpg", use_column_width=True)  # Replace with your image path or URL
+    # Define the file paths for each institution, including the new ones
+    institution_csv_mapping = {
+        "Laksamana College of Business": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Laksamana_College.csv",
+        "Cosmopolitan College of Commerce and Technology": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Cosmopolitan_College_of_Commerce_and_Technology_courses.csv",
+        "Kemuda Institute": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Kemuda_Institute_courses.csv",
+        "IBTE": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/IBTE.csv",
+        "Universiti Brunei Darussalam (UBD)": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Universiti_Brunei_Darussalam.csv",
+        "Universiti Teknologi Brunei (UTB)": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Universiti_Teknologi_Brunei.csv",
+        "International Graduate Studies College": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/International_Graduate_Studies_College_courses.csv",
+        "KUPUSB": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/KUPUSB_courses.csv",
+        "Micronet International College": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Micronet_International_College_courses.csv",
+        "Politeknik Brunei": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Politeknik_Brunei_courses.csv",
+        "Universiti Sultan Sharif Ali": r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/Universiti_Sultan_Sharif_Ali.csv"
+    }
 
-    st.header("Enter your O Level / A Level results to find eligible institutions")
+    # Define the O Level and A Level requirements for each institution
+    institution_requirements = {
+        "Laksamana College of Business": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "Cosmopolitan College of Commerce and Technology": {"O_Level_Credits": 1, "A_Level_Passes": 0},
+        "Kemuda Institute": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "IBTE": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "Universiti Brunei Darussalam (UBD)": {"O_Level_Credits": 0, "A_Level_Passes": 2},
+        "Universiti Teknologi Brunei (UTB)": {"O_Level_Credits": 0, "A_Level_Passes": 2},
+        "International Graduate Studies College": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "KUPUSB": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "Micronet International College": {"O_Level_Credits": 1, "A_Level_Passes": 0},
+        "Politeknik Brunei": {"O_Level_Credits": 5, "A_Level_Passes": 0},
+        "Universiti Sultan Sharif Ali": {"O_Level_Credits": 0, "A_Level_Passes": 2}
+    }
 
-    # List of subjects with syllabus codes according to Cambridge BGCE
+    # Function to load and display courses from a CSV file
+    def display_courses(institution_name, csv_file_path):
+        try:
+            df = pd.read_csv(csv_file_path)
+            st.subheader(f"{institution_name} - Courses")
+            
+            # Aesthetic display of courses
+            for index, row in df.iterrows():
+                st.markdown(f"**Program**: {row['Programs']}")
+                st.markdown(f"*Minimum Entry Requirements*: {row['Entry Requirements']}")
+                st.markdown("---")  # Divider for readability
+                
+        except FileNotFoundError:
+            st.error(f"{institution_name} courses data not found. Please check the file path.")
+
+    # Function to check eligibility based on O Level and A Level grades
+    def check_eligibility(o_level_grades, a_level_grades, requirements):
+        o_level_credits = sum(1 for grade in o_level_grades.values() if grade in ['A1', 'A2', 'B3', 'B4', 'C5', 'C6'])
+        a_level_credits = sum(1 for grade in a_level_grades.values() if grade in ['A', 'B', 'C', 'D', 'E'])
+
+        return o_level_credits >= requirements['O_Level_Credits'] and a_level_credits >= requirements['A_Level_Passes']
+
+    st.title("EduEZ: Educational Pathways Eligibility System")
+    
+    # Header layout
+    st.write("""
+        EduEZ is designed to help students explore potential educational pathways based on their O Level and A Level results. 
+        Simply input your grades, and see which institutions and programs that match your qualifications.
+    """)
+
+    # User Input for O Level and A Level Grades
+    st.subheader("Enter Your O Level and A Level Results")
+
+    # O Level subjects
     o_level_subjects = {
         'Mathematics (4024)': '4024', 
         'English (1123)': '1123', 
@@ -32,7 +94,8 @@ def EduEz():
         'Computer Science (2210)': '2210', 
         'Additional Maths (4037)': '4037'
     }
-    
+
+    # A Level subjects
     a_level_subjects = {
         'Mathematics (9709)': '9709', 
         'English (9093)': '9093', 
@@ -44,163 +107,59 @@ def EduEz():
         'Computer Science (9608)': '9608'
     }
 
-    # Updated grading system
+    # Grading options
     o_level_grades_list = ['A1', 'A2', 'B3', 'B4', 'C5', 'C6', 'D7', 'E8', 'U']
     a_level_grades_list = ['A', 'B', 'C', 'D', 'E', 'F', 'U']
 
-    # O-Level grades input form
-    st.subheader("O Level Grades")
-    selected_o_level_subjects = st.multiselect("Select O Level Subjects:", list(o_level_subjects.keys()))
-    o_level_grades = {}
-    for subject in selected_o_level_subjects:
-        o_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {o_level_subjects[subject]}):', o_level_grades_list, key=f'o_level_{subject}')
+    # O Level input using checkboxes for subjects with globally unique keys
+    with st.expander("Select your O Level subjects"):
+        st.write("Select subjects and grades:")
+        o_level_grades = {}
+        for i, (subject, code) in enumerate(o_level_subjects.items()):
+            # Adding "O_Level" to the key to make it globally unique
+            if st.checkbox(subject, key=f"O_Level_subject_{i}"):  # Unique key per iteration
+                o_level_grades[subject] = st.selectbox(f'Select grade for {subject}', o_level_grades_list, key=f'O_Level_grade_{subject}_{i}')
 
-    # A-Level grades input form (optional)
-    st.subheader("A Level Grades (if applicable)")
-    selected_a_level_subjects = st.multiselect("Select A Level Subjects:", list(a_level_subjects.keys()))
-    a_level_grades = {}
-    for subject in selected_a_level_subjects:
-        a_level_grades[subject] = st.selectbox(f'Select grade for {subject} (Syllabus Code: {a_level_subjects[subject]}):', a_level_grades_list, key=f'a_level_{subject}')
+    # A Level input using checkboxes for subjects with globally unique keys
+    with st.expander("Select your A Level subjects"):
+        st.write("Select subjects and grades:")
+        a_level_grades = {}
+        for i, (subject, code) in enumerate(a_level_subjects.items()):
+            # Adding "A_Level" to the key to make it globally unique
+            if st.checkbox(subject, key=f"A_Level_subject_{i}"):  # Unique key per iteration
+                a_level_grades[subject] = st.selectbox(f'Select grade for {subject}', a_level_grades_list, key=f'A_Level_grade_{subject}_{i}')
 
-    # Example data
-    data = {
-        "Institution": [
-            "Laksamana College of Business", 
-            "Cosmopolitan College of Commerce and Technology", 
-            "Kemuda Institute", 
-            "IBTE", 
-            "Universiti Brunei Darussalam (UBD)",
-            "Universiti Teknologi Brunei (UTB)",
-            "Universiti Islam Sultan Sharif Ali (UNISSA)",
-            "Politeknik Brunei",
-            "Micronet International College",
-            "International Graduate Studies College"
-        ],
-        "Description": [
-            "Laksamana College of Business is a leading educational institution offering business-related programs.",
-            "Cosmopolitan College of Commerce and Technology focuses on commerce and technology courses.",
-            "Kemuda Institute specializes in computing and IT programs.",
-            "IBTE provides technical education and vocational training.",
-            "Universiti Brunei Darussalam (UBD) is Brunei's premier university.",
-            "Universiti Teknologi Brunei (UTB) offers engineering and technology programs.",
-            "Universiti Islam Sultan Sharif Ali (UNISSA) focuses on Islamic studies.",
-            "Politeknik Brunei provides a range of diploma programs across various fields.",
-            "Micronet International College specializes in IT and business programs.",
-            "International Graduate Studies College offers various diploma programs in business, computing, and multimedia."
-        ],
-        "Programs": [
-            ["BTEC International Level 2 Certificate in Business", "BTEC International Level 3 Diploma in Business", "BTEC Higher National Diploma in Business (Accounting)", "BTEC Higher National Diploma in Business (Marketing)"],
-            ["Level-1 Introductory Diploma in Business", "Level-2 International Certificate in Business", "Level-3 Diploma in Business", "Level-5 HND in Business"],
-            ["BTEC Level 5 Higher National Diploma in Computing", "BTEC Level 3 Diploma in Information Technology", "BTEC Level 2 Certificate in Information Technology", "Level 1 Introductory Diploma in Information Technology"],
-            ["HNTec in Aircraft Engineering", "HNTec in Electronic Engineering", "HNTec in Electronic and Communication Engineering", "HNTec in Electronic and Media Technology"],
-            ["Bachelor Programs in Arts, Science, and Technology"],
-            ["Bachelor Programs in Engineering and Technology"],
-            ["Bachelor Programs in Islamic Studies"],
-            ["Diploma in Business", "Diploma in Hospitality Management", "Diploma in IT"],
-            ["Diploma in Computing", "Diploma in Business and Finance"],
-            ["Diploma in Computer Studies", "Diploma in Business and Finance"]
-        ],
-        "Entry Requirements": [
-            {"O_level_credits": 4},
-            {"O_level_credits": 1},
-            {"O_level_credits": 4},
-            {"O_level_credits": 4},
-            {"O_level_credits": 5, "A_level_passes": 2},
-            {"O_level_credits": 5, "A_level_passes": 2},
-            {"O_level_credits": 5, "A_level_passes": 2},
-            {"O_level_credits": 5},
-            {"O_level_credits": 4},
-            {"O_level_credits": 4}
-        ],
-        "Contact": [
-            {"Website": "https://www.lcb.edu.bn", "Phone": "+673 2232451", "Address": "Jalan Ong Sum Ping, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.ccct.edu.bn", "Phone": "+673 2232452", "Address": "Simpang 47-15, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.kemuda.edu.bn", "Phone": "+673 2232453", "Address": "Simpang 47-16, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.ibte.edu.bn", "Phone": "+673 2232454", "Address": "Simpang 47-17, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.ubd.edu.bn", "Phone": "+673 2232455", "Address": "Simpang 47-18, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.utb.edu.bn", "Phone": "+673 2232456", "Address": "Simpang 47-19, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.unissa.edu.bn", "Phone": "+673 2232457", "Address": "Simpang 47-20, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.pb.edu.bn", "Phone": "+673 2232458", "Address": "Simpang 47-21, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.micronet.edu.bn", "Phone": "+673 2232459", "Address": "Simpang 47-22, Kg Kiulap, Bandar Seri Begawan, Brunei"},
-            {"Website": "https://www.igs.edu.bn", "Phone": "+673 2232460", "Address": "Simpang 47-23, Kg Kiulap, Bandar Seri Begawan, Brunei"}
-        ]
-    }
+    # Determine eligibility across institutions
+    eligible_institutions = []
+    ineligible_institutions = []
 
-    # Convert the data to a DataFrame
-    df = pd.DataFrame(data)
-
-    # Grading criteria function based on the updated grading system
-    def calculate_credits(grades, level='O'):
-        if level == 'O':
-            return sum(1 for g in grades.values() if g in ['A1', 'A2', 'B3', 'B4', 'C5', 'C6'])
-        else:
-            return sum(1 for g in grades.values() if g in ['A', 'B', 'C', 'D', 'E'])
-
-    def is_eligible(o_level_grades, a_level_grades, requirements):
-        actual_o_level_credits = calculate_credits(o_level_grades, level='O')
-        actual_a_level_passes = calculate_credits(a_level_grades, level='A')
-        
-        required_o_level_credits = requirements.get("O_level_credits", 0)
-        required_a_level_passes = requirements.get("A_level_passes", 0)
-        
-        if actual_o_level_credits < required_o_level_credits:
-            return False
-        if required_a_level_passes > 0 and actual_a_level_passes < required_a_level_passes:
-            return False
-        
-        return True
-
-    # Combine all grades
-    all_grades = {**o_level_grades, **a_level_grades}
-
-    # Submit button
     if st.button('Submit'):
-        eligible_institutions = []
-        ineligible_institutions = []
-        for i, institution in enumerate(data['Institution']):
-            if is_eligible(o_level_grades, a_level_grades, data['Entry Requirements'][i]):
+        for institution, requirements in institution_requirements.items():
+            if check_eligibility(o_level_grades, a_level_grades, requirements):
                 eligible_institutions.append(institution)
             else:
                 ineligible_institutions.append(institution)
-        
-        st.write(f'You entered O Level Grades: {o_level_grades}')
-        st.write(f'You entered A Level Grades: {a_level_grades}')
-        
-        st.subheader("Eligible Institutions")
-        if eligible_institutions:
-            for institution in eligible_institutions:
-                st.write(f"- {institution}")
-        else:
-            st.write("- none")
-        
-        st.subheader("Ineligible Institutions")
-        with st.expander("Click to view ineligible institutions"):
-            if not ineligible_institutions:
-                st.write("- none")
+
+        # Display eligible institutions inside an expander
+        with st.expander("Eligible Institutions", expanded=False):
+            if eligible_institutions:
+                for institution in eligible_institutions:
+                    st.write(f"- {institution}")
             else:
+                st.write("- None")
+
+        # Display ineligible institutions inside an expander
+        with st.expander("Ineligible Institutions", expanded=False):
+            if ineligible_institutions:
                 for institution in ineligible_institutions:
                     st.write(f"- {institution}")
+            else:
+                st.write("- None")
 
-    # Tabs for each institution
-    tabs = st.tabs(data['Institution'])
+    # Display courses for the selected institution
+    selected_tab = st.selectbox("Choose an Institution to Explore Courses", list(institution_csv_mapping.keys()))
+    if selected_tab:
+        display_courses(selected_tab, institution_csv_mapping[selected_tab])
 
-    for i, tab in enumerate(tabs):
-        with tab:
-            st.subheader(f"{data['Institution'][i]}")
-            st.markdown(f"{data['Description'][i]}")
-            
-            st.write("### Programs Offered:")
-            for program in data['Programs'][i]:
-                st.write(f"- {program}")
-            
-            st.write("### Entry Requirements:")
-            st.write(f"- Requires at least {data['Entry Requirements'][i]['O_level_credits']} O Level credits (grades A1 to C6)")
-            if "A_level_passes" in data['Entry Requirements'][i]:
-                st.write(f"- Requires at least {data['Entry Requirements'][i]['A_level_passes']} A Level passes (grades A to E)")
-
-            # Additional sections for each institution
-            with st.expander("More Information"):
-                contact = data['Contact'][i]
-                st.write(f"**Website**: [Visit Website]({contact['Website']})")
-                st.write(f"**Phone**: {contact['Phone']}")
-                st.write(f"**Address**: {contact['Address']}")
+# Call the EduEz function to run the app
+EduEz()
