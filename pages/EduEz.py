@@ -40,7 +40,7 @@ def EduEz():
         "Universiti Brunei Darussalam (UBD)": {"O_Level_Credits": 0, "A_Level_Passes": 2},
         "Universiti Teknologi Brunei (UTB)": {"O_Level_Credits": 0, "A_Level_Passes": 2},
         "International Graduate Studies College": {"O_Level_Credits": 4, "A_Level_Passes": 0},
-        "KUPUSB": {"O_Level_Credits": 4, "A_Level_Passes": 0},
+        "Kolej Universiti Perguruan Ugama Seri Begawan (KUPUSB)": {"O_Level_Credits": 4, "A_Level_Passes": 0},
         "Micronet International College": {"O_Level_Credits": 1, "A_Level_Passes": 0},
         "Politeknik Brunei": {"O_Level_Credits": 5, "A_Level_Passes": 0},
         "Universiti Sultan Sharif Ali": {"O_Level_Credits": 0, "A_Level_Passes": 2}
@@ -156,10 +156,36 @@ def EduEz():
             else:
                 st.write("- None")
 
-    # Display courses for the selected institution
+    # Load the contact data from the uploaded CSV file
+    contact_data = pd.read_csv(r"C:/Users/waizz/OneDrive/Documents/GitHub/EduEz/pages/EduEZ_institutions_updated_data.csv")
+
+    # Function to display contact and website information for an institution
+    def display_institution_info(institution_name, contact_data):
+        try:
+            # Filter the contact data for the selected institution
+            info = contact_data[contact_data['Institution'] == institution_name].iloc[0]
+
+            # Display in an expander box
+            with st.expander(f"{institution_name} - More Information"):
+                st.write(f"**Description**: {info['Description']}") 
+                st.write(f"**Contact**: {info['Contact']}")
+                st.write(f"**Email**: {info['Email']}")
+                st.write(f"**Website**: [Visit Website]({info['Website']})")
+                st.write(f"**Location**: {info['Location']}")
+        except IndexError:
+            st.error(f"Contact information for {institution_name} is not available.")
+
+    # Section where the user selects an institution to explore courses
     selected_tab = st.selectbox("Choose an Institution to Explore Courses", list(institution_csv_mapping.keys()))
+
     if selected_tab:
+        # Display courses for the selected institution
         display_courses(selected_tab, institution_csv_mapping[selected_tab])
+
+        # Display contact and website details for the selected institution
+        display_institution_info(selected_tab, contact_data)
+
+
 
 # Call the EduEz function to run the app
 EduEz()
